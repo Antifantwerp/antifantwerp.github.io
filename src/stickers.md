@@ -5,7 +5,8 @@ title: Stickers
 
 <style>
     img {
-        max-width: 500px;
+        width: 500px;
+        max-width: 100%;
     }
 </style>
 

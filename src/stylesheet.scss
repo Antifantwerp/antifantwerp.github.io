@@ -4,4 +4,13 @@
 
 body {
     font-family: "OpenDyslexic", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    width: 80%;
+    @media (max-width: 600px) {
+        width: 95%;
+    }
+    margin: auto;
 }
