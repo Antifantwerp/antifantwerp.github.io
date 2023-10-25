@@ -1,5 +1,6 @@
 ---
 layout: page.md
+order: 1
 title: Stickers
 ---
 
