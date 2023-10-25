@@ -1,2 +1,7 @@
+@import "style/fonts";
 @import "style/accessibility";
 @import "style/nav";
+
+body {
+    font-family: "OpenDyslexic", Arial, Helvetica, sans-serif;
+}
