@@ -3,6 +3,12 @@ layout: page.md
 title: Stickers
 ---
 
+<style>
+    img {
+        max-width: 500px;
+    }
+</style>
+
 # Stickers 
 Information about stickering from both sides.
 
@@ -32,5 +38,6 @@ Hurting innocent people is a price not worth paying.
 This list is not exhaustive, 
 these are merely stickers and signs that have been spotted in Antwerp by contributors to the website.
         
+![A circle sticker. A contrasted image of a man with a hat, decorated with a white-red brim. On the left a black half circle says "Vlaams - Rechts - Radikaal". On the right, a red half-circle says "www.nsv.be"](/assets/stickers/vlaams-rechts-radikaal-www.nsv.be.png)
 
-![](/assets/stickers/vlaams-rechts-radikaal-www.nsv.be.png)
+Translation: Flemish, right(-wing), radical
