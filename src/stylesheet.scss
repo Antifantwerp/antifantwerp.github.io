@@ -18,8 +18,8 @@ body {
 
     color: black;
 
-    background-color: $two;
-    background: linear-gradient(175deg, $one, $two 20%) $two;
+    background-color: white;
+    //background: linear-gradient($one 10%, white 10% 20%, $two 20%) $two;
     background-repeat: no-repeat;
 }
 
@@ -30,33 +30,39 @@ a {
     text-underline-offset: 4px;
 
     &:link {
-        color: #ff3636;
+        color: #ff0000;
     }
     &:visited {
-        color: #ff7a37;
+        color: #ff5500;
     }
     &:hover {
-        color: #ff9898;
+        color: #980000;
         font-size: 1.05rem;
     }
     &:active {
-        color: white;
+        color: $two;
     }
 }
 
 header {
+    background-color: $two;
+    padding-bottom: 40px;
+    nav {
+        background-color: $one;
+    }
     a {
         &:link {
             color: white;
         }
         &:visited {
-            color: rgb(214, 214, 214);
+            color: #c1c1c1;
+            text-decoration-color: black;
         }
         &:hover {
-            color: #ff8f8f;
+            color: #ffc6c6;
         }
         &:active {
-            color: $one;
+            color: $two;
         }
     }
 }
