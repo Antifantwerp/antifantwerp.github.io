@@ -1,3 +1,5 @@
+@import "style/variables";
+
 .sr-only {
     position: absolute;
     left: -10000px;
@@ -13,9 +15,15 @@
     left: -10000px;
     top: auto;
     overflow: hidden;
-    //background-color: $base;
+    color: white;
+    background-color: $two;
     padding: 5px;
 
+    
+    &:link, &:visited, &:hover,  &:active {
+        color: white
+    }
+    
     &:focus {
         position: absolute;
         left: 0;

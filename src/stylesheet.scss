@@ -1,10 +1,64 @@
+@import "style/variables";
 @import "style/fonts";
 @import "style/accessibility";
 @import "style/nav";
 
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100%;
+
+    padding: 0;
+    margin: 0;
+
     font-family: "OpenDyslexic", Arial, Helvetica, sans-serif;
     font-size: 1rem;
+
+    color: black;
+
+    background-color: $two;
+    background: linear-gradient(175deg, $one, $two 20%) $two;
+    background-repeat: no-repeat;
+}
+
+a {
+    outline-color: $one;
+    outline-offset: 4px;
+
+    text-underline-offset: 4px;
+
+    &:link {
+        color: #ff3636;
+    }
+    &:visited {
+        color: #ff7a37;
+    }
+    &:hover {
+        color: #ff9898;
+        font-size: 1.05rem;
+    }
+    &:active {
+        color: white;
+    }
+}
+
+header {
+    a {
+        &:link {
+            color: white;
+        }
+        &:visited {
+            color: rgb(214, 214, 214);
+        }
+        &:hover {
+            color: #ff8f8f;
+        }
+        &:active {
+            color: $one;
+        }
+    }
 }
 
 main {
