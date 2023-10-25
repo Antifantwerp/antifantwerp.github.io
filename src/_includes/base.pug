@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Antifantwerp
+
+        link(rel="stylesheet", href="/stylesheet.css")
+
+        if stylesheet
+            link(rel="stylesheet", href=stylesheet)
+
+
+    body
+        header 
+            a(href="#main").skip-link Skip to main content
+            nav 
+                ul
+                    each page in collections.page
+                        a(href=page.url)
+                            li=page.data.title
+        
+        | !{content}
+        

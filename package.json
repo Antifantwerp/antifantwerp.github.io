@@ -1,0 +1,19 @@
+{
+  "name": "antifantwerp",
+  "version": "1.0.0",
+  "description": "Website for antifantwerp",
+  "main": "index.js",
+  "repository": "https://github.com/Antifantwerp/antifantwerp.github.io.git",
+  "author": "Antifantwerp <antifantwerp@proton.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn eleventy --serve",
+    "build": "yarn eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-sass": "^2.2.3",
+    "js-yaml": "^4.1.0",
+    "sass": "^1.69.4"
+  }
+}
