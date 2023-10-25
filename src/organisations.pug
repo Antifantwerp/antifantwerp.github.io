@@ -1,0 +1,84 @@
+---
+layout: page.pug
+order: 2
+title: Organisations
+---
+
+mixin org(title, description, url, prettyUrl, subOrg=false)
+    if !subOrg
+        h2=title
+    else
+        h3=title
+    p=description
+
+    a(href="https://antwerpen.pvda.be/")=prettyUrl
+
+main#main
+    h1 Organisations
+    p Support eachother. Below are a bunch of links to leftist organisations. 
+
+    div#organisations
+        section
+            +org("PVDA (Partij Van De Arbeid)",
+                "The largest socialist political party in Belgium.",
+                "https://antwerpen.pvda.be/",
+                "antwerpen.pvda.be")
+
+            +org("Redfox",
+                 "Youth movement of PVDA. Stickers, protests. Organiser of Protest With Pride.",
+                 "https://www.redfox.be/",
+                 "redfox.be",
+                 true 
+            )
+
+            +org("Comac",
+                 "Student movement of PVDA. Protests.",
+                 "https://www.comac-studenten.be/",
+                 "comac-studenten.be",
+                 true 
+            )
+
+        section 
+            +org("ACA (Anarchistisch Collectief Antwerpen / Anarchist Collective Antwerp)",
+                 "Collective of anarchists & libertarian socialists. Monthly affordable dinner events, protests.",
+                 "https://acollectiefantwerpen.be",
+                 "acollectiefantwerpen.be"
+            )
+
+        section
+            +org("Campagne Rosa",
+                 "Anti-capitalist feminist movement. Organiser of Pride Is A Protest.",
+                 "https://campagnerosa.be/",
+                 "campagnerosa.be"
+            )
+
+
+        section 
+            +org("LSP (Linkse Socialistische Partij / Leftist Socialist Party)",
+                 "Belgian branch of the International Socialist Alternative.",
+                 "https://www.socialisme.be/",
+                 "socialisme.be"
+            )
+
+            +org(" Actief Linkse Studenten (Active Leftist Students)",
+                 "Youth movement of LSP.",
+                 "https://www.facebook.com/ALSAntwerpen",
+                 "ALS Antwerpen Facebook",
+                 true 
+            )
+
+
+
+    style.
+        #organisations {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        section {
+            flex-basis: 40%;
+            margin: 20px;
+            @media (max-width: 600px) {
+                flex-basis: 100%;
+            }
+        }
