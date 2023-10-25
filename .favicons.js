@@ -15,7 +15,7 @@ module.exports = async function(eleventyDir) {
         background: "#ff0000",
         theme_color: "#ff0000",
     });
-    await fs.writeFile(path.join("src", "_includes", "favicons.pug"), response.html.join(), ()=>{})
+    await fs.writeFile(path.join("src", "_includes", "favicons.pug"), response.html.join(""), ()=>{})
     await write(response, "images", eleventyDir.output);
     await write(response, "files", eleventyDir.output);
 }
