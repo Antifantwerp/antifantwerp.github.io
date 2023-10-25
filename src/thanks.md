@@ -12,3 +12,4 @@ title: Thanks
 
 ## Projects
 - Original antifa svg from [Noun Project](https://thenounproject.com/icon/antifa-1245689/)
+- [Anarchist Book Fair Amsterdam](https://anarchistbookfairamsterdam.blackblogs.org/nl/2018/10/19/antifa-antwerpen-2/), of which their image for Antifa Antwerpen were used. Or use, if it hasn't been replaced yet. Sorry again.
