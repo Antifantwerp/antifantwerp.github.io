@@ -88,6 +88,7 @@ Want some stickers to put places?
 
 - [Zwarte Kat Kollektief](https://www.zwartekat.org/)
 - [De Rode Lap België](https://www.derodelap.be/) & [De Rode Lap Nederland](https://www.derodelap.nl/)
+- [Left Laster](https://leftlaser.com/)
 
 </article>
 
