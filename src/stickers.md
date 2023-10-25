@@ -85,6 +85,8 @@ Source: [Thierry Jaspart's Instagram post](https://www.instagram.com/p/CgSLSN_jn
 ## Good sticker sources
 Want some stickers to put places?
 
+- [Zwarte Kat Kollektief](https://www.zwartekat.org/)
+- [De Rode Lap België](https://www.derodelap.be/) & [De Rode Lap Nederland](https://www.derodelap.nl/)
 
 </article>
 
