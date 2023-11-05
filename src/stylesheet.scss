@@ -59,6 +59,9 @@ table {
     img {
         max-width: 100px;
         margin: auto;
+        @media (max-width: 600px) {
+            max-width: 50px;
+        }
     }
 }
 
