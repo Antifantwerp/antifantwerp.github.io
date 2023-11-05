@@ -1,6 +1,7 @@
 ---
 layout: page.md
-order: 3
+permalink: positions/
+order: 4
 title: Positions
 ---
 # Positions held by the contributors of this website

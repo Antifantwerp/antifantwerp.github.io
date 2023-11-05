@@ -1,6 +1,7 @@
 ---
 layout: page.md
-order: 4
+permalink: locations/
+order: 6
 title: Locations
 ---
 # Locations

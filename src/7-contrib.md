@@ -1,6 +1,7 @@
 ---
 layout: page.md
-order: 5
+permalink: contributions/
+order: 7
 title: Contributing
 ---
 # Contributing to Antifantwerp

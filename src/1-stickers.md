@@ -1,5 +1,6 @@
 ---
 layout: page.md
+permalink: stickers/
 order: 1
 title: Stickers
 ---
