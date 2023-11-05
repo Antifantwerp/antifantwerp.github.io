@@ -1,0 +1,48 @@
+---
+layout: page.md
+permalink: "| signs/"
+order: 3
+title: Signs
+---
+
+h1 Signs
+
+h2 Fascist punk emblems
+
+table
+    tr
+        th Name
+        th Symbol
+        th Link
+        th Extra note
+    each emblem in fascist_emblems
+        tr
+            td=emblem.name
+            td
+                if emblem.img
+                    img(src=`/assets/signs/${emblem.img}`)
+                else if emblem.symbol 
+                    p=emblem.symbol
+                else 
+                    p=emblem.name
+            td
+                -
+                    let text = "More information";
+                    if (emblem.url.toLowerCase().indexOf("wikipedia") > -1) {
+                        text = "Wikipedia link";
+                    }
+                a(href=emblem.url)=text
+
+            td 
+                if emblem.note
+                    p=emblem.note
+                if emblem.widespread_usage
+                    p Sees usage outside of Fascist contexts
+
+details
+    summary Sources
+
+    img(src="/assets/signs/public_warning_know_your_enemy.jpg")
+
+    p [Source list (Reddit)](https://www.reddit.com/r/MarchAgainstNazis/comments/12m031q/comment/jg9tetg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+    p Note: the comment links - understandably, due to their extensive sign database - to the ADL. The links *have* as such been replaced, until the ADL stops their support for Israel.

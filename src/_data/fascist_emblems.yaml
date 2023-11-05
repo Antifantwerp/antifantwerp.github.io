@@ -1,0 +1,72 @@
+- name: Elhaz/Algiz Rune
+  url: https://en.wikipedia.org/wiki/Algiz#%22Life_rune%22_and_%22Death_rune%22
+  img: elhaz-algiz-rune.svg
+  widespread_usage: true
+
+- name: 88
+  url: https://en.wikipedia.org/wiki/88_(number)#In_neo-Nazism
+  symbol: 88
+
+- name: Black Sun/Sonnenrad
+  url: https://en.wikipedia.org/wiki/Black_Sun_(symbol)
+  img: black-sun.svg
+
+- name: Celtic Cross
+  url: https://en.wikipedia.org/wiki/Celtic_cross#White_supremacist_symbolism
+  img: celtic-cross.svg
+
+- name: Blood And Honour
+  url: https://en.wikipedia.org/wiki/Blood_%26_Honour
+  img: blood-and-honour.png
+
+- name: not equals
+  note: (ADL link to be replaced)
+  url: https://www.adl.org/resources/hate-symbol/not-equal
+  symbol: ≠
+
+- name: Othala/Odal rune
+  url: https://en.wikipedia.org/wiki/Othala#Far-right_iconography
+  img: odal-rune.svg
+  widespread_usage: true
+  
+
+- name: Fourteen Words (14)
+  url: https://en.wikipedia.org/wiki/Fourteen_Words
+  symbol: 14
+
+- name: Wolfsangel
+  url: https://en.wikipedia.org/wiki/Wolfsangel#As_a_Nazi_symbol
+  img: wolfsangel.svg
+
+- name: Atomwaffen Division
+  url: https://en.wikipedia.org/wiki/Atomwaffen_Division
+  img: atomwaffen-division.svg
+
+- name: Totenkopf/Deaths Head
+  url: https://en.wikipedia.org/wiki/Totenkopf#Nazi_Germany
+  img: totenkopf.jpg
+
+- name: Iron Cross
+  url: https://en.wikipedia.org/wiki/Iron_Cross#Post-World_War_II
+  img: iron-cross.svg
+  widespread_usage: true
+
+- name: Identity Evropa
+  url: https://en.wikipedia.org/wiki/Identity_Evropa
+  img: identity-evropa.svg
+
+- name: Traditionalist Youth Network
+  url: https://en.wikipedia.org/wiki/Traditionalist_Worker_Party#Traditionalist_Youth_Network
+  img: traditionalist-youth-network.svg
+
+- name: Fasces
+  url: https://en.wikipedia.org/wiki/Neo-fascism
+  img: fasces.svg
+
+- name: Arrow Cross
+  url: https://en.wikipedia.org/wiki/Arrow_Cross_Party#/media/File:Emblem_of_the_Arrow_Cross_Party_alternative.svg
+  img: arrow-cross.svg
+
+- name: Iron Guard /  St. Michael's Cross
+  url: https://en.wikipedia.org/wiki/Iron_Guard
+  img: iron-guard.png

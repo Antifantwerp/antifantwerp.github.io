@@ -44,6 +44,24 @@ a {
     }
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+
+    tr:nth-child(even) {
+        background-color: #ffdddd;
+    }
+    td {
+        padding: 3px;
+        vertical-align: middle;        
+    }
+    img {
+        max-width: 100px;
+        margin: auto;
+    }
+}
+
 header {
     background-color: $two;
     padding-bottom: 40px;
