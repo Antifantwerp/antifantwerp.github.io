@@ -21,7 +21,7 @@ table
             td=emblem.name
             td
                 if emblem.img
-                    img(src=`/assets/signs/${emblem.img}`)
+                    img(src=`/assets/signs/${emblem.img}` alt=emblem.alt)
                 else if emblem.symbol 
                     p=emblem.symbol
                 else 

@@ -1,6 +1,7 @@
 - name: Elhaz/Algiz Rune
   url: https://en.wikipedia.org/wiki/Algiz#%22Life_rune%22_and_%22Death_rune%22
   img: elhaz-algiz-rune.svg
+  alt: All black symbol. A line straight down, with two lines near the top pointing to the top-left and top-right
   widespread_usage: true
 
 - name: 88
@@ -9,10 +10,14 @@
 
 - name: Black Sun/Sonnenrad
   url: https://en.wikipedia.org/wiki/Black_Sun_(symbol)
+  alt:
+    A black circle. In the middle is a black dot, with another black circle around it.
+    12 lines that go up-right-up connect the black dot to the circle
   img: black-sun.svg
 
 - name: Celtic Cross
   url: https://en.wikipedia.org/wiki/Celtic_cross#White_supremacist_symbolism
+  alt: A black circle with a plus sign through it, sticking out on every side. The circle and cross both have a white outline.
   img: celtic-cross.svg
 
 - name: Blood And Honour
