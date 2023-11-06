@@ -23,7 +23,7 @@
 - name: Blood And Honour
   url: https://en.wikipedia.org/wiki/Blood_%26_Honour
   alt: Three A-shaped triangles (without the smaller line connecting the two), connected to eachother by 90 degree increments, forming a swastika-like shape.
-  img: blood-and-honour.png
+  img: blood-and-honour.svg
 
 - name: not equals
   note: (ADL link to be replaced)
