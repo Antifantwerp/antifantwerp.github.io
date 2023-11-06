@@ -1,4 +1,5 @@
-- url: https://www.nieuwsblad.be/cnt/dmf20190319_04267654
+- description: Abortion laws, protections for & education about queer people, multiple parenthood
+  url: https://www.nieuwsblad.be/cnt/dmf20190319_04267654
   cdv: -2
   vb: -3
   nva: -3
@@ -14,7 +15,8 @@
     - diversity
 
 
-- url: https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/
+- description: Abortion laws
+  url: https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/
   cdv: -2
   vb: -3
 

@@ -16,7 +16,7 @@ stylesheet: /style/political-parties.css
         console.log(source)
 
         source.forEach((entry) => {
-            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "tags");
+            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "tags" && key != "description" && key != "note");
             partyIds.forEach((partyId) => {
                 if (!Object.hasOwn(parties[partyId], "points")) {
                     parties[partyId].points = 0;
@@ -75,11 +75,13 @@ main#main
         each source in parties.sources
             each entry in source
                 article
-                    h3 Article
+                    h3 About: #{entry.description}
+                    if entry.note
+                        p Note: #{entry.note}
 
                     h4 Party scores
                     ul
-                        each party in Object.keys(entry).filter(key => key != "url" && key != "tags")
+                        each party in Object.keys(entry).filter(key => key != "url" && key != "tags" && key != "description"&& key != "note")
                             li #{party}: #{entry[party]}
 
                     h4 Tags
