@@ -38,28 +38,28 @@ main#main
         div
             each party in parties
                 - 
-                    let left;
+                    let px;
+                    let value;
                     console.log("-")
                     console.log(party.points)
                     if (party.points >= 0) {
                         console.log(party.points)
                         console.log(maxScale[party.id])
                         console.log(party.name)
-                        left = party.points / maxScale[party.id] * 100 - 50  //50 - (100/maxScale - party.points)
+                        value = party.points / maxScale[party.id] * 100  //50 - (100/maxScale - party.points)
+                        from = "right";
                     } else {
                         let points = party.points * -1;
-                        left = points / maxScale[party.id] * 100;  //50 - (100/maxScale - party.points)
-
+                        value = points / maxScale[party.id] * 100;  //50 - (100/maxScale - party.points)
+                        from = "left";
                         //left = party.points / maxScale * 100  //50 - (100/maxScale - party.points)
                         //left = 50 + (100/maxScale - points)
 
                     }
-                    // Patchwork solution
-                    if (left < 0) {left = -left;}
                     
                 if party.name
                     //svg.party(style="left: " + left + "%")
-                    img.party(title=party.name style="left: " + left + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
+                    img.party(title=party.name style=from + ": " + value + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
 
     section#articles
         h2 Scoring system
