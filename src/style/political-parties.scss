@@ -1,0 +1,18 @@
+
+
+#scale > div {
+    position: relative;
+    width: 100%;
+    background-color: rgb(208, 208, 208);
+    height: 50px;
+
+    .party {
+        position: absolute;
+        top: 0px;
+        transform: translateX(-50%) translateY(50%);
+    }
+
+    img {
+        width: 50px;
+    }
+}

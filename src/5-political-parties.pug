@@ -1,0 +1,89 @@
+---
+layout: page.md
+permalink: "| political-parties/"
+order: 5
+title: Political parties
+description: Want to know whether political parties in Antwerp actually support their statements? Now you can. Complete with sources.
+stylesheet: /style/political-parties.css
+---
+
+- 
+    let maxScale = {};
+
+    Object.keys(parties.sources).forEach((sourceId) => {
+        console.log(sourceId)
+        const source = parties.sources[sourceId];
+        console.log(source)
+
+        source.forEach((entry) => {
+            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "tags");
+            partyIds.forEach((partyId) => {
+                if (!Object.hasOwn(parties[partyId], "points")) {
+                    parties[partyId].points = 0;
+                    maxScale[partyId] = 0;
+                }
+
+                parties[partyId].points += entry[partyId];
+                maxScale[partyId] += 3;
+            });
+        });
+
+      
+    });
+
+main#main
+    h1 Political parties
+    section#scale
+        h2 Scale
+        div
+            each party in parties
+                - 
+                    let left;
+                    console.log("-")
+                    console.log(party.points)
+                    if (party.points >= 0) {
+                        console.log(party.points)
+                        console.log(maxScale[party.id])
+                        console.log(party.name)
+                        left = party.points / maxScale[party.id] * 100 - 50  //50 - (100/maxScale - party.points)
+                    } else {
+                        let points = party.points * -1;
+                        left = points / maxScale[party.id] * 100;  //50 - (100/maxScale - party.points)
+
+                        //left = party.points / maxScale * 100  //50 - (100/maxScale - party.points)
+                        //left = 50 + (100/maxScale - points)
+
+                    }
+                    // Patchwork solution
+                    if (left < 0) {left = -left;}
+                    
+                if party.name
+                    //svg.party(style="left: " + left + "%")
+                    img.party(title=party.name style="left: " + left + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
+
+    section#articles
+        h2 Scoring system
+        p Dependant on whether the party is in line with our values, the score will be added or subtracted.
+        ul
+            each score in Object.keys(parties._scale)
+                li +/-#{score}:
+                    ul
+                        each description in parties._scale[score]
+                            li=description
+
+        h2 Considered articles
+        each source in parties.sources
+            each entry in source
+                article
+                    h3 Article
+
+                    h4 Party scores
+                    ul
+                        each party in Object.keys(entry).filter(key => key != "url" && key != "tags")
+                            li #{party}: #{entry[party]}
+
+                    h4 Tags
+                    ul
+                        each tag in entry.tags
+                            li=tag
+                    a(href=entry.url)=entry.url
