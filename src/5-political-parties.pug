@@ -35,31 +35,31 @@ main#main
     h1 Political parties
     section#scale
         h2 Scale
-        div
-            each party in parties
-                - 
-                    let px;
-                    let value;
-                    console.log("-")
-                    console.log(party.points)
-                    if (party.points >= 0) {
-                        console.log(party.points)
-                        console.log(maxScale[party.id])
-                        console.log(party.name)
-                        value = party.points / maxScale[party.id] * 100  //50 - (100/maxScale - party.points)
-                        from = "right";
-                    } else {
-                        let points = party.points * -1;
-                        value = points / maxScale[party.id] * 100;  //50 - (100/maxScale - party.points)
-                        from = "left";
-                        //left = party.points / maxScale * 100  //50 - (100/maxScale - party.points)
-                        //left = 50 + (100/maxScale - points)
+        each classname in ["desktop", "mobile"]
+            div(class=classname)
+                each party in parties
+                    - 
+                        let px;
+                        let value;
+                        if (party.points >= 0) {
+                            console.log(party.points)
+                            console.log(maxScale[party.id])
+                            console.log(party.name)
+                            value = party.points / maxScale[party.id] * 100  //50 - (100/maxScale - party.points)
 
-                    }
-                    
-                if party.name
-                    //svg.party(style="left: " + left + "%")
-                    img.party(title=party.name style=from + ": " + value + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
+                            from = classname == "desktop" ? "right" : "bottom";
+                        } else {
+                            let points = party.points * -1;
+                            value = points / maxScale[party.id] * 100;  //50 - (100/maxScale - party.points)
+                            from = classname == "desktop" ? "left" : "top";
+                            //left = party.points / maxScale * 100  //50 - (100/maxScale - party.points)
+                            //left = 50 + (100/maxScale - points)
+
+                        }
+                        
+                    if party.name
+                        //svg.party(style="left: " + left + "%")
+                        img.party(title=party.name style=from + ": " + value + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
 
     section#articles
         h2 Scoring system

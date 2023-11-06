@@ -1,18 +1,55 @@
+@import "variables";
 
+main {
+    width: 95%;
+}
+#scale {
+    width: 100%;
+}
 
 #scale > div {
+    background-color: rgb(208, 208, 208);
     position: relative;
     width: 100%;
-    background-color: rgb(208, 208, 208);
-    height: 50px;
 
     .party {
         position: absolute;
-        top: 0px;
-        transform: translateX(-50%) translateY(50%);
     }
 
     img {
         width: 50px;
+    }
+}
+
+#scale > .desktop {
+    background-color: rgb(208, 208, 208);
+    background: linear-gradient(90deg, rgb(105, 224, 105), rgb(247, 222, 141), rgb(241, 70, 70));
+    height: 50px;
+
+    .party {
+        top: 0px;
+        transform: translateX(-50%) translateY(50%);
+    }
+}
+
+#scale > .mobile {
+    background: linear-gradient(rgb(105, 224, 105), rgb(247, 222, 141), rgb(241, 70, 70));
+
+    min-height: 700px;
+    display: none;
+    .party {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+
+@media (max-width: 800px) {
+    #scale > .desktop {
+        display: none;
+    }
+
+    #scale > .mobile {
+        display: inline-block;
     }
 }
