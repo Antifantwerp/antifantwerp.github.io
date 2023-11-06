@@ -22,6 +22,7 @@
 
 - name: Blood And Honour
   url: https://en.wikipedia.org/wiki/Blood_%26_Honour
+  alt: Three A-shaped triangles (without the smaller line connecting the two), connected to eachother by 90 degree increments, forming a swastika-like shape.
   img: blood-and-honour.png
 
 - name: not equals
@@ -31,47 +32,61 @@
 
 - name: Othala/Odal rune
   url: https://en.wikipedia.org/wiki/Othala#Far-right_iconography
+  alt: All black rune. A square, tilted 45 degrees, with a hole i nthe middle. A W-shaped bar is on the bottom of the square.
   img: odal-rune.svg
   widespread_usage: true
-  
 
 - name: Fourteen Words (14)
   url: https://en.wikipedia.org/wiki/Fourteen_Words
   symbol: 14
 
 - name: Wolfsangel
+  alt: A black crest with a 90-degree Z shape, with a line through the middle of it 
   url: https://en.wikipedia.org/wiki/Wolfsangel#As_a_Nazi_symbol
   img: wolfsangel.svg
 
 - name: Atomwaffen Division
+  alt: A black crest with a white atomic logo
   url: https://en.wikipedia.org/wiki/Atomwaffen_Division
   img: atomwaffen-division.svg
 
 - name: Totenkopf/Deaths Head
+  alt: A skull with crossbones under it
   url: https://en.wikipedia.org/wiki/Totenkopf#Nazi_Germany
   img: totenkopf.jpg
+  widespreaD_usage: true
 
 - name: Iron Cross
+  alt: A black cross with a white outline. The bars of the cross get thinner as they go to the center
   url: https://en.wikipedia.org/wiki/Iron_Cross#Post-World_War_II
   img: iron-cross.svg
   widespread_usage: true
 
 - name: Identity Evropa
+  alt: 
+    A dark green-blue triangle that's wider than it's high.
+    A white triangle of the same shape is inside of it, with each of its ends connecting in the center
   url: https://en.wikipedia.org/wiki/Identity_Evropa
   img: identity-evropa.svg
 
 - name: Traditionalist Youth Network
+  alt: 5 arrows poiting to west, north-west, north, north-east and east. The bottom half of the west and east is cut off
   url: https://en.wikipedia.org/wiki/Traditionalist_Worker_Party#Traditionalist_Youth_Network
   img: traditionalist-youth-network.svg
 
 - name: Fasces
+  alt: A bundle of sticks with an axe to its right side
   url: https://en.wikipedia.org/wiki/Neo-fascism
   img: fasces.svg
 
 - name: Arrow Cross
+  alt: 4 arrows going to the top, right, bottom and left
   url: https://en.wikipedia.org/wiki/Arrow_Cross_Party#/media/File:Emblem_of_the_Arrow_Cross_Party_alternative.svg
   img: arrow-cross.svg
 
 - name: Iron Guard /  St. Michael's Cross
+  alt: 
+    A white cross subtly placed behind a black grid with 4 columns & rows, 
+    with the lines not connecting at the outside margins
   url: https://en.wikipedia.org/wiki/Iron_Guard
   img: iron-guard.png
