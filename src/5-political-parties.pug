@@ -18,12 +18,12 @@ stylesheet: /style/political-parties.css
         source.forEach((entry) => {
             const partyIds = Object.keys(entry).filter(key => key != "url" && key != "tags" && key != "description" && key != "note");
             partyIds.forEach((partyId) => {
-                if (!Object.hasOwn(parties[partyId], "points")) {
-                    parties[partyId].points = 0;
+                if (!Object.hasOwn(parties.parties[partyId], "points")) {
+                    parties.parties[partyId].points = 0;
                     maxScale[partyId] = 0;
                 }
 
-                parties[partyId].points += entry[partyId];
+                parties.parties[partyId].points += entry[partyId];
                 maxScale[partyId] += 3;
             });
         });
@@ -37,7 +37,7 @@ main#main
         h2 Scale
         each classname in ["desktop", "mobile"]
             div(class=classname)
-                each party in parties
+                each party in parties.parties
                     - 
                         let px;
                         let value;
@@ -65,10 +65,10 @@ main#main
         h2 Scoring system
         p Dependant on whether the party is in line with our values, the score will be added or subtracted.
         ul
-            each score in Object.keys(parties._scale)
+            each score in Object.keys(parties.scale)
                 li +/-#{score}:
                     ul
-                        each description in parties._scale[score]
+                        each description in parties.scale[score]
                             li=description
 
         h2 Considered articles
