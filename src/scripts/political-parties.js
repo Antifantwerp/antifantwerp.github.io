@@ -1,10 +1,3 @@
-/*function setTag(key, value) {
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.get("tags");
-    window.location.search = urlParams;
-}
-*/
-
 function setParam(key, value) {
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set(key, value);
@@ -39,13 +32,15 @@ function toggleTag(tagname) {
 }
 
 function setupTagbuttons() {
-    const btns = document.querySelectorAll("#tags button")
+    const btns = document.querySelectorAll(".tag")
+    const selectedTags = getSelectedTags();
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", (e) => {
-            console.log("meow")
-            console.log(e)
-            toggleTag(e.target.value)
+            toggleTag(e.target.value);
         });
+        if (selectedTags.indexOf(btns[i].value) > -1) {
+            btns[i].classList.add("selected")
+        }
     }
 }
 

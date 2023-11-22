@@ -6,6 +6,9 @@ title: Political parties
 description: Want to know whether political parties in Antwerp actually support their statements? Now you can. Complete with articles.
 stylesheet: /style/political-parties.css
 ---
+mixin tagbutton(type, id, title=false)
+    - if (!title) { title = id };
+    button(name=type, value=id).tag=title
 
 - 
     let maxScale = {};
@@ -77,9 +80,7 @@ main#main
 
         fieldset#tags
             legend Tags
-            mixin tagbutton(type, id, title=false)
-                - if (!title) { title = id };
-                button(name=type, value=id).tag=title
+
 
             each tag in parties.subjects 
                 +tagbutton("subject", tag)
@@ -102,11 +103,11 @@ main#main
                         h4 Party scores
                         ul
                             each party in involvedParties
-                                li #{party}: #{article[party]}
+                                +tagbutton("party", party, `${party}: ${article[party]}`)
 
                         h4 Tags
                         ul
                             each subject in article.subjects
-                                li=subject
+                                +tagbutton("subject", subject)
                         a(href=article.url)=article.url
     script(src="/scripts/political-parties.js")
