@@ -1,6 +1,7 @@
 ---
 layout: page.md
-order: 6
+permalink: thanks/
+order: 9
 title: Thanks
 ---
 
