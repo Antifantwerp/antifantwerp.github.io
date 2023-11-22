@@ -61,7 +61,7 @@ main#main
                         //svg.party(style="left: " + left + "%")
                         img.party(title=party.name style=from + ": " + value + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
 
-    section#articles
+    section
         h2 Scoring system
         p Dependant on whether the party is in line with our values, the score will be added or subtracted.
         ul
@@ -75,7 +75,7 @@ main#main
 
         h2 Considered articles
 
-        fieldset
+        fieldset#tags
             legend Tags
             mixin tagbutton(type, id, title=false)
                 - if (!title) { title = id };
@@ -89,23 +89,24 @@ main#main
 
 
 
+        section#articles
+            each source in parties.articles
+                each article in source
+                    - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note");
+                    - const allTags =involvedParties.concat(article.subjects).join(",");
+                    article(data-tags=allTags)
+                        h3 About: #{article.description}
+                        if article.note
+                            p Note: #{article.note}
 
-        each source in parties.articles
-            each article in source
-                - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note");
-                - const allTags =involvedParties.concat(article.subjects).join(",");
-                article(data-tags=allTags)
-                    h3 About: #{article.description}
-                    if article.note
-                        p Note: #{article.note}
+                        h4 Party scores
+                        ul
+                            each party in involvedParties
+                                li #{party}: #{article[party]}
 
-                    h4 Party scores
-                    ul
-                        each party in involvedParties
-                            li #{party}: #{article[party]}
-
-                    h4 Tags
-                    ul
-                        each subject in article.subjects
-                            li=subject
-                    a(href=article.url)=article.url
+                        h4 Tags
+                        ul
+                            each subject in article.subjects
+                                li=subject
+                        a(href=article.url)=article.url
+    script(src="/scripts/political-parties.js")
