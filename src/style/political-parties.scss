@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "variables";
 
 main {
@@ -28,7 +29,11 @@ main {
 
     .party {
         top: 0px;
-        transform: translateX(-50%) translateY(50%);
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                transform: translateX(-50%) translateY(100% - math.random() * 100);
+            }
+        }
     }
 }
 
@@ -39,7 +44,12 @@ main {
     display: none;
     .party {
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        
+        @for $i from 1 through 8 {
+            &:nth-child(#{$i}) {
+                transform: translateX(-50% - math.random() * 100) translateY(-50%);
+            }
+        }
     }
 }
 
