@@ -37,6 +37,7 @@ The subjects being talked about in the articles
 ```yaml
 # articles/*.yaml
 - description: {headline/short summary of article}
+  year: {article release year}
   url: {https link to article}
 
   {partyid}: {positive score}

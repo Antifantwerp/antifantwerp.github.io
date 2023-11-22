@@ -19,7 +19,7 @@ mixin tagbutton(type, id, title=false)
         console.log(source)
 
         source.forEach((entry) => {
-            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note");
+            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note" && key != "year");
             partyIds.forEach((partyId) => {
                 if (!Object.hasOwn(parties.parties[partyId], "points")) {
                     parties.parties[partyId].points = 0;
@@ -93,10 +93,15 @@ main#main
         section#articles
             each source in parties.articles
                 each article in source
-                    - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note");
+                    - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note" && key != "year");
                     - const allTags =involvedParties.concat(article.subjects).join(",");
                     article(data-tags=allTags)
-                        h3 About: #{article.description}
+                        -
+                            let description = article.description;
+                            if (article.year) {
+                                article.description = `${article.description} (${article.year})`
+                            }
+                        h3=article.description
                         if article.note
                             p Note: #{article.note}
 

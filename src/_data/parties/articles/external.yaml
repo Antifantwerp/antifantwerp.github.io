@@ -1,4 +1,5 @@
-- description: Abortion laws, protections for & education about queer people, multiple parenthood
+- description: Political party questionaires of sex & gender
+  year: 2019
   url: https://www.nieuwsblad.be/cnt/dmf20190319_04267654
   cdv: -2
   vb: -3
@@ -15,7 +16,8 @@
     - diversity
 
 
-- description: Abortion laws
+- description: CD&V and Vlaams Belang about Abortion
+  year: 2022
   url: https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/
   cdv: -2
   vb: -3

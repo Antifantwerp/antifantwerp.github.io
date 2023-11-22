@@ -78,3 +78,16 @@ main {
         opacity: 1;
     }
 }
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    article {
+        min-width: 300px;
+        flex: 1;
+        border: 1px dashed $two;
+        padding: 20px;
+        margin: 20px;
+    }
+}
