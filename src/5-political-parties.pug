@@ -3,20 +3,20 @@ layout: page.md
 permalink: "| political-parties/"
 order: 5
 title: Political parties
-description: Want to know whether political parties in Antwerp actually support their statements? Now you can. Complete with sources.
+description: Want to know whether political parties in Antwerp actually support their statements? Now you can. Complete with articles.
 stylesheet: /style/political-parties.css
 ---
 
 - 
     let maxScale = {};
 
-    Object.keys(parties.sources).forEach((sourceId) => {
+    Object.keys(parties.articles).forEach((sourceId) => {
         console.log(sourceId)
-        const source = parties.sources[sourceId];
+        const source = parties.articles[sourceId];
         console.log(source)
 
         source.forEach((entry) => {
-            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "tags" && key != "description" && key != "note");
+            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note");
             partyIds.forEach((partyId) => {
                 if (!Object.hasOwn(parties.parties[partyId], "points")) {
                     parties.parties[partyId].points = 0;
@@ -71,21 +71,41 @@ main#main
                         each description in parties.scale[score]
                             li=description
 
+
+
         h2 Considered articles
-        each source in parties.sources
-            each entry in source
-                article
-                    h3 About: #{entry.description}
-                    if entry.note
-                        p Note: #{entry.note}
+
+        fieldset
+            legend Tags
+            mixin tagbutton(type, id, title=false)
+                - if (!title) { title = id };
+                button(name=type, value=id).tag=title
+
+            each tag in parties.subjects 
+                +tagbutton("subject", tag)
+            
+            each party in parties.parties
+                +tagbutton("party", party.id, party.name)
+
+
+
+
+        each source in parties.articles
+            each article in source
+                - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note");
+                - const allTags =involvedParties.concat(article.subjects).join(",");
+                article(data-tags=allTags)
+                    h3 About: #{article.description}
+                    if article.note
+                        p Note: #{article.note}
 
                     h4 Party scores
                     ul
-                        each party in Object.keys(entry).filter(key => key != "url" && key != "tags" && key != "description"&& key != "note")
-                            li #{party}: #{entry[party]}
+                        each party in involvedParties
+                            li #{party}: #{article[party]}
 
                     h4 Tags
                     ul
-                        each tag in entry.tags
-                            li=tag
-                    a(href=entry.url)=entry.url
+                        each subject in article.subjects
+                            li=subject
+                    a(href=article.url)=article.url
