@@ -3,6 +3,7 @@ layout: page.md
 permalink: resources/
 order: 7
 title: Resources
+description: Links to surveillance camera maps
 ---
 # Resources
 ## Surveillance camera locations

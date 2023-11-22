@@ -3,6 +3,7 @@ layout: page.md
 permalink: stickers/
 order: 1
 title: Stickers
+description: Information about stickering from both sides.
 ---
 
 <style>
@@ -28,7 +29,7 @@ title: Stickers
 </style>
 
 # Stickers 
-Information about stickering from both sides.
+{{description}}
 
 Quick navigation:
 - [Covering/removing stickers](#coveringremoving-stickers)

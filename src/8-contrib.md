@@ -3,6 +3,7 @@ layout: page.md
 permalink: contributions/
 order: 8
 title: Contributing
+description: Instructions for contributing to and/or joining antifantwerp
 ---
 # Contributing to Antifantwerp
 Currently, this is just a website of information run by one person. But more information is good!

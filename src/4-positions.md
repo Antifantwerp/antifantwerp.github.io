@@ -3,8 +3,9 @@ layout: page.md
 permalink: positions/
 order: 4
 title: Positions
+description: Positions held by the contributors of this website
 ---
-# Positions held by the contributors of this website
+# {{description}}
 - There is no place for...
     - Ableism
     - Anti-semitism (no, anti-zionism isn't anti-semitism. Don't support Israël's occupation. Support your local Jewish communities.)

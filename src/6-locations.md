@@ -3,9 +3,10 @@ layout: page.md
 permalink: locations/
 order: 6
 title: Locations
+description: Places where you might (not) want to be.
 ---
 # Locations
-Places where you might (not) want to be.
+{{description}}
 
 ## Probably not
 ### Café De Leeuw van Vlaanderen
