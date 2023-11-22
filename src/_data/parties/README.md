@@ -42,6 +42,10 @@ The subjects being talked about in the articles
   {partyid}: {positive score}
   {partyid}: -{negative score}
 
+  subjects:
+    - {subjects}
+    - {from subjects.yaml}
+
 - description: ...
 
 ```
