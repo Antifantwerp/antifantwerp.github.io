@@ -1,18 +1,15 @@
 ---
-layout: page.md
-permalink: "| political-parties/"
-order: 5
-title: Political parties
-description: Want to know whether political parties in Antwerp actually support their statements? Now you can. Complete with articles.
+layout: base.pug
 stylesheet: /style/political-parties.css
+eleventyComputed:
+    description: "Want to know whether political parties in #{watchId} actually support their statements? Now you can. Complete with articles."
 ---
 mixin tagbutton(type, id, title=false)
     - if (!title) { title = id };
     button(name=type, value=id).tag=title
 
 - 
-    const allParties = { ...parties.flanders, ...parties.netherlands};
-
+    const allParties = parties[watchId]
     function filterParties(condition) {
         Object.keys(allParties).forEach((partyId) => {
             if (condition(allParties[partyId])) {
