@@ -11,6 +11,8 @@ mixin tagbutton(type, id, title=false)
     button(name=type, value=id).tag=title
 
 - 
+    const allParties = parties.flanders;
+
     let maxScale = {};
 
     Object.keys(parties.articles).forEach((sourceId) => {
@@ -21,12 +23,12 @@ mixin tagbutton(type, id, title=false)
         source.forEach((entry) => {
             const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note" && key != "year");
             partyIds.forEach((partyId) => {
-                if (!Object.hasOwn(parties.parties[partyId], "points")) {
-                    parties.parties[partyId].points = 0;
+                if (!Object.hasOwn(allParties[partyId], "points")) {
+                    allParties[partyId].points = 0;
                     maxScale[partyId] = 0;
                 }
 
-                parties.parties[partyId].points += entry[partyId];
+                allParties[partyId].points += entry[partyId];
                 maxScale[partyId] += 3;
             });
         });
@@ -40,7 +42,7 @@ main#main
         h2 Scale
         each classname in ["desktop", "mobile"]
             div(class=classname)
-                each party in parties.parties
+                each party in allParties
                     - 
                         let px;
                         let value;
@@ -85,7 +87,7 @@ main#main
             each tag in parties.subjects 
                 +tagbutton("subject", tag)
             
-            each party in parties.parties
+            each party in allParties
                 +tagbutton("party", party.id, party.name)
 
 
