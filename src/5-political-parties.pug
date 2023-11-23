@@ -11,7 +11,18 @@ mixin tagbutton(type, id, title=false)
     button(name=type, value=id).tag=title
 
 - 
-    const allParties = parties.flanders;
+    const allParties = { ...parties.flanders, ...parties.netherlands};
+
+    function filterParties(condition) {
+        Object.keys(allParties).forEach((partyId) => {
+            if (condition(allParties[partyId])) {
+                delete allParties[partyId]
+            } 
+        });
+    }
+
+    // Filter out parties with no configuration
+    filterParties((party)=> {return party == null});
 
     let maxScale = {};
 
@@ -32,9 +43,11 @@ mixin tagbutton(type, id, title=false)
                 maxScale[partyId] += 3;
             });
         });
-
-      
     });
+
+    // Filter out parties with no points/articles
+    filterParties((party)=> {return !Object.hasOwn(party, "points")});
+
 
 main#main
     h1 Political parties
