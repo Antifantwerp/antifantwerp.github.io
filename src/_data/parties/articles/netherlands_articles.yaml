@@ -1,0 +1,55 @@
+- description: Dutch parties views on abortion
+  year: 2023
+  url: https://www.andc.tv/body-en-mind/TRF-stemmen-partij-politiek-vrouwen-rechten-abortus
+  nl_glpvda: 
+    value: 3
+    note: meow
+  nl_volt: 
+    value: 3
+    note: gfdgfd
+
+  nl_pvdd: 
+    value: 2
+    note: fdghfd
+  nl_d66: 
+    value: 2
+    note: gfdd
+  nl_sp: 
+    value: 2
+    note:  dfhgdf
+  nl_bij1: 
+    value: 2
+    note: dfg
+  nl_bbb: 
+    value: 1
+    note: gfdgdf
+  nl_cu: 
+    value: 1
+    note: gfdgdf
+
+  nl_cda: 
+    value: -2
+    note: gfdgdf
+  nl_ja21: 
+    value: -3
+    note: gfd
+  nl_sgp:
+    value: -3
+    note: f
+
+  nl_pvv:
+    value: -1
+    note: gfdgdf
+  nl_fvd:
+    value: -1
+    note: gfdgdf
+  nl_nsc:
+    value: -1
+    note: gfdgdf
+  nl_vvd:
+    value: -1
+    note: gfd
+
+  
+  subjects:
+    - abortion

@@ -3,26 +3,54 @@
   url: https://www.nieuwsblad.be/cnt/dmf20190319_04267654
   cdv: 
     value: -2
-    note: 
+    note: | 
+      Against mentions of same gender relationships in kindergarten.
+
   vb: 
     value: -3
-    note:
+    note: |
+      Against police training programs about homophobia,
+      mentions of same gender relationships in kindergarten 
+      specific elderly care for LGBTQIA+ people,
+      and quotas for electoral lists.
+
   nva: 
     value: -3
-    note: 
+    note: |
+      Against police training programs about homophobia,
+      mentions of same gender relationships in kindergarten, 
+      specific elderly care for LGBTQIA+ people,
+      and quotas for electoral lists.
+      Ministers from countries with homophobic laws should
+      not be talked to about these subjects.
   
   vooruit: 
     value: 2
-    note: 
+    note: |
+      Pro age-appropiate sex ed,
+      increase of abortion term,
+      and quotas for electoral lists.
   pvda: 
     value: 2
-    note: 
+    note: |
+      Pro age-appropiate sex ed,
+      increase of abortion term,
+      and quotas for electoral lists.
+
   openvld: 
     value: 2
-    note: 
+    note: |
+      Pro age-appropiate sex ed,
+      increase of abortion term,
+      and quotas for electoral lists.
+
   groen: 
     value: 2
-    note: 
+    note: |
+      Pro age-appropiate sex ed,
+      increase of abortion term,
+      and quotas for electoral lists.
+
   
   subjects:
     - abortion
@@ -35,36 +63,50 @@
   url: https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/
   cdv: 
     value: -2
-    note:
+    note: Against loosening restrictions, but also against restricting general access.
   vb: 
     value: -3
-    note:
+    note: Against all forms of abortion. Pro life.
 
   openvld: 
     value: 2
-    note: 
+    note: Pro loosening restrictions
 
   subjects:
     - abortion
   
 - description: Parties' reactions to increase of Palestine/Israel conflict
   year: 2023
+  url: https://www.vrt.be/vrtnws/nl/2023/10/12/conflict-israel-hamas-verdeelt-belgische-politiek-niet-slim-v/
   note: 
     Every death is an injustice, no matter what side.
     However Israel as a country is an ethnostate & colonising Palestine.
 
-  groen: 
-    value: 2
-    note:
   nva: 
     value: -3
-    note:
+    note: Pro-Israel
+
   openvld: 
     value: -1
-    note: 
+    note: Solely accentuated Israel deaths
+
+  groen:
+    value: 2
+    note: Criticised openvld's statement
+  
+  vooruit:
+    value: 1
+    note: Accentuated all deaths
+  
+  cdv:
+    value: -1
+    note: Complacent
+  
+  # TODO add ps & MR
+
   pvda: 
     value: 3
-    note: 
+    note: Pro-Palestine, against Israelian occupation
 
   subjects:
     - palestine
