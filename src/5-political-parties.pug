@@ -39,7 +39,7 @@ mixin tagbutton(type, id, title=false)
                     maxScale[partyId] = 0;
                 }
 
-                allParties[partyId].points += entry[partyId];
+                allParties[partyId].points += entry[partyId].value;
                 maxScale[partyId] += 3;
             });
         });
@@ -123,7 +123,7 @@ main#main
                         h4 Party scores
                         ul
                             each party in involvedParties
-                                +tagbutton("party", party, `${party}: ${article[party]}`)
+                                +tagbutton("party", party, `${party}: ${article[party].value}, ${article[party].note}`)
 
                         h4 Tags
                         ul

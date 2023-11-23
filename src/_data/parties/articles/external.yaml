@@ -1,14 +1,28 @@
 - description: Political party questionaires of sex & gender
   year: 2019
   url: https://www.nieuwsblad.be/cnt/dmf20190319_04267654
-  cdv: -2
-  vb: -3
-  nva: -3
+  cdv: 
+    value: -2
+    note: 
+  vb: 
+    value: -3
+    note:
+  nva: 
+    value: -3
+    note: 
   
-  vooruit: 2
-  pvda: 2
-  openvld: 2
-  groen: 2
+  vooruit: 
+    value: 2
+    note: 
+  pvda: 
+    value: 2
+    note: 
+  openvld: 
+    value: 2
+    note: 
+  groen: 
+    value: 2
+    note: 
   
   subjects:
     - abortion
@@ -19,10 +33,16 @@
 - description: CD&V and Vlaams Belang about Abortion
   year: 2022
   url: https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/
-  cdv: -2
-  vb: -3
+  cdv: 
+    value: -2
+    note:
+  vb: 
+    value: -3
+    note:
 
-  openvld: 2
+  openvld: 
+    value: 2
+    note: 
 
   subjects:
     - abortion
@@ -33,10 +53,18 @@
     Every death is an injustice, no matter what side.
     However Israel as a country is an ethnostate & colonising Palestine.
 
-  groen: 2
-  nva: -3
-  openvld: -1
-  pvda: 3
+  groen: 
+    value: 2
+    note:
+  nva: 
+    value: -3
+    note:
+  openvld: 
+    value: -1
+    note: 
+  pvda: 
+    value: 3
+    note: 
 
   subjects:
     - palestine

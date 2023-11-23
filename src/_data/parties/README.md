@@ -41,8 +41,12 @@ The subjects being talked about in the articles
   year: {article release year}
   url: {https link to article}
 
-  {partyid}: {positive score}
-  {partyid}: -{negative score}
+  {partyid}:
+    value: {positive score}
+    note: {reasoning}
+  {partyid}: 
+    value: -{negative score}
+    note: {reasoning}
 
   subjects:
     - {subjects}

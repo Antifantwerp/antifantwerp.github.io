@@ -2,7 +2,9 @@
   year: 2023
   url: https://www.pvda.be/energie
   
-  pvda: 3
+  pvda:
+    value: 3
+    note: Tax corporations who profit from energy, lower & block prices
   
   subjects:
     - poverty
