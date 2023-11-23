@@ -7,7 +7,7 @@ nl_glpvda:
   name: GL/PvdA
 
 nl_vvd:
-  id: nl_vdd
+  id: nl_vvd
   name: vvd
 
 nl_nsc:

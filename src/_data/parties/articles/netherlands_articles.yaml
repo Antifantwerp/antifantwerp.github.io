@@ -3,52 +3,54 @@
   url: https://www.andc.tv/body-en-mind/TRF-stemmen-partij-politiek-vrouwen-rechten-abortus
   nl_glpvda: 
     value: 3
-    note: meow
+    note: Decriminalising abortion, pushback against abortion clinic protests, anticonception as a right
   nl_volt: 
     value: 3
-    note: gfdgfd
+    note: Abortion & anticonception as a right, sex ed for all ages
 
   nl_pvdd: 
-    value: 2
-    note: fdghfd
+    value: 3
+    note: Decriminalising abortion, anticonception as a right
   nl_d66: 
-    value: 2
-    note: gfdd
+    value: 3
+    note: Decriminalising abortion, anticonception as a right
   nl_sp: 
-    value: 2
-    note:  dfhgdf
+    value: 3
+    note: Decriminalising abortion, anticonception as a right
   nl_bij1: 
-    value: 2
-    note: dfg
+    value: 3
+    note: Decriminalising abortion, anticonception as a right
+
   nl_bbb: 
     value: 1
-    note: gfdgdf
+    note: Abortion & anticonception as a right, against removing forced reconsideration time
   nl_cu: 
     value: 1
-    note: gfdgdf
+    note: Loosening abortion laws is a "dangerous precedent", but supports anticonception as a right
 
   nl_cda: 
     value: -2
-    note: gfdgdf
+    note: For abortuspil by general practicioner, but against decriminalising abortion
   nl_ja21: 
     value: -3
-    note: gfd
+    note: Only wants abortion for medical reasons
   nl_sgp:
     value: -3
-    note: f
+    note: Against abortion existing
 
   nl_pvv:
     value: -1
-    note: gfdgdf
-  nl_fvd:
-    value: -1
-    note: gfdgdf
+    note: Complacent about abortion
   nl_nsc:
     value: -1
-    note: gfdgdf
+    note: Complacent about abortion
   nl_vvd:
     value: -1
-    note: gfd
+    note: Complacent about abortion
+  
+  nl_fvd:
+    value: -3
+    note: Complacent about abortion, against the increased criminalisation of "sex without consent"
 
   
   subjects:
