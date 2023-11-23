@@ -1,41 +1,71 @@
 nl_pvv:
-  id: pvv
+  id: nl_pvv
   name: pvv
 
 nl_glpvda:
-  id: glpvda
+  id: nl_glpvda
   name: GL/PvdA
 
 nl_vvd:
-  id: vdd
+  id: nl_vdd
   name: vvd
 
 nl_nsc:
+  id: nl_nsc
+  name: nsc
   
-
 nl_d66:
+  id: nl_d66
+  name: d66
 
 nl_bbb:
+  id: nl_bbb
+  name: 
 
 nl_cda:
+  id: nl_cda
+  name: cda
 
 nl_sp:
+  id: nl_sp
+  name: sp
 
 nl_denk:
+  id: nl_denk
+  name: denk
 
 nl_fvd:
+  id: nl_fvd
+  name: fvd
 
 nl_pvdd:
+  id: nl_pvdd
+  name: Partij voor de Dieren
 
 nl_sgp:
+  id: nl_sgp
+  name: sgp
 
-nl_christenunie:
+nl_cu:
+  id: nl_cu
+  name: cu 
 
 nl_volt:
+  id: nl_volt
+  name: volt
 
 nl_ja21:
+  id: nl_ja21
+  name: JA21
 
 nl_bvnl:
+  id: nl_bvnl
+  name: bvnl
 
 nl_50plus:
+  id: nl_50plus
+  name: 50plus
 
+nl_bij1:
+  id: nl_bij1
+  name: bij1

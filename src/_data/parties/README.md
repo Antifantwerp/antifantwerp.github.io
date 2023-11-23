@@ -3,8 +3,8 @@
 The files in this directory are a collection of political entities and articles displaying their handling of subjects
 
 ## Data structure
-### [parties.yaml](parties.yaml)
-Which parties are being weighed
+### [{area}.yaml](area.yaml)
+Which parties are being weighed for the area
 ```yaml
 # parties.yaml
 {id}:
@@ -12,6 +12,7 @@ Which parties are being weighed
     name: {party name for display in UI}
     colour: {css colour value for the party in the UI}
 ```
+When adding non-Belgian parties, add a two letter prefix (e.g. nl_) to the `id` and subsequent filenames
 
 ### [scale.yaml](scale.yaml)
 The self-administered rules of scoring a party's contribution to the article/subject
