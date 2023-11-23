@@ -63,7 +63,9 @@ mixin tagbutton(type, id, title=false)
 
 
 main#main
-    h1 Political parties
+    h1 
+        a(href="/watchpigeon/") Watchpigeon
+        span &nbsp;-&nbsp;#{watchId}
     section#scale
         h2 Scale
         each classname in ["desktop", "mobile"]
