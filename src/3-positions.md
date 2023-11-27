@@ -1,7 +1,7 @@
 ---
 layout: page.md
 permalink: positions/
-order: 4
+order: 3
 title: Positions
 description: Positions held by the contributors of this website
 ---
