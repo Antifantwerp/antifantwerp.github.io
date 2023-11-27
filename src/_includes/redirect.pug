@@ -1,0 +1,11 @@
+---
+layout: base.pug
+---
+
+main#main
+    h1=title
+    p This page has been moved to #[a(href=redirectTo)=redirectTo]!
+    p Attempting to redirect in 2 seconds...
+
+script.
+    setTimeout(()=> { window.location.href = "#{redirectTo}"; }, 2000)
