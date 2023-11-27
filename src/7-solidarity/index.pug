@@ -1,0 +1,12 @@
+---
+layout: page.pug
+permalink: "| solidarity/"
+order: 7
+title: Solidarity
+description: Grafitti and stickers from all over the world.
+---
+
+for image in solidaritywall
+    a(href=image.post_url)
+        img(src=image.image_url, alt=image.alt)
+

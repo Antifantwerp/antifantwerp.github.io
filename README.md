@@ -23,3 +23,9 @@ Then run...
 - `yarn build` to build into `dist/`
 - `yarn dev` to run a dev server on [localhost:8080](http://localhost:8080).
 
+
+### Update solidarity wall
+```bash
+curl -o ttic.py https://raw.githubusercontent.com/Denperidge/tumblr-tagged-image-collector/main/ttic.py
+python ttic.py --blog antifantwerp --tag wall --output src/_data/solidaritywall.json --api-key APIKEY
+```
