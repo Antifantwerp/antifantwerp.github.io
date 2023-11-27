@@ -93,6 +93,7 @@ Want some stickers to put places?
 - [De Rode Lap België](https://www.derodelap.be/) & [De Rode Lap Nederland](https://www.derodelap.nl/)
 - [Left Laster](https://leftlaser.com/)
 - [Black Mosquito](https://black-mosquito.org/en/)
+- [Vrije Bond](https://webshop.vrijebond.org/)
 
 </article>
 
