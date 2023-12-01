@@ -1,0 +1,28 @@
+@import "variables";
+main ul {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+        display: block;
+        margin: 20px;
+
+        width: 400px;
+        height: 260px;
+
+        border: 1px solid $one;
+
+        text-align: center;
+
+    
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 80%;
+            object-fit: contain;
+        }
+    }
+
+}
