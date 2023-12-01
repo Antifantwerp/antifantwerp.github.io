@@ -5,10 +5,20 @@ A website collecting anti-fascist resources in Antwerp, Belgium.
 
 ## Reference
 ### Data
-Feel free to use the data collected in this site
+A part of being a collection of resources is collecting and displaying data. Some text (e.g. [how to remove stickers on our website](https://www.antifantwerp.org/stickers/#howto)) will be hardcoded. However, every list (e.g. [organisations](https://www.antifantwerp.org/organisations/) or watchpigeon articles [like seen in Watchpigeon Flanders](https://www.antifantwerp.org/watchpigeon/flanders/)) are available in YAML format: human+machine readable & writeable.
 
-- Signs: [data](src/_data/fascist_emblems.yaml) & [images](src/assets/signs/)
-- Political parties: [data](src/_data/parties/) & [images](src/assets/parties/)
+This data can be used by people and organisations in line with what Antifantwerp stands for. For more information on this, see [the Antifantwerp positions page](https://www.antifantwerp.org/positions/).
+
+- Stickers: TODO
+- Organisations: [data](src/_data/organisations.yaml)
+- Positions: pure text, and thus hardcoded
+- Watchpigeon: [data](src/_data/parties/) & [images](src/assets/parties/)
+- Resources:
+    - Surveillance camera locations: TODO
+    - Signs: [data](src/_data/fascist_emblems.yaml) & [images](src/assets/signs/)
+- Locations: possibly TODO, depending whether it falls under text or data down the road
+- Contributing: text
+- Thanks: text
 
 ## How-to
 ### Run locally
