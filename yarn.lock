@@ -960,6 +960,13 @@ js-yaml@^4.1.0:
   dependencies:
     argparse "^2.0.1"
 
+jstransformer-markdown-it@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jstransformer-markdown-it/-/jstransformer-markdown-it-3.0.0.tgz#4afb090c1618d80cc312c7651c67d594b51a0c27"
+  integrity sha512-/2fNT0ir/D0NYI5roBTVRwDV2YBjMfU3f/wSeraKLfOMNxcrIJatjJQy4zPmwQBxqKxUojXBN8hmfQBMTLZ3KA==
+  dependencies:
+    markdown-it "^13.0.1"
+
 jstransformer@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/jstransformer/-/jstransformer-1.0.0.tgz#ed8bf0921e2f3f1ed4d5c1a44f68709ed24722c3"
