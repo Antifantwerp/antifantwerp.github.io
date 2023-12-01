@@ -19,87 +19,34 @@ main#main
     h1 Organisations
     p Support eachother. Below are a bunch of links to leftist organisations. 
 
-    div#organisations
-        h2 Organisations with activity in Antwerp
-        section
-            +org("PVDA (Partij Van De Arbeid)",
-                "The largest socialist political party in Belgium.",
-                "https://antwerpen.pvda.be/",
-                "antwerpen.pvda.be")
+    each location in organisations
 
-            +org("Redfox",
-                 "Youth movement of PVDA. Stickers, protests. Organiser of Protest With Pride.",
-                 "https://www.redfox.be/",
-                 "redfox.be",
-                 true 
-            )
+        h2=location.header
+        if location.subHeader
+            p=location.subHeader
 
-            +org("Comac",
-                 "Student movement of PVDA. Protests.",
-                 "https://www.comac-studenten.be/",
-                 "comac-studenten.be",
-                 true 
-            )
+        section(id=location).organisations
 
-        section 
-            +org("ACA (Anarchistisch Collectief Antwerpen / Anarchist Collective Antwerp)",
-                 "Collective of anarchists & libertarian socialists. Monthly affordable dinner events, protests.",
-                 "https://acollectiefantwerpen.be",
-                 "acollectiefantwerpen.be"
-            )
+            each organisation in location.organisations
+                ul
+                    li
+                        +org(organisation.name, organisation.description, organisation.url, organisation.prettyUrl)
+                    
+                        if organisation.subOrganisations
+                            ul
+                                each subOrganisation in organisation.subOrganisations
+                                    li
+                                        +org(subOrganisation.name, subOrganisation.description, subOrganisation.url, subOrganisation.prettyUrl, true)
+                        
 
-        section
-            +org("Campagne Rosa",
-                 "Anti-capitalist feminist movement. Organiser of Pride Is A Protest.",
-                 "https://campagnerosa.be/",
-                 "campagnerosa.be"
-            )
-
-
-        section 
-            +org("LSP (Linkse Socialistische Partij / Leftist Socialist Party)",
-                 "Belgian branch of the International Socialist Alternative, organising protests and discussions.",
-                 "https://www.socialisme.be/",
-                 "socialisme.be"
-            )
-
-            +org(" Actief Linkse Studenten (Active Leftist Students)",
-                 "Youth movement of LSP.",
-                 "https://www.facebook.com/ALSAntwerpen",
-                 "ALS Antwerpen Facebook",
-                 true 
-            )
-        section 
-            +org("Hart boven hard",
-                 "Movement for \"value over profit\", protesting for inclusive and durable policies.",
-                 "https://hartbovenhard.be/",
-                 "hartbovenhard.be"
-            )
-        section 
-            +org("Vonk",
-                 "Belgian branch of In Defence of Marxism, organising actions and discussions.",
-                 "https://www.vonk.org/",
-                 "vonk.org"
-            )
-
-
-        hr
-        h2 Other organisations
-        p These have no confirmed activity or presence in Antwerp, but might still be nice
-        section
-            +org("Bond Precaire Woonvormen",
-                 "Fighting for the right of a roof above your head",
-                 "https://bondprecairewoonvormen.nl/",
-                 "bondprecairewoonvormen.nl"
-                 )
 
     style.
-        #organisations {
+        .organisations {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        section {
+        .organisations ul {
             flex-basis: 40%;
             margin: 20px;
             @media (max-width: 600px) {
