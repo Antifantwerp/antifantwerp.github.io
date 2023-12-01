@@ -12,7 +12,7 @@ This data can be used by people and organisations in line with what Antifantwerp
 - Stickers: [data](src/_data/stickers/) & [images](src/assets/stickers/)
 - Organisations: [data](src/_data/organisations.yaml)
 - Positions: pure text, and thus hardcoded
-- Watchpigeon: [data](src/_data/parties/) & [images](src/assets/parties/)
+- Watchpigeon: [data](src/_data/watchpigeon/) & [images](src/assets/watchpigeon/)
 - Resources:
     - Surveillance camera locations: [data](src/_data/resources/surveillance_cameras.yaml)
     - Signs: [data](src/_data/resources/fascist_emblems.yaml) & [images](src/assets/signs/)

@@ -9,7 +9,7 @@ mixin tagbutton(type, id, title=false)
     button(name=type, value=id).tag=title
 
 - 
-    const allParties = parties[watchId];
+    const allParties = watchpigeon[watchId];
     const relatedArticles = [];
     function filterParties(condition) {
         Object.keys(allParties).forEach((partyId) => {
@@ -24,9 +24,9 @@ mixin tagbutton(type, id, title=false)
 
     let maxScale = {};
 
-    Object.keys(parties.articles).forEach((sourceId) => {
+    Object.keys(watchpigeon.articles).forEach((sourceId) => {
         console.log(sourceId)
-        const source = parties.articles[sourceId];
+        const source = watchpigeon.articles[sourceId];
         console.log(source)
 
         source.forEach((entry) => {
@@ -92,16 +92,16 @@ main#main
                         
                     if party.name
                         //svg.party(style="left: " + left + "%")
-                        img.party(title=party.name style=from + ": " + value + "%" src=`/assets/parties/${party.id}.svg` alt=`${party.name} logo`)
+                        img.party(title=party.name style=from + ": " + value + "%" src=`/assets/watchpigeon/${party.id}.svg` alt=`${party.name} logo`)
 
     section
         h2 Scoring system
         p Dependant on whether the party is in line with our values, the score will be added or subtracted.
         ul
-            each score in Object.keys(parties.scale)
+            each score in Object.keys(watchpigeon.scale)
                 li +/-#{score}:
                     ul
-                        each description in parties.scale[score]
+                        each description in watchpigeon.scale[score]
                             li=description
 
 
@@ -112,7 +112,7 @@ main#main
             legend Tags
 
 
-            each tag in parties.subjects 
+            each tag in watchpigeon.subjects 
                 +tagbutton("subject", tag)
             
             each party in allParties
