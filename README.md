@@ -14,8 +14,8 @@ This data can be used by people and organisations in line with what Antifantwerp
 - Positions: pure text, and thus hardcoded
 - Watchpigeon: [data](src/_data/parties/) & [images](src/assets/parties/)
 - Resources:
-    - Surveillance camera locations: TODO
-    - Signs: [data](src/_data/fascist_emblems.yaml) & [images](src/assets/signs/)
+    - Surveillance camera locations: [data](src/_data/resources/surveillance_cameras.yaml)
+    - Signs: [data](src/_data/resources/fascist_emblems.yaml) & [images](src/assets/signs/)
 - Locations: possibly TODO, depending whether it falls under text or data down the road
 - Contributing: text
 - Thanks: text
