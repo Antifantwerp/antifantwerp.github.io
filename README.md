@@ -9,7 +9,7 @@ A part of being a collection of resources is collecting and displaying data. Som
 
 This data can be used by people and organisations in line with what Antifantwerp stands for. For more information on this, see [the Antifantwerp positions page](https://www.antifantwerp.org/positions/).
 
-- Stickers: TODO
+- Stickers: [data](src/_data/stickers/) & [images](src/assets/stickers/)
 - Organisations: [data](src/_data/organisations.yaml)
 - Positions: pure text, and thus hardcoded
 - Watchpigeon: [data](src/_data/parties/) & [images](src/assets/parties/)

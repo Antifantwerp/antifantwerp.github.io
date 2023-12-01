@@ -60,43 +60,58 @@ main#main
         or random person might be tasked with removing the sticker is not impossible.
         Hurting innocent people is a price not worth paying.
 
-
-    article#cover
-        :markdown-it
-            ## Far-right stickers detected in Antwerp
-
-            This list is not exhaustive, 
-            these are merely stickers and signs that have been spotted in Antwerp by contributors to the website.
-                    
-            ![A circle sticker. A contrasted image of a man with a hat, decorated with a white-red brim. On the left a black half circle says "Vlaams - Rechts - Radikaal". On the right, a red half-circle says "www.nsv.be"](/assets/stickers/vlaams-rechts-radikaal-www.nsv.be.png)
-
-            Translation: Flemish, right(-wing), radical
+        \- Pigeon
 
 
-    article#neutral
-        :markdown-it
-            ## Neutral stickers detected in Antwerp
-            Sometimes a sticker looks like it would be political, for better and for worse. Then it turns out, it's neither.
+    mixin stickers(id, header, description, stickers)
+        article(id=id)
+            h2 Spotted: #{header}
 
+            p=description
+            
+            ul
+                each sticker in stickers
+                    li
+                        img(alt=sticker.alt src=`/assets/stickers/${sticker.id}.png`)
+                        if sticker.note
+                            p=sticker.note
+                        if sticker.source
+                            span Source: #[a(href=sticker.source.url)=sticker.source.title]
 
-
-            ### Fuck Thierry Jaspart
-            I do not know Thierry's political allegiance. But the sticker itself has no big meaning aside from being an art piece/bit
-            ![A square sticker with a white background and black text saying "Fuck Thierry Jaspart!"](/assets/stickers/fuck-thierry-jaspart!.png)
-            Source: [Thierry Jaspart's Instagram post](https://www.instagram.com/p/CgSLSN_jn6U/)
-
+            
+    +stickers(
+        "cover", 
+        "Far-right stickers in Antwerp",
+        "This list is not exhaustive, these are merely stickers and signs that have been spotted in Antwerp by contributors to the website.",
+        stickers.spotted.cover)
+    
+    +stickers(
+        "neutral",
+        "Neutral stickers in Antwerp",
+        "Sometimes a sticker looks like it would be political, for better and for worse. Then it turns out, it's neither.",
+        stickers.spotted.neutral
+    )
 
 
     article#support
-        :markdown-it
-            ## Good sticker sources
-            Want some stickers to put places?
+        h2 Good sticker sources
+        p Want some stickers to put places?
 
-            - [Redfox](https://www.redfoxshop.be/) (including a few free stickers)
-            - [Zwarte Kat Kollektief](https://www.zwartekat.org/)
-            - [De Rode Lap België](https://www.derodelap.be/) & [De Rode Lap Nederland](https://www.derodelap.nl/)
-            - [Left Laster](https://leftlaser.com/)
-            - [Black Mosquito](https://black-mosquito.org/en/)
-            - [Vrije Bond](https://webshop.vrijebond.org/)
+        mixin source(name, url, note=false)
+            a(href=url)=name
+            if note
+                span  #{note}
 
-
+        ul
+            each source in stickers.sources
+                li
+                    if !source.sources
+                        +source(source.name, source.url, source.note)
+                    else
+                        - for (let i = 0; i < source.sources.length; i++)
+                            - const subSource = source.sources[i];
+                            +source(subSource.name, subSource.url, subSource.note)
+                            - if (i < source.sources.length -1)
+                                span  &amp; 
+                        
+                    
