@@ -144,5 +144,13 @@ main#main
                     ul
                         each subject in article.subjects
                             +tagbutton("subject", subject)
-                    a(href=article.url)=article.url
+                    
+                    - if (!Array.isArray(article.url))
+                        a(href=article.url)=article.url
+                    - else
+                        ul
+                            each url in article.url
+                                li
+                                    a(href=url)=url
+
     script(src="/scripts/political-parties.js")
