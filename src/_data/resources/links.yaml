@@ -1,0 +1,26 @@
+data:
+  title: Data leaks
+  entries:
+    - url: https://ddosecrets.com
+      name: Distributed Denial Of Secrets
+
+surveillance_cameras:
+  title: Surveillance camera locations
+  entries:
+    - url: https://carto.technopolice.be
+      name: carto.technopolice.be
+    - url: https://mapcomplete.org/surveillance?z=15&lat=51.21585688037587&lon=4.420263386840816
+      name: mapcomplete.org/surveillance
+    
+music:
+  title: Playlists
+  subtitle: Revolutionary music, made by those we're trying to protect.
+  entries:
+    - url: https://open.spotify.com/playlist/3ZiS4ADbbQe5ucOv1kLe7R?si=f9783e5508874c80
+      name: Appropiate leftist music
+    - url: https://open.spotify.com/playlist/6eyccvKVdgSGxVEGdoaInF?si=ac09e59ff94d4f5d
+      name: Inappropiate leftist music
+    - url: https://open.spotify.com/playlist/4mjzkQ7fTetooIMYn02y70?si=6144ad60076241b7
+      name: Queer protest
+    - url: https://open.spotify.com/playlist/2AjO1gUW7M9nJRHe1DqSf4?si=65118e82c9b64356
+      name: ACAB.
