@@ -25,19 +25,19 @@ mixin tagbutton(type, id, title=false)
     let maxScale = {};
 
     Object.keys(watchpigeon.articles).forEach((sourceId) => {
-        console.log(sourceId)
+        //console.log(sourceId)
         const source = watchpigeon.articles[sourceId];
-        console.log(source)
+        //console.log(source)
 
         source.forEach((entry) => {
             const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note" && key != "year");
             let articleContainsOneOfParties = false;
 
             partyIds.forEach((partyId) => {
-                console.log(partyId)
-                console.log(allParties)
+                //console.log(partyId)
+                //console.log(allParties)
                 if (!Object.hasOwn(allParties, partyId)) {
-                    console.log(`${entry.description} does not contain ${partyId}`)
+                    //console.log(`${entry.description} does not contain ${partyId}`)
                     return;
                 }
                 articleContainsOneOfParties = true;
@@ -45,7 +45,7 @@ mixin tagbutton(type, id, title=false)
                     allParties[partyId].points = 0;
                     maxScale[partyId] = 0;
                 }
-                console.log("-@-")
+                //console.log("-@-")
 
                 allParties[partyId].points += entry[partyId].value;
                 maxScale[partyId] += 3;
@@ -75,9 +75,9 @@ main#main
                         let px;
                         let value;
                         if (party.points >= 0) {
-                            console.log(party.points)
-                            console.log(maxScale[party.id])
-                            console.log(party.name)
+                            //console.log(party.points)
+                            //console.log(maxScale[party.id])
+                            //console.log(party.name)
                             value = party.points / maxScale[party.id] * 100  //50 - (100/maxScale - party.points)
 
                             from = classname == "desktop" ? "right" : "bottom";
@@ -121,7 +121,7 @@ main#main
 
 
         section#articles
-            - console.log(relatedArticles)
+            - //console.log(relatedArticles)
             each article in relatedArticles
                 - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note" && key != "year");
                 - const allTags =involvedParties.concat(article.subjects).join(",");
