@@ -497,10 +497,10 @@ dev-ip@^1.0.1:
   resolved "https://registry.yarnpkg.com/dev-ip/-/dev-ip-1.0.1.tgz#a76a3ed1855be7a012bb8ac16cb80f3c00dc28f0"
   integrity sha512-LmVkry/oDShEgSZPNgqCIp2/TlqtExeGmymru3uCELnfyjY11IzpAproLYs+1X88fXO6DBoYP3ul2Xo2yz2j6A==
 
-directus-to-data@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/directus-to-data/-/directus-to-data-0.4.0.tgz#318aaf3919212c244982895a920593f05f11110e"
-  integrity sha512-OQeBKP3jLBRKkhoBkRquG4Nu7KdMpeWs/bzpdnEF5Dgd7Qb2vmHZa4bcy0Z4zlDaFqbn3Q+VsowwA0o9quEc9Q==
+directus-to-data@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/directus-to-data/-/directus-to-data-0.6.1.tgz#5f4bb64a2ffee20d14458d7c9dd8115ef6e722e7"
+  integrity sha512-ETdkt7pQn/43Ru+/DORQs5IW9Bmnc0V8gVKfNnRtIoaKir1MPp47S0fuJzd3tfyGfTRbhMbymwCjc6Y9108UNg==
   dependencies:
     "@directus/sdk" "^16.1.1"
     commander "^12.1.0"

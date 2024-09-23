@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.774Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "Redfox",
+        "url": "https://www.redfoxshop.be/",
+        "note": "(including a few free stickers)",
+        "type": null
+    },
+    {
+        "id": 2,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.793Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "Zwarte Kat Kollektief",
+        "url": "https://www.zwartekat.org/",
+        "note": null,
+        "type": null
+    },
+    {
+        "id": 3,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.807Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "De Rode Lap België",
+        "url": "https://www.derodelap.be/",
+        "note": null,
+        "type": null
+    },
+    {
+        "id": 4,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.816Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "De Rode Lap Nederland",
+        "url": "https://www.derodelap.nl/",
+        "note": null,
+        "type": null
+    },
+    {
+        "id": 5,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.826Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "Left Laser",
+        "url": "https://leftlaser.com/",
+        "note": null,
+        "type": null
+    },
+    {
+        "id": 6,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.834Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "Black Mosquito",
+        "url": "https://black-mosquito.org/en/",
+        "note": null,
+        "type": null
+    },
+    {
+        "id": 7,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-23T11:34:06.841Z",
+        "user_updated": null,
+        "date_updated": null,
+        "name": "Vrije Bond",
+        "url": "https://webshop.vrijebond.org/",
+        "note": null,
+        "type": null
+    }
+]

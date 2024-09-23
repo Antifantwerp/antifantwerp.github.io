@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-06-29T19:24:15.915Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-18T16:32:15.040Z",
+        "image": "322448db-acae-4a6c-985e-0328fc5022f4",
+        "description": "I do not know Thierry's political allegiance. But the sticker itself has no big meaning aside from being an art piece/bit",
+        "image_description": "A square sticker with a white background and black text saying \"Fuck Thierry Jaspart!\"",
+        "url": "https://www.instagram.com/p/CgSLSN_jn6U/",
+        "label": "Thierry Jaspart's Instagram post",
+        "category": "neutral",
+        "name": "Fuck Thierry Jaspart!"
+    },
+    {
+        "id": 2,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-18T16:34:23.680Z",
+        "user_updated": null,
+        "date_updated": null,
+        "image": "d08d7d9e-7e09-42d0-a1f0-b8e8f4cb5eec",
+        "description": "Translation: Flemish, right(-wing), radical",
+        "image_description": "A circle sticker. A contrasted image of a man with a hat, decorated with a white-red brim. On the left a black half circle says \"Vlaams - Rechts - Radikaal\". On the right, a red half-circle says \"www.nsv.be\"",
+        "url": null,
+        "label": null,
+        "category": "bad",
+        "name": "vlaams-rechts-radikaal-www.nsv.be"
+    }
+]

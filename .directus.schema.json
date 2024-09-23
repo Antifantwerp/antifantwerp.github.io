@@ -1,0 +1,1190 @@
+{
+    "version": 1,
+    "directus": "10.12.1",
+    "vendor": "postgres",
+    "collections": [
+        {
+            "collection": "AFAOrganisations",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAOrganisations",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "flag_circle",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAOrganisations"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAStickers",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "supervised_user_circle",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": null,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAStickers"
+            }
+        }
+    ],
+    "fields": [
+        {
+            "collection": "AFAOrganisations",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAOrganisations",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAOrganisations_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "user_created",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 2,
+                "special": [
+                    "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_created",
+                "table": "AFAOrganisations",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "date_created",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_created",
+                "table": "AFAOrganisations",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "user_updated",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_updated",
+                "table": "AFAOrganisations",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "date_updated",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_updated",
+                "table": "AFAOrganisations",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "name",
+            "type": "string",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "name",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Zwarte Kat Kollektief"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "name",
+                "table": "AFAOrganisations",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "url",
+            "type": "string",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "url",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "link",
+                    "placeholder": "https://www.zwartekat.org/"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "url",
+                "table": "AFAOrganisations",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "note",
+            "type": "string",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "note",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "(including a few free stickers)"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "note",
+                "table": "AFAOrganisations",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "type",
+            "type": "string",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "type",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                    "choices": [
+                        {
+                            "text": "Sticker source",
+                            "value": "stickersource",
+                            "icon": "sticky_note_2"
+                        },
+                        {
+                            "text": "Political organisation",
+                            "value": "politicalorg",
+                            "icon": "flag"
+                        }
+                    ],
+                    "icon": "merge_type"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "type",
+                "table": "AFAOrganisations",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAStickers",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAStickers_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "user_created",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 2,
+                "special": [
+                    "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_created",
+                "table": "AFAStickers",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "date_created",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_created",
+                "table": "AFAStickers",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "user_updated",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_updated",
+                "table": "AFAStickers",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "date_updated",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_updated",
+                "table": "AFAStickers",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "image",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "image",
+                "group": null,
+                "hidden": false,
+                "interface": "file-image",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": true,
+                "sort": 7,
+                "special": [
+                    "file"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "image",
+                "table": "AFAStickers",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "description",
+            "type": "text",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "description",
+                "group": null,
+                "hidden": false,
+                "interface": "input-rich-text-md",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "description",
+                "table": "AFAStickers",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "image_description",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "image_description",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "image_aspect_ratio",
+                    "placeholder": "A square sticker with a white background and black text saying \"...\""
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "image_description",
+                "table": "AFAStickers",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "source",
+            "type": "alias",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "source",
+                "group": null,
+                "hidden": false,
+                "interface": "group-raw",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": [
+                    "alias",
+                    "group",
+                    "no-data"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "url",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "url",
+                "group": "source",
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "link",
+                    "placeholder": "https://example.com"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "url",
+                "table": "AFAStickers",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "label",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "label",
+                "group": "source",
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "text_fields",
+                    "placeholder": "Relevant Instagram post"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "label",
+                "table": "AFAStickers",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "category",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "category",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                    "choices": [
+                        {
+                            "text": "Good",
+                            "value": "good",
+                            "icon": "check",
+                            "color": "#2ECDA7"
+                        },
+                        {
+                            "text": "Neutral",
+                            "value": "neutral",
+                            "icon": "line_end",
+                            "color": "#FFC23B"
+                        },
+                        {
+                            "text": "Bad",
+                            "value": "bad",
+                            "icon": "exclamation",
+                            "color": "#E35169"
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 11,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "category",
+                "table": "AFAStickers",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "name",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "name",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Nickname for internal usage"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "name",
+                "table": "AFAStickers",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        }
+    ],
+    "relations": [
+        {
+            "collection": "AFAOrganisations",
+            "field": "user_created",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAOrganisations",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAOrganisations",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afaorganisations_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "user_updated",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAOrganisations",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAOrganisations",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afaorganisations_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "user_created",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAStickers",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAStickers",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afastickers_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "user_updated",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAStickers",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAStickers",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afastickers_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "image",
+            "related_collection": "directus_files",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAStickers",
+                "many_field": "image",
+                "one_allowed_collections": null,
+                "one_collection": "directus_files",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAStickers",
+                "column": "image",
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id",
+                "constraint_name": "afastickers_image_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        }
+    ]
+}
