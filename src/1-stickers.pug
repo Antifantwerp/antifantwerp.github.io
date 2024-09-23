@@ -105,15 +105,9 @@ main#main
                 span  #{note}
 
         ul
-            each source in stickers.sources
-                li
-                    if !source.sources
+            each source in AFAOrganisations
+                if source.type == "stickersource"
+                    li
                         +source(source.name, source.url, source.note)
-                    else
-                        - for (let i = 0; i < source.sources.length; i++)
-                            - const subSource = source.sources[i];
-                            +source(subSource.name, subSource.url, subSource.note)
-                            - if (i < source.sources.length -1)
-                                span  &amp; 
                         
                     

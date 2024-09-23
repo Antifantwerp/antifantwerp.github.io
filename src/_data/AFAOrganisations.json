@@ -3,77 +3,77 @@
         "id": 1,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.774Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:48:49.002Z",
         "name": "Redfox",
         "url": "https://www.redfoxshop.be/",
         "note": "(including a few free stickers)",
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 2,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.793Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:06.460Z",
         "name": "Zwarte Kat Kollektief",
         "url": "https://www.zwartekat.org/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 3,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.807Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:01.188Z",
         "name": "De Rode Lap België",
         "url": "https://www.derodelap.be/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 4,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.816Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:21.067Z",
         "name": "De Rode Lap Nederland",
         "url": "https://www.derodelap.nl/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 5,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.826Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:21.067Z",
         "name": "Left Laser",
         "url": "https://leftlaser.com/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 6,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.834Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:21.067Z",
         "name": "Black Mosquito",
         "url": "https://black-mosquito.org/en/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     },
     {
         "id": 7,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-23T11:34:06.841Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-23T11:49:21.067Z",
         "name": "Vrije Bond",
         "url": "https://webshop.vrijebond.org/",
         "note": null,
-        "type": null
+        "type": "stickersource"
     }
 ]
