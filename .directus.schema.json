@@ -456,7 +456,7 @@
                 "translations": null,
                 "validation": null,
                 "validation_message": null,
-                "width": "full"
+                "width": "half"
             },
             "schema": {
                 "name": "type",
@@ -464,6 +464,117 @@
                 "data_type": "character varying",
                 "default_value": null,
                 "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "parent_organisation",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": "related-values",
+                "display_options": {
+                    "template": "{{name}}"
+                },
+                "field": "parent_organisation",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "enableLink": true,
+                    "template": "{{name}}"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 11,
+                "special": [
+                    "m2o"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "parent_organisation",
+                "table": "AFAOrganisations",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAOrganisations",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "area",
+            "type": "json",
+            "meta": {
+                "collection": "AFAOrganisations",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "area",
+                "group": null,
+                "hidden": false,
+                "interface": "select-multiple-dropdown",
+                "note": null,
+                "options": {
+                    "allowNone": true,
+                    "choices": [
+                        {
+                            "text": "Antwerp",
+                            "value": "antwerp"
+                        },
+                        {
+                            "text": "Belgium",
+                            "value": "belgium"
+                        },
+                        {
+                            "text": "Surrounding",
+                            "value": "surrounding"
+                        }
+                    ],
+                    "icon": "add_location_alt",
+                    "placeholder": "Area"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": [
+                    "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "area",
+                "table": "AFAOrganisations",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1107,6 +1218,31 @@
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
                 "constraint_name": "afaorganisations_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAOrganisations",
+            "field": "parent_organisation",
+            "related_collection": "AFAOrganisations",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAOrganisations",
+                "many_field": "parent_organisation",
+                "one_allowed_collections": null,
+                "one_collection": "AFAOrganisations",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAOrganisations",
+                "column": "parent_organisation",
+                "foreign_key_table": "AFAOrganisations",
+                "foreign_key_column": "id",
+                "constraint_name": "afaorganisations_parent_organisation_foreign",
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
