@@ -9,14 +9,14 @@
   "scripts": {
     "dev": "yarn eleventy --serve",
     "build": "yarn eleventy",
-    "cms:pull": "directus-to-data --output-filename src/_data/{{collectionName}}.json -c AFAOrganisations -c AFAStickers",
+    "cms:pull": "directus-to-data --collection-output src/_data/{{collectionName}}.json --assets-output src/assets/{{filename}} -c AFAOrganisations -c AFAStickers:*,image.*",
     "cms:schema:backup": "directus-to-data --backup-schema .directus.schema.json -c AFAOrganisations -c AFAStickers",
     "cms:schema:restore": "directus-to-data --restore-schema .directus.schema.json -c AFAOrganisations -c AFAStickers",
     "chms:schema:apply": "directus-to-data --restore-schema .directus.schema.json --apply-schema -c AFAOrganisations -c AFAStickers"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "directus-to-data": "^0.6.1",
+    "directus-to-data": "^0.7.0",
     "eleventy-sass": "^2.2.3",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",

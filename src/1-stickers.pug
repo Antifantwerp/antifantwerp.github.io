@@ -73,25 +73,28 @@ main#main
             
             ul
                 each sticker in stickers
+                    - console.log(sticker)
                     li
-                        img(alt=sticker.alt src=`/assets/stickers/${sticker.id}.png`)
-                        if sticker.note
-                            p=sticker.note
-                        if sticker.source
-                            span Source: #[a(href=sticker.source.url)=sticker.source.title]
+                        img(alt=sticker.image_description src=`/assets/${sticker.image.filename_download}`)
+                        if sticker.description
+                            p=sticker.description
+                        if sticker.url
+                            span Source: #[a(href=sticker.url)=sticker.label]
 
-            
+    
+
     +stickers(
         "cover", 
         "Far-right stickers in Antwerp",
         "This list is not exhaustive, these are merely stickers and signs that have been spotted in Antwerp by contributors to the website.",
-        stickers.spotted.cover)
+        AFAStickers.filter((sticker)=> sticker.category === "bad")
+    )
     
     +stickers(
         "neutral",
         "Neutral stickers in Antwerp",
         "Sometimes a sticker looks like it would be political, for better and for worse. Then it turns out, it's neither.",
-        stickers.spotted.neutral
+        AFAStickers.filter((sticker)=> sticker.category === "neutral")
     )
 
 
