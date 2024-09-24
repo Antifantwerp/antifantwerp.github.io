@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Data leaks",
+        "entries": [
+            {
+                "url": "https://ddosecrets.com",
+                "name": "Distributed Denial Of Secrets"
+            }
+        ]
+    },
+    {
+        "title": "Surveillance camera locations",
+        "entries": [
+            {
+                "name": "carto.technopolice.be",
+                "url": "https://carto.technopolice.be"
+            },
+            {
+                "name": "mapcomplete.org/surveillance",
+                "url": "https://mapcomplete.org/surveillance?z=15&lat=51.21585688037587&lon=4.420263386840816"
+            }
+        ]
+    }
+]

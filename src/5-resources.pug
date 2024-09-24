@@ -1,0 +1,17 @@
+---
+layout: page.md
+permalink: "| resources/"
+order: 5
+title: Resources
+description: Interesting links &amp; far-right dogwhistles
+---
+h1 Resources
+
+each links in AFALinks
+    h2=links.title
+    if links.subtitle
+        p=links.subtitle
+    ul
+        each entry in links.entries
+            li
+                a(href=entry.url)=entry.name
