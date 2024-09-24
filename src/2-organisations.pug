@@ -6,38 +6,53 @@ title: Organisations
 description: Leftist organisations in &amp; around Belgium
 ---
 
-mixin org(title, description, url, prettyUrl, subOrg=false)
+mixin org(title, description, url, subOrg=false)
     if !subOrg
         h2=title
     else
         h3=title
     p=description
 
-    a(href="https://antwerpen.pvda.be/")=prettyUrl
+    a(href="https://antwerpen.pvda.be/")=url
+
+mixin organisations(area, header, subHeader=null)
+    h2=header
+    if subHeader
+        p=subHeader 
+        
+    section(id=area).organisations
+        -
+            const orgs = AFAOrganisations.filter((org) => org.type == "politicalorg" && org.area.includes(area));
+            const parentOrganisations = orgs.filter((org) => org.parent_organisation == null);
+            const childOrganisations = orgs.filter((org) => org.parent_organisation != null);
+            const childDirectory = {};  // Weird variable name
+            childOrganisations.forEach((org) => {
+                // If parent organisation
+            try {
+                childDirectory[org.parent_organisation].push(org);
+            } catch {
+                childDirectory[org.parent_organisation] = [org];
+            }
+            });
+
+        each organisation in parentOrganisations
+            ul
+                li
+                    +org(organisation.name, organisation.note, organisation.url)
+                
+                    if childDirectory[organisation.id]
+                        ul
+                            each subOrganisation in childDirectory[organisation.id]
+                                li
+                                    +org(subOrganisation.name, subOrganisation.note, subOrganisation.url, true)
+                    
 
 main#main
     h1 Organisations
     p Support eachother. Below are a bunch of links to leftist organisations. 
 
-    each location in organisations
-
-        h2=location.header
-        if location.subHeader
-            p=location.subHeader
-
-        section(id=location).organisations
-
-            each organisation in location.organisations
-                ul
-                    li
-                        +org(organisation.name, organisation.description, organisation.url, organisation.prettyUrl)
-                    
-                        if organisation.subOrganisations
-                            ul
-                                each subOrganisation in organisation.subOrganisations
-                                    li
-                                        +org(subOrganisation.name, subOrganisation.description, subOrganisation.url, subOrganisation.prettyUrl, true)
-                        
+    +organisations("antwerp", "Organisations with activity in Antwerp")
+    +organisations("surrounding", "Other organisations", "These have no confirmed activity or presence in Antwerp, but might still be nice")
 
 
     style.

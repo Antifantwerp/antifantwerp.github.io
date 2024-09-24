@@ -8,7 +8,9 @@
         "name": "Redfox",
         "url": "https://www.redfoxshop.be/",
         "note": "(including a few free stickers)",
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 2,
@@ -19,7 +21,9 @@
         "name": "Zwarte Kat Kollektief",
         "url": "https://www.zwartekat.org/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 3,
@@ -30,7 +34,9 @@
         "name": "De Rode Lap België",
         "url": "https://www.derodelap.be/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 4,
@@ -41,7 +47,9 @@
         "name": "De Rode Lap Nederland",
         "url": "https://www.derodelap.nl/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 5,
@@ -52,7 +60,9 @@
         "name": "Left Laser",
         "url": "https://leftlaser.com/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 6,
@@ -63,7 +73,9 @@
         "name": "Black Mosquito",
         "url": "https://black-mosquito.org/en/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
     },
     {
         "id": 7,
@@ -74,6 +86,167 @@
         "name": "Vrije Bond",
         "url": "https://webshop.vrijebond.org/",
         "note": null,
-        "type": "stickersource"
+        "type": "stickersource",
+        "parent_organisation": null,
+        "area": null
+    },
+    {
+        "id": 8,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T14:31:32.028Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "PVDA (Partij Van De Arbeid)",
+        "url": "https://antwerpen.pvda.be/",
+        "note": "The largest socialist political party in Belgium.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 9,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T14:32:13.097Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "Redfox",
+        "url": "https://www.redfox.be/",
+        "note": "Youth movement of PVDA. Stickers, protests. Organiser of Protest With Pride.",
+        "type": "politicalorg",
+        "parent_organisation": 8,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 10,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T14:34:16.085Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "Comac",
+        "url": "https://www.comac-studenten.be/",
+        "note": "Student movement of PVDA. Among other things, organises palpatable protests.",
+        "type": "politicalorg",
+        "parent_organisation": 8,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 11,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T14:34:56.032Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T16:08:09.395Z",
+        "name": "ACA (Anarchistisch Collectief Antwerpen / Anarchist Collective Antwerp)",
+        "url": "https://acollectiefantwerpen.be",
+        "note": "Collective of anarchists & libertarian socialists. Monthly affordable dinner events, protests.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 12,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:39:19.218Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "Campagne Rosa",
+        "url": "https://campagnerosa.be/",
+        "note": "Anti-capitalist feminist movement. Organiser of Pride Is A Protest.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 13,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:39:36.730Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T16:08:56.113Z",
+        "name": "LSP (Linkse Socialistische Partij / Leftist Socialist Party)",
+        "url": "https://www.socialisme.be/",
+        "note": "Belgian branch of the International Socialist Alternative, organising protests and discussions.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 14,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:40:01.027Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "ALS (Actief Linkse Studenten/Active Leftist Students)",
+        "url": "https://www.facebook.com/ALSAntwerpen",
+        "note": "Youth movement of LSP.",
+        "type": "politicalorg",
+        "parent_organisation": 13,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 15,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:40:42.924Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "Hart boven hard",
+        "url": "https://hartbovenhard.be/",
+        "note": "Movement for \"value over profit\", protesting for inclusive and durable policies.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 16,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:41:12.395Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:27.046Z",
+        "name": "Vonk",
+        "url": "https://www.vonk.org/",
+        "note": "Belgian branch of In Defence of Marxism, organising actions and discussions.",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "antwerp",
+            "belgium"
+        ]
+    },
+    {
+        "id": 17,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-09-24T15:41:34.484Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-09-24T15:50:11.716Z",
+        "name": "Bond Precaire Woonvormen",
+        "url": "https://bondprecairewoonvormen.nl/",
+        "note": "Fighting for the right of a roof above your head",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "surrounding"
+        ]
     }
 ]

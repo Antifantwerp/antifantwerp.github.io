@@ -73,7 +73,6 @@ main#main
             
             ul
                 each sticker in stickers
-                    - console.log(sticker)
                     li
                         img(alt=sticker.image_description src=`/assets/${sticker.image.filename_download}`)
                         if sticker.description
