@@ -1,0 +1,302 @@
+[
+    {
+        "id": "be_cdv",
+        "name": "cd&v",
+        "colour": "#FFA439",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "cdv.svg",
+            "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50"
+        }
+    },
+    {
+        "id": "be_groen",
+        "name": "Groen",
+        "colour": "#2ECDA7",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "groen.svg",
+            "id": "ad8783da-e6a1-4bc7-9643-f948907a7885"
+        }
+    },
+    {
+        "id": "be_nva",
+        "name": "N-VA",
+        "colour": "#FFC23B",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "nva.svg",
+            "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89"
+        }
+    },
+    {
+        "id": "be_openvld",
+        "name": "Open Vld",
+        "colour": "#3399FF",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "openvld.svg",
+            "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8"
+        }
+    },
+    {
+        "id": "be_pvda",
+        "name": "Partij Van De Arbeid",
+        "colour": "#E35169",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "pvda.svg",
+            "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f"
+        }
+    },
+    {
+        "id": "be_vb",
+        "name": "Vlaams Belang",
+        "colour": "#FFC23B",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "vb.svg",
+            "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2"
+        }
+    },
+    {
+        "id": "be_vooruit",
+        "name": "Vooruit",
+        "colour": "#E35169",
+        "areas": [
+            "Flanders"
+        ],
+        "logo": {
+            "filename_download": "vooruit.svg",
+            "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b"
+        }
+    },
+    {
+        "id": "nl_50plus",
+        "name": "50PLUS",
+        "colour": "#932290",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_50plus.svg",
+            "id": "2c351f4f-43c5-42c1-a796-6e411a4c4cc3"
+        }
+    },
+    {
+        "id": "nl_bbb",
+        "name": "BoerBurgerBeweging",
+        "colour": "#00FF00",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_bbb.svg",
+            "id": "82135883-29d1-4800-bd3c-7bebbb0229c8"
+        }
+    },
+    {
+        "id": "nl_bij1",
+        "name": "BIJ1",
+        "colour": "#FFFF00",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_bij1.svg",
+            "id": "38300035-aeea-423c-b680-5a30976cf30a"
+        }
+    },
+    {
+        "id": "nl_bvnl",
+        "name": "Belang van Nederland",
+        "colour": "#171F44",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_bvnl.svg",
+            "id": "b239c12b-24be-43df-bf89-5c437188df7f"
+        }
+    },
+    {
+        "id": "nl_cda",
+        "name": "Christen-Democratisch Appèl",
+        "colour": "#00FF00",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_cda.svg",
+            "id": "e2db876d-0caf-4a0a-b8ec-058d3d533ef9"
+        }
+    },
+    {
+        "id": "nl_cu",
+        "name": "ChristenUnie",
+        "colour": "#032564",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_cu.svg",
+            "id": "124365c6-d826-4532-aa1d-7c711864e4ea"
+        }
+    },
+    {
+        "id": "nl_d66",
+        "name": "Democraten 66",
+        "colour": "#00FF00",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_d66.svg",
+            "id": "31e2c747-b97d-4534-8025-3aef9c7fa8d3"
+        }
+    },
+    {
+        "id": "nl_denk",
+        "name": "DENK",
+        "colour": "#00B8B4",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_denk.svg",
+            "id": "fc35069d-8645-4a48-9f5e-60f6577bf3f8"
+        }
+    },
+    {
+        "id": "nl_fvd",
+        "name": "fvd",
+        "colour": "#AA110D",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_fvd.svg",
+            "id": "ef68abdf-a1b5-46f3-9a18-83de525d6523"
+        }
+    },
+    {
+        "id": "nl_glpvda",
+        "name": "GroenLinks-PvdA",
+        "colour": "#2ECDA7",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_glpvda.svg",
+            "id": "09725f51-136b-4238-b21e-c5bd30f85f76"
+        }
+    },
+    {
+        "id": "nl_ja21",
+        "name": "JA21",
+        "colour": "#1F2756",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_ja21.svg",
+            "id": "3ada149d-8f31-489d-a0f4-36f160fdef9f"
+        }
+    },
+    {
+        "id": "nl_nsc",
+        "name": "Nieuw Sociaal Contract",
+        "colour": "#0000FF",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_nsc.svg",
+            "id": "8a47f415-97d7-4a01-afee-572b99eb4175"
+        }
+    },
+    {
+        "id": "nl_pvdd",
+        "name": "Partij voor de Dieren",
+        "colour": "#006B28",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_pvdd.svg",
+            "id": "f9c06fc7-9097-446b-878f-89470e579fd0"
+        }
+    },
+    {
+        "id": "nl_pvv",
+        "name": "Partij voor de Vrijheid",
+        "colour": "#3399FF",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_pvv.svg",
+            "id": "471ccbee-d4d5-464e-915a-993f28b96fcb"
+        }
+    },
+    {
+        "id": "nl_sgp",
+        "name": "Staatkundig Gereformeerde Partij",
+        "colour": "#EA5D06",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_sgp.svg",
+            "id": "b220140c-0f1e-46a0-880d-62e7d249d8c5"
+        }
+    },
+    {
+        "id": "nl_sp",
+        "name": "Socialistische Partij",
+        "colour": "#EE161F",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_sp.svg",
+            "id": "a4462dd1-7e39-4618-816f-4bea00d02e95"
+        }
+    },
+    {
+        "id": "nl_volt",
+        "name": "Volt Nederland",
+        "colour": "#4F1E7A",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_volt.svg",
+            "id": "2ece8c06-ed3b-4bb5-81cf-febf683eddbd"
+        }
+    },
+    {
+        "id": "nl_vvd",
+        "name": "Volkspartij voor Vrijheid en Democratie",
+        "colour": "#FFA439",
+        "areas": [
+            "Netherlands"
+        ],
+        "logo": {
+            "filename_download": "nl_vvd.svg",
+            "id": "9adfd647-daf1-4725-a47d-a2da604cdd34"
+        }
+    }
+]
