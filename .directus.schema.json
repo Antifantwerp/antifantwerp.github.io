@@ -4,6 +4,34 @@
     "vendor": "postgres",
     "collections": [
         {
+            "collection": "AFALinks",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFALinks",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "link",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 3,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFALinks"
+            }
+        },
+        {
             "collection": "AFAOrganisations",
             "meta": {
                 "accountability": "all",
@@ -21,7 +49,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": null,
+                "sort": 1,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -49,7 +77,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": null,
+                "sort": 2,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -58,9 +86,495 @@
             "schema": {
                 "name": "AFAStickers"
             }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAWatchpigeonArticles",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "article",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 6,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAWatchpigeonArticles"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "color": null,
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "import_export",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 8,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAWatchpigeonParties",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "interactive_space",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 5,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAWatchpigeonParties"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAWatchpigeonResponses",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "campaign",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 7,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAWatchpigeonResponses"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonSubjects",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAWatchpigeonSubjects",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": "question_exchange",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 4,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAWatchpigeonSubjects"
+            }
         }
     ],
     "fields": [
+        {
+            "collection": "AFALinks",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFALinks",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFALinks_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "user_created",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 2,
+                "special": [
+                    "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_created",
+                "table": "AFALinks",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "date_created",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_created",
+                "table": "AFALinks",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "user_updated",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_updated",
+                "table": "AFALinks",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "date_updated",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_updated",
+                "table": "AFALinks",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "title",
+            "type": "string",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "title",
+                    "placeholder": "Title"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "title",
+                "table": "AFALinks",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "entries",
+            "type": "json",
+            "meta": {
+                "collection": "AFALinks",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "entries",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                    "fields": [
+                        {
+                            "field": "name",
+                            "name": "name",
+                            "type": "string",
+                            "meta": {
+                                "field": "name",
+                                "width": "half",
+                                "type": "string",
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "Name"
+                                }
+                            }
+                        },
+                        {
+                            "field": "url",
+                            "name": "url",
+                            "type": "string",
+                            "meta": {
+                                "field": "url",
+                                "width": "half",
+                                "type": "string",
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "https://example.com/"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": [
+                    "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "entries",
+                "table": "AFALinks",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
         {
             "collection": "AFAOrganisations",
             "field": "id",
@@ -1169,9 +1683,1458 @@
                 "foreign_key_table": null,
                 "foreign_key_column": null
             }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAWatchpigeonArticles_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "user_created",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 2,
+                "special": [
+                    "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_created",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "date_created",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_created",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "user_updated",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_updated",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "date_updated",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_updated",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "year",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "year",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "calendar_month"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 7,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "year",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "url",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "url",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "link",
+                    "placeholder": "https://example.com/"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "url",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "title",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "title",
+                    "placeholder": "Title"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "title",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "responses",
+            "type": "alias",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "responses",
+                "group": null,
+                "hidden": false,
+                "interface": "list-o2m",
+                "note": null,
+                "options": {
+                    "fields": [
+                        "note",
+                        "party.logo.$thumbnail",
+                        "party.name",
+                        "score"
+                    ],
+                    "layout": "table"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 11,
+                "special": [
+                    "o2m"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "subjects",
+            "type": "alias",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": "related-values",
+                "display_options": {
+                    "template": "{{AFAWatchpigeonSubjects_id.name}} ({{AFAWatchpigeonSubjects_id.description}})"
+                },
+                "field": "subjects",
+                "group": null,
+                "hidden": false,
+                "interface": "list-m2m",
+                "note": null,
+                "options": {
+                    "enableCreate": false,
+                    "template": "{{AFAWatchpigeonSubjects_id.name}} ({{AFAWatchpigeonSubjects_id.description}})"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": [
+                    "m2m"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "note",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "note",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Note"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "note",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAWatchpigeonArticles_AFAWatchpigeonSubjects_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "field": "AFAWatchpigeonArticles_id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "AFAWatchpigeonArticles_id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "AFAWatchpigeonArticles_id",
+                "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAWatchpigeonArticles",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "field": "AFAWatchpigeonSubjects_id",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "AFAWatchpigeonSubjects_id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "AFAWatchpigeonSubjects_id",
+                "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAWatchpigeonSubjects",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "id",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonParties",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": {
+                    "_and": [
+                        {
+                            "id": {
+                                "_regex": ".._.*"
+                            }
+                        }
+                    ]
+                },
+                "validation_message": "ID should be two characters, followed by an underscore, followed by anything (e.g. be_cdv)",
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAWatchpigeonParties",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "name",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonParties",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "name",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Name"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "name",
+                "table": "AFAWatchpigeonParties",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "colour",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonParties",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "colour",
+                "group": null,
+                "hidden": false,
+                "interface": "select-color",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "colour",
+                "table": "AFAWatchpigeonParties",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "logo",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAWatchpigeonParties",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "logo",
+                "group": null,
+                "hidden": false,
+                "interface": "file-image",
+                "note": null,
+                "options": {
+                    "folder": "3c090bdc-81e1-4417-b914-194a0f5271ab"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "file"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "logo",
+                "table": "AFAWatchpigeonParties",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "areas",
+            "type": "json",
+            "meta": {
+                "collection": "AFAWatchpigeonParties",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "areas",
+                "group": null,
+                "hidden": false,
+                "interface": "select-multiple-dropdown",
+                "note": null,
+                "options": {
+                    "choices": [
+                        {
+                            "text": "flanders",
+                            "value": "Flanders"
+                        },
+                        {
+                            "text": "netherlands",
+                            "value": "Netherlands"
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "areas",
+                "table": "AFAWatchpigeonParties",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAWatchpigeonResponses_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "user_created",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_created",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 2,
+                "special": [
+                    "user-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_created",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "date_created",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_created",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "date-created"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_created",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "user_updated",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": "user",
+                "display_options": null,
+                "field": "user_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{avatar.$thumbnail}} {{first_name}} {{last_name}}"
+                },
+                "readonly": true,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "user-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "user_updated",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "date_updated",
+            "type": "timestamp",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": "datetime",
+                "display_options": {
+                    "relative": true
+                },
+                "field": "date_updated",
+                "group": null,
+                "hidden": true,
+                "interface": "datetime",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 5,
+                "special": [
+                    "date-updated"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "date_updated",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "timestamp with time zone",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "party",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "party",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{name}} ({{areas}})"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 6,
+                "special": [
+                    "m2o"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "party",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAWatchpigeonParties",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "score",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "score",
+                "group": null,
+                "hidden": false,
+                "interface": "select-dropdown",
+                "note": null,
+                "options": {
+                    "choices": [
+                        {
+                            "text": "3 - Active campaign point, support proven through external sources, pushes rights forwards",
+                            "value": 3,
+                            "color": "#2ECDA7"
+                        },
+                        {
+                            "text": "2 - Peddled by members and/or website",
+                            "value": 2,
+                            "color": "#3399FF"
+                        },
+                        {
+                            "text": "1 - Supported with leeway",
+                            "value": 1,
+                            "color": "#FFC23B"
+                        },
+                        {
+                            "text": "-1 - Opposes with leeway",
+                            "value": -1,
+                            "color": "#FFC23B"
+                        },
+                        {
+                            "text": "-2 - Horrible stuff peddled by members and/or website",
+                            "value": -2,
+                            "color": "#FFA439"
+                        },
+                        {
+                            "text": "-3 - negative active campaign point, opposition proven through external sources, pushes rights backwards",
+                            "value": -3,
+                            "color": "#E35169"
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 8,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "score",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "integer",
+                "default_value": 0,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "note",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "note",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Describe their stance"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 9,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "half"
+            },
+            "schema": {
+                "name": "note",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "article_id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAWatchpigeonResponses",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "article_id",
+                "group": null,
+                "hidden": true,
+                "interface": "select-dropdown-m2o",
+                "note": null,
+                "options": {
+                    "template": "{{title}} ({{year}})"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "article_id",
+                "table": "AFAWatchpigeonResponses",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAWatchpigeonArticles",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonSubjects",
+            "field": "id",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAWatchpigeonSubjects",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonSubjects",
+            "field": "name",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "name",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Name"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "name",
+                "table": "AFAWatchpigeonSubjects",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonSubjects",
+            "field": "description",
+            "type": "string",
+            "meta": {
+                "collection": "AFAWatchpigeonSubjects",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "description",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Description"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "description",
+                "table": "AFAWatchpigeonSubjects",
+                "data_type": "character varying",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
         }
     ],
     "relations": [
+        {
+            "collection": "AFALinks",
+            "field": "user_created",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFALinks",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFALinks",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afalinks_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFALinks",
+            "field": "user_updated",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFALinks",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFALinks",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afalinks_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
         {
             "collection": "AFAOrganisations",
             "field": "user_created",
@@ -1318,6 +3281,231 @@
                 "foreign_key_table": "directus_files",
                 "foreign_key_column": "id",
                 "constraint_name": "afastickers_image_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "user_created",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonArticles",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonArticles",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonarticles_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "user_updated",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonArticles",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonArticles",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonarticles_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "field": "AFAWatchpigeonSubjects_id",
+            "related_collection": "AFAWatchpigeonSubjects",
+            "meta": {
+                "junction_field": "AFAWatchpigeonArticles_id",
+                "many_collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "many_field": "AFAWatchpigeonSubjects_id",
+                "one_allowed_collections": null,
+                "one_collection": "AFAWatchpigeonSubjects",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "column": "AFAWatchpigeonSubjects_id",
+                "foreign_key_table": "AFAWatchpigeonSubjects",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__232961c9_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+            "field": "AFAWatchpigeonArticles_id",
+            "related_collection": "AFAWatchpigeonArticles",
+            "meta": {
+                "junction_field": "AFAWatchpigeonSubjects_id",
+                "many_collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "many_field": "AFAWatchpigeonArticles_id",
+                "one_allowed_collections": null,
+                "one_collection": "AFAWatchpigeonArticles",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": "subjects",
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
+                "column": "AFAWatchpigeonArticles_id",
+                "foreign_key_table": "AFAWatchpigeonArticles",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__6d407a93_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonParties",
+            "field": "logo",
+            "related_collection": "directus_files",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonParties",
+                "many_field": "logo",
+                "one_allowed_collections": null,
+                "one_collection": "directus_files",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonParties",
+                "column": "logo",
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonparties_logo_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "user_created",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonResponses",
+                "many_field": "user_created",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonResponses",
+                "column": "user_created",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonresponses_user_created_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "user_updated",
+            "related_collection": "directus_users",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonResponses",
+                "many_field": "user_updated",
+                "one_allowed_collections": null,
+                "one_collection": "directus_users",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonResponses",
+                "column": "user_updated",
+                "foreign_key_table": "directus_users",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonresponses_user_updated_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "NO ACTION"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "party",
+            "related_collection": "AFAWatchpigeonParties",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonResponses",
+                "many_field": "party",
+                "one_allowed_collections": null,
+                "one_collection": "AFAWatchpigeonParties",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonResponses",
+                "column": "party",
+                "foreign_key_table": "AFAWatchpigeonParties",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonresponses_party_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonResponses",
+            "field": "article_id",
+            "related_collection": "AFAWatchpigeonArticles",
+            "meta": {
+                "junction_field": null,
+                "many_collection": "AFAWatchpigeonResponses",
+                "many_field": "article_id",
+                "one_allowed_collections": null,
+                "one_collection": "AFAWatchpigeonArticles",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": "responses",
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAWatchpigeonResponses",
+                "column": "article_id",
+                "foreign_key_table": "AFAWatchpigeonArticles",
+                "foreign_key_column": "id",
+                "constraint_name": "afawatchpigeonresponses_article_id_foreign",
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
