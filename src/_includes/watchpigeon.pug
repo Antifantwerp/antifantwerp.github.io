@@ -28,9 +28,13 @@ mixin tagbutton(type, id, title=false)
     });
 
 main
-    h1 
-        a(href="/watchpigeon/") Watchpigeon
-        span &nbsp;-&nbsp;#{watchId}
+    h1
+        nav(aria-label="breadcrumb")
+            ul
+                li
+                    a(href="/watchpigeon/") Watchpigeon
+                li
+                    a(href="#")=watchId
     section#scale
         h2 Scale
                 //each party in relevantParties
@@ -74,13 +78,16 @@ main
         fieldset#tags
             legend Tags
 
-
+            
             each subject in AFAWatchpigeonSubjects
                 +tagbutton("subject", subject.id, subject.name)
             
+            hr
+
             each party in relevantParties
                 +tagbutton("party", party.id, party.name)
 
+            hr
 
 
         section#articles
