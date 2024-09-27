@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "directus": "10.12.1",
+    "directus": "11.1.0",
     "vendor": "postgres",
     "collections": [
         {
@@ -124,10 +124,10 @@
                 "archive_value": null,
                 "collapse": "open",
                 "collection": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
-                "color": null,
+                "color": "#E35169",
                 "display_template": null,
                 "group": null,
-                "hidden": false,
+                "hidden": true,
                 "icon": "import_export",
                 "item_duplication_fields": null,
                 "note": null,
@@ -2208,7 +2208,7 @@
                 "display_options": null,
                 "field": "AFAWatchpigeonArticles_id",
                 "group": null,
-                "hidden": true,
+                "hidden": false,
                 "interface": null,
                 "note": null,
                 "options": null,
@@ -2250,7 +2250,7 @@
                 "display_options": null,
                 "field": "AFAWatchpigeonSubjects_id",
                 "group": null,
-                "hidden": true,
+                "hidden": false,
                 "interface": null,
                 "note": null,
                 "options": null,
@@ -2480,12 +2480,12 @@
                 "options": {
                     "choices": [
                         {
-                            "text": "flanders",
-                            "value": "Flanders"
+                            "text": "Flanders",
+                            "value": "flanders"
                         },
                         {
-                            "text": "netherlands",
-                            "value": "Netherlands"
+                            "text": "Netherlands",
+                            "value": "netherlands"
                         }
                     ]
                 },
@@ -3357,7 +3357,7 @@
                 "foreign_key_column": "id",
                 "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__232961c9_foreign",
                 "on_update": "NO ACTION",
-                "on_delete": "SET NULL"
+                "on_delete": "CASCADE"
             }
         },
         {
@@ -3382,7 +3382,7 @@
                 "foreign_key_column": "id",
                 "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__6d407a93_foreign",
                 "on_update": "NO ACTION",
-                "on_delete": "SET NULL"
+                "on_delete": "CASCADE"
             }
         },
         {
