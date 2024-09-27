@@ -8,69 +8,32 @@ mixin tagbutton(type, id, title=false)
     - if (!title) { title = id };
     button(name=type, value=id).tag=title
 
-- 
-    const allParties = watchpigeon[watchId];
+-
+    const relevantParties = AFAWatchpigeonParties.filter(party => party.areas.includes(watchId));
+    const relevantPartyIds = relevantParties.map((party) => party.id)
+    const relevantArticles = AFAWatchpigeonArticles.filter(article => article.responses.find((response) => relevantPartyIds.includes(response.party.id)));
+    const points = {};
     const relatedArticles = [];
-    function filterParties(condition) {
-        Object.keys(allParties).forEach((partyId) => {
-            if (condition(allParties[partyId])) {
-                delete allParties[partyId]
-            } 
-        });
-    }
-
     // Filter out parties with no configuration
-    filterParties((party)=> {return party == null});
+    //filterParties((party)=> {return party == null});
 
-    let maxScale = {};
-
-    Object.keys(watchpigeon.articles).forEach((sourceId) => {
-        //console.log(sourceId)
-        const source = watchpigeon.articles[sourceId];
-        //console.log(source)
-
-        source.forEach((entry) => {
-            const partyIds = Object.keys(entry).filter(key => key != "url" && key != "subjects" && key != "description" && key != "note" && key != "year");
-            let articleContainsOneOfParties = false;
-
-            partyIds.forEach((partyId) => {
-                //console.log(partyId)
-                //console.log(allParties)
-                if (!Object.hasOwn(allParties, partyId)) {
-                    //console.log(`${entry.description} does not contain ${partyId}`)
-                    return;
-                }
-                articleContainsOneOfParties = true;
-                if (!Object.hasOwn(allParties[partyId], "points")) {
-                    allParties[partyId].points = 0;
-                    maxScale[partyId] = 0;
-                }
-                //console.log("-@-")
-
-                allParties[partyId].points += entry[partyId].value;
-                maxScale[partyId] += 3;
-            });
-            if (articleContainsOneOfParties) {
-                relatedArticles.push(entry);
-
+    relevantArticles.forEach((article, articleId) => {
+        article.responses.forEach((response) => {
+            const partyId = response.party.id;
+            if (!Object.hasOwn(points, partyId)) {
+                points[partyId] = 0;
             }
-
+            points[partyId] += response.score;
         });
     });
 
-    // Filter out parties with no points/articles
-    filterParties((party)=> {return !Object.hasOwn(party, "points")});
-
-
-main#main
+main
     h1 
         a(href="/watchpigeon/") Watchpigeon
         span &nbsp;-&nbsp;#{watchId}
     section#scale
         h2 Scale
-        each classname in ["desktop", "mobile"]
-            div(class=classname)
-                each party in allParties
+                //each party in relevantParties
                     - 
                         let px;
                         let value;
@@ -98,7 +61,7 @@ main#main
         h2 Scoring system
         p Dependant on whether the party is in line with our values, the score will be added or subtracted.
         ul
-            each score in Object.keys(watchpigeon.scale)
+            //each score in Object.keys(watchpigeon.scale)
                 li +/-#{score}:
                     ul
                         each description in watchpigeon.scale[score]
@@ -112,38 +75,36 @@ main#main
             legend Tags
 
 
-            each tag in watchpigeon.subjects 
-                +tagbutton("subject", tag)
+            each subject in AFAWatchpigeonSubjects
+                +tagbutton("subject", subject.id, subject.name)
             
-            each party in allParties
+            each party in relevantParties
                 +tagbutton("party", party.id, party.name)
 
 
 
         section#articles
-            - //console.log(relatedArticles)
-            each article in relatedArticles
-                - const involvedParties = Object.keys(article).filter(key => key != "url" && key != "subjects" && key != "description"&& key != "note" && key != "year");
-                - const allTags =involvedParties.concat(article.subjects).join(",");
+            each article in relevantArticles
+                -
+                    const involvedPartyIds = article.responses.map(response => response.party.id)
+                    const involvedParties = relevantParties.filter((party) => involvedPartyIds.includes(party.id));
+                    const involvedSubjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)
+                    const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
                 article(data-tags=allTags)
-                    -
-                        let description = article.description;
-                        if (article.year) {
-                            article.description = `${article.description} (${article.year})`
-                        }
-                    h3=article.description
+                    h3 #{article.title} #{article.year}
                     if article.note
                         p Note: #{article.note}
 
                     h4 Party scores
                     ul
                         each party in involvedParties
-                            +tagbutton("party", party, `${party}: ${article[party].value}, ${article[party].note}`)
+                            - const response = article.responses.find(response => response.party.id == party.id);
+                            +tagbutton("party", party.id, `${party.name}: ${response.score}, ${response.note}`)
 
                     h4 Tags
                     ul
-                        each subject in article.subjects
-                            +tagbutton("subject", subject)
+                        each subject in involvedSubjects
+                            +tagbutton("subject", subject.id, subject.name)
                     
                     - if (!Array.isArray(article.url))
                         a(href=article.url)=article.url

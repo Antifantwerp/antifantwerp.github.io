@@ -4,7 +4,7 @@
         "name": "cd&v",
         "colour": "#FFA439",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "cdv.svg",
@@ -16,7 +16,7 @@
         "name": "Groen",
         "colour": "#2ECDA7",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "groen.svg",
@@ -28,7 +28,7 @@
         "name": "N-VA",
         "colour": "#FFC23B",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "nva.svg",
@@ -40,7 +40,7 @@
         "name": "Open Vld",
         "colour": "#3399FF",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "openvld.svg",
@@ -52,7 +52,7 @@
         "name": "Partij Van De Arbeid",
         "colour": "#E35169",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "pvda.svg",
@@ -64,7 +64,7 @@
         "name": "Vlaams Belang",
         "colour": "#FFC23B",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "vb.svg",
@@ -76,7 +76,7 @@
         "name": "Vooruit",
         "colour": "#E35169",
         "areas": [
-            "Flanders"
+            "flanders"
         ],
         "logo": {
             "filename_download": "vooruit.svg",
@@ -88,7 +88,7 @@
         "name": "50PLUS",
         "colour": "#932290",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_50plus.svg",
@@ -100,7 +100,7 @@
         "name": "BoerBurgerBeweging",
         "colour": "#00FF00",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_bbb.svg",
@@ -112,7 +112,7 @@
         "name": "BIJ1",
         "colour": "#FFFF00",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_bij1.svg",
@@ -124,7 +124,7 @@
         "name": "Belang van Nederland",
         "colour": "#171F44",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_bvnl.svg",
@@ -136,7 +136,7 @@
         "name": "Christen-Democratisch Appèl",
         "colour": "#00FF00",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_cda.svg",
@@ -148,7 +148,7 @@
         "name": "ChristenUnie",
         "colour": "#032564",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_cu.svg",
@@ -160,7 +160,7 @@
         "name": "Democraten 66",
         "colour": "#00FF00",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_d66.svg",
@@ -172,7 +172,7 @@
         "name": "DENK",
         "colour": "#00B8B4",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_denk.svg",
@@ -184,7 +184,7 @@
         "name": "fvd",
         "colour": "#AA110D",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_fvd.svg",
@@ -196,7 +196,7 @@
         "name": "GroenLinks-PvdA",
         "colour": "#2ECDA7",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_glpvda.svg",
@@ -208,7 +208,7 @@
         "name": "JA21",
         "colour": "#1F2756",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_ja21.svg",
@@ -220,7 +220,7 @@
         "name": "Nieuw Sociaal Contract",
         "colour": "#0000FF",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_nsc.svg",
@@ -232,7 +232,7 @@
         "name": "Partij voor de Dieren",
         "colour": "#006B28",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_pvdd.svg",
@@ -244,7 +244,7 @@
         "name": "Partij voor de Vrijheid",
         "colour": "#3399FF",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_pvv.svg",
@@ -256,7 +256,7 @@
         "name": "Staatkundig Gereformeerde Partij",
         "colour": "#EA5D06",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_sgp.svg",
@@ -268,7 +268,7 @@
         "name": "Socialistische Partij",
         "colour": "#EE161F",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_sp.svg",
@@ -280,7 +280,7 @@
         "name": "Volt Nederland",
         "colour": "#4F1E7A",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_volt.svg",
@@ -292,7 +292,7 @@
         "name": "Volkspartij voor Vrijheid en Democratie",
         "colour": "#FFA439",
         "areas": [
-            "Netherlands"
+            "netherlands"
         ],
         "logo": {
             "filename_download": "nl_vvd.svg",

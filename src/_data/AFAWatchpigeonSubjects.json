@@ -1,0 +1,37 @@
+[
+    {
+        "id": "abortion",
+        "name": "Abortion",
+        "description": null
+    },
+    {
+        "id": "diversity",
+        "name": "Diversity",
+        "description": null
+    },
+    {
+        "id": "palestine",
+        "name": "Palestine",
+        "description": null
+    },
+    {
+        "id": "poverty",
+        "name": "Poverty",
+        "description": null
+    },
+    {
+        "id": "queer_rights",
+        "name": "Queer Rights",
+        "description": "This includes polyamory here, but not trans rights"
+    },
+    {
+        "id": "right_to_protest",
+        "name": "Right to protest",
+        "description": null
+    },
+    {
+        "id": "trans_rights",
+        "name": "Trans Rights",
+        "description": null
+    }
+]
