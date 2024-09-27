@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@picocss/pico": "^2.0.6",
     "directus-to-data": "^0.7.2",
     "eleventy-sass": "^2.2.3",
     "favicons": "^7.1.4",

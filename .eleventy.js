@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(eleventySass, {
         sass: {
-            loadPaths: ["node_modules"]
+            loadPaths: ["node_modules", "node_modules/@picocss/pico/scss"]
         }
     });
 
