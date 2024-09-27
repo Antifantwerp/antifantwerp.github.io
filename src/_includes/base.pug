@@ -26,12 +26,12 @@ html(lang="en")
     body
         header 
             a(href="#main").skip-link Skip to main content
-            nav 
+            nav
+                - collections.page.sort((pageA, pageB) => pageA.data.order - pageB.data.order);  // https://stackoverflow.com/a/979289a                
                 ul
-                    - collections.page.sort((pageA, pageB) => pageA.data.order - pageB.data.order);  // https://stackoverflow.com/a/979289a
-                    each page in collections.page
-                        a(href=page.url)
-                            li=page.data.title
-        
+                    for page in collections.page
+                        li
+                            a(href=page.url)=page.data.title
+
         | !{content}
         

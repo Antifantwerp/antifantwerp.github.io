@@ -13,11 +13,14 @@ main#main
     h2.sr-only Pages
 
     - collections.page.sort((pageA, pageB) => pageA.data.order - pageB.data.order);  // https://stackoverflow.com/a/979289a
-    ul#index-nav
-        each page in collections.page
-            if page.data.title != "Home"
-                a(href=page.url)
-                    li
-                        h3=page.data.title
-                        p !{page.data.description}
+    nav
+        ul
+            each page in collections.page
+                if page.data.title != "Home"
+                    a(href=page.url)
+                        li
+                            article
+                                header
+                                    h3=page.data.title
+                                p !{page.data.description}
 

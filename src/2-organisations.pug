@@ -8,19 +8,20 @@ description: Leftist organisations in &amp; around Belgium
 
 mixin org(title, description, url, subOrg=false)
     if !subOrg
-        h2=title
+        header
+            h2=title
     else
         h3=title
     p=description
 
-    a(href="https://antwerpen.pvda.be/")=url
+    a(href=url)=url
 
 mixin organisations(area, header, subHeader=null)
     h2=header
     if subHeader
         p=subHeader 
         
-    section(id=area).organisations
+    section(id=area)
         -
             const orgs = AFAOrganisations.filter((org) => org.type == "politicalorg" && org.area.includes(area));
             const parentOrganisations = orgs.filter((org) => org.parent_organisation == null);
@@ -38,14 +39,15 @@ mixin organisations(area, header, subHeader=null)
         each organisation in parentOrganisations
             ul
                 li
-                    +org(organisation.name, organisation.note, organisation.url)
-                
-                    if childDirectory[organisation.id]
-                        ul
-                            each subOrganisation in childDirectory[organisation.id]
-                                li
-                                    +org(subOrganisation.name, subOrganisation.note, subOrganisation.url, true)
-                    
+                    article
+                        +org(organisation.name, organisation.note, organisation.url)
+                        if childDirectory[organisation.id]
+                            footer
+                                ul
+                                    each subOrganisation in childDirectory[organisation.id]
+                                        li
+                                            +org(subOrganisation.name, subOrganisation.note, subOrganisation.url, true)
+                        
 
 main#main
     h1 Organisations
@@ -53,18 +55,3 @@ main#main
 
     +organisations("antwerp", "Organisations with activity in Antwerp")
     +organisations("surrounding", "Other organisations", "These have no confirmed activity or presence in Antwerp, but might still be nice")
-
-
-    style.
-        .organisations {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .organisations ul {
-            flex-basis: 40%;
-            margin: 20px;
-            @media (max-width: 600px) {
-                flex-basis: 100%;
-            }
-        }
