@@ -5,10 +5,13 @@ order: 4
 title: Watchpigeon
 description: Want to know whether political parties in and around Antwerp actually support their statements? Now you can. Complete with sources!
 ---
-main#main
-    ul
-        each place in ["flanders", "netherlands"]
-            li
-                img(src="/assets/watchpigeon/" + place + ".svg", alt="Flag from " + place)
-                a(href="/watchpigeon/" + place)=place
+main
+    nav
+        ul.grid
+            each place in ["flanders", "netherlands"]
+                a(href="/watchpigeon/" + place)
+                    li
+                        article
+                            header=place
+                            img(src="/assets/watchpigeon/" + place + ".svg", alt="Flag from " + place)
 
