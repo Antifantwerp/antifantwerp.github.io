@@ -9,17 +9,22 @@
     max-width: 50px;
 }
 
+/*
 $track: "&::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track";
 
 input[type=range] {
     color: red;
+    appearance: none;
+    background: none;
     & {
-        #{$track} {
+        track {
+            opacity: 0;
             display: none;
         }
 
     }
 }
+*/
 
 
 #tags, article ul {

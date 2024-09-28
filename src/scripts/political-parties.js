@@ -1,3 +1,17 @@
+
+percentages = JSON.parse(percentages); // passed in watchpigeon.pug
+
+noUiSlider.create(document.getElementById("input-scale"), {
+    range: {
+        min: 0,
+        max: 100
+    },
+    start: [
+        20, 100
+    ],
+    connect: true
+})
+
 function setParam(key, value) {
     const urlParams = new URLSearchParams(window.location.search);
     urlParams.set(key, value);

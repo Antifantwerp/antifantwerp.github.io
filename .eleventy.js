@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/scripts");
+    eleventyConfig.addPassthroughCopy({
+        "./node_modules/nouislider/dist/nouislider.min.js": "/vendor/nouislider.min.js",
+        "./node_modules/nouislider/dist/nouislider.min.css": "/vendor/nouislider.min.css"
+    });
 
     eleventyConfig.addPlugin(eleventySass, {
         sass: {
