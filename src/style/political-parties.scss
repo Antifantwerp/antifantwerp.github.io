@@ -10,6 +10,7 @@
 }
 #input-scale {
     margin: auto;
+    margin-top: 50px;
 }
 
 .noUi-handle {
@@ -18,12 +19,13 @@
         position: absolute;
         display: block;
         max-width: none;
-        width: 75px;
+        width: 50px;
         left: -50%;
 
         transform-origin: center;
         top: 140%;
         &.top {
+            transform-origin: center;
             top: -140%;
         }
 

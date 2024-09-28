@@ -16,8 +16,9 @@ parties.sort((a,b) => {
 
 function createSliders() {
     const percentageValues = parties.map(party => party.percentage);
-    percentageValues.sort();
-    noUiSlider.create(document.getElementById("input-scale"), {
+    console.log(percentageValues)
+    const elem = document.getElementById("input-scale");
+    noUiSlider.create(elem, {
         range: {
             min: 0,
             max: 100
@@ -26,18 +27,31 @@ function createSliders() {
         connect: true,
     })
 
-    const handles = document.querySelectorAll("#input-scale .noUi-handle")
-    let top = false;
+    const handles = document.querySelectorAll("#input-scale .noUi-handle");
+    let highestChain = 0;
     handles.forEach((handle, i) => {
         const party = parties[i];
+        
+        const percentageValuesBeforeThis = percentageValues.slice(0, i);
+        console.log(percentageValuesBeforeThis)
+        console.log(percentageValuesBeforeThis.filter(value => value == party.percentage))
+        const howManythOfThisValue = percentageValuesBeforeThis.filter(value => value == party.percentage).length;
+        console.log(party.name, party.percentage, howManythOfThisValue)
+
         const img = document.createElement("img");
         img.setAttribute("src", "/assets/" + party.logo.filename_download)
         handle.appendChild(img)
-        if (top) {
+        if (howManythOfThisValue == 0) {
             img.classList.add("top");
+        } else {
+            img.style.top = 40 + (100 * howManythOfThisValue) + "%";
+            if (howManythOfThisValue > highestChain) {
+                highestChain = howManythOfThisValue;
+            }
         }
-        top = !top;
     });
+    elem.style.marginBottom = highestChain * 50 + "px";
+
 }
 createSliders();
 
