@@ -1,0 +1,38 @@
+# .github/workflows/directus.yml
+# from https://github.com/Denperidge/directus-to-data/
+name: Update data from Directus webhook
+on:
+  workflow_dispatch:  # Manual run
+concurrency:  # If multiple builds are going, keep most recent
+  group: directus
+  cancel-in-progress: true
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Fetch data
+        run: yarn cms:pull
+        env:
+          CMS_URL: ${{ secrets.CMS_URL }}
+          STATIC_TOKEN: ${{ secrets.STATIC_TOKEN }}
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: '*'  # git add
+          default_author: github_actions  # Commit as github-actions bot
+          message: 'CMS update (${{ github.event.repository.updated_at}})'
+
+  deploy:
+    uses: ./.github/workflows/eleventy.yml
+    needs: update-data
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    secrets: inherit  # Pass secrets to called workflow
