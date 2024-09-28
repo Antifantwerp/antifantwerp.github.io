@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const sass = require("sass");
 const eleventySass = require("eleventy-sass");
+const eleventyAutoCacheBuster = require("eleventy-auto-cache-buster");
 
 const favicons = require("./.favicons");
 
@@ -11,6 +12,8 @@ module.exports = function (eleventyConfig) {
         output: "dist",
     });
     eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+
+    eleventyConfig.addPlugin(eleventyAutoCacheBuster);
 
     eleventyConfig.addPassthroughCopy("src/assets");
     eleventyConfig.addPassthroughCopy("src/scripts");
