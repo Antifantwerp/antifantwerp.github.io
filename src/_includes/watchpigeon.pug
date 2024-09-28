@@ -80,14 +80,18 @@ main
         h2 Scoring system
         p Dependant on whether the party is in line with our values, the score will be added or subtracted.
         ul
-            //each score in Object.keys(watchpigeon.scale)
-                li +/-#{score}:
-                    ul
-                        each description in watchpigeon.scale[score]
-                            li=description
-
-
-
+            li +/- 1
+                ol
+                    li (+) Supported with leeway
+                    li (-) Opposes with leeway
+            li +/- 2
+                ol
+                    li (+) Peddled by members and/or website
+                    li (-) Horrible stuff peddled by members and/or website
+            li +/-3
+                ol
+                    li (+) Active campaign point, support proven through external sources, pushes rights forwards
+                    li (-) Negative active campaign point, opposition proven through external sources, pushes rights backwards
         h2 Considered articles
 
         fieldset#tags
@@ -113,7 +117,8 @@ main
                     const involvedSubjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)
                     const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
                 article(data-tags=allTags)
-                    h3 #{article.title} #{article.year}
+                    header
+                        h3 #{article.title} #{article.year}
                     if article.note
                         p Note: #{article.note}
 

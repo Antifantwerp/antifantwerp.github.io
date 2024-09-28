@@ -58,7 +58,7 @@ function filterArticlesOnTags(filterOnTags) {
             }
         }
         if (showArticle) {
-            article.style.display = "initial";
+            article.style.display = "block";
         } else {
             article.style.display = "none";
         }
