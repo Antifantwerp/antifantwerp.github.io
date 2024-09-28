@@ -5,9 +5,31 @@
     position: absolute;
     top: 0;
 }
+
 #scale img {
-    max-width: 50px;
 }
+#input-scale {
+    margin: auto;
+}
+
+.noUi-handle {
+    position: relative;
+    img {
+        position: absolute;
+        display: block;
+        max-width: none;
+        width: 75px;
+        left: -50%;
+
+        transform-origin: center;
+        top: 140%;
+        &.top {
+            top: -140%;
+        }
+
+    }
+}
+
 
 /*
 $track: "&::-webkit-slider-runnable-track, &::-moz-range-track, &::-ms-track";

@@ -23,15 +23,20 @@ function createSliders() {
             max: 100
         },
         start: percentageValues,
-        connect: true
+        connect: true,
     })
 
     const handles = document.querySelectorAll("#input-scale .noUi-handle")
+    let top = false;
     handles.forEach((handle, i) => {
         const party = parties[i];
         const img = document.createElement("img");
         img.setAttribute("src", "/assets/" + party.logo.filename_download)
         handle.appendChild(img)
+        if (top) {
+            img.classList.add("top");
+        }
+        top = !top;
     });
 }
 createSliders();
