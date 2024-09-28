@@ -12,18 +12,25 @@ mixin tagbutton(type, id, title=false)
     const relevantParties = AFAWatchpigeonParties.filter(party => party.areas.includes(watchId));
     const relevantPartyIds = relevantParties.map((party) => party.id)
     const relevantArticles = AFAWatchpigeonArticles.filter(article => article.responses.find((response) => relevantPartyIds.includes(response.party.id)));
-    const points = {};
+    let points = {};
+    let maxScale = {};
     const relatedArticles = [];
     // Filter out parties with no configuration
     //filterParties((party)=> {return party == null});
 
+    function addToObjectInt(object, key, increaseWith) {
+        if (!Object.hasOwn(object, key)) {
+            object[key] = 0;
+        }
+        object[key] += increaseWith;
+        return object;
+    }
+
     relevantArticles.forEach((article, articleId) => {
         article.responses.forEach((response) => {
             const partyId = response.party.id;
-            if (!Object.hasOwn(points, partyId)) {
-                points[partyId] = 0;
-            }
-            points[partyId] += response.score;
+            points = addToObjectInt(points, partyId, response.score)
+            maxScale = addToObjectInt(maxScale, partyId, 3)
         });
     });
 
@@ -37,6 +44,14 @@ main
                     a(href="#")=watchId
     section#scale
         h2 Scale
+        each party in relevantParties
+            section.party
+
+                img(src="/assets/" + party.logo.filename_download)
+            input.no-bar(type="range" id=party.id min=-maxScale[party.id] max=maxScale[party.id] value=points[party.id])
+                
+            //p
+        
                 //each party in relevantParties
                     - 
                         let px;
