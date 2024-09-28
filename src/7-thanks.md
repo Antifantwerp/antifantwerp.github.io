@@ -1,13 +1,14 @@
 ---
 layout: page.md
 permalink: thanks/
-order: 9
+order: 7
 title: Thanks
+description: Credit to those who contributed
 ---
 
 # Thanks to
 ## Contributors
-- `Pseudonym pending/Antifantwerp`. Main developer & maintainer of the site. It's me. I'm writing in third person. Sorry.
+- `Pigeon`. Main developer & maintainer of the site. It's me. I'm writing in third person. Sorry.
 - `Matty` for the links towards Hart Boven Hard, Vonk, LeftLaser, Black-Mosquito and Redfox stickers.
 - Also all friends and loved ones who have helped me collect stickers & resources!
 
