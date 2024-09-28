@@ -2486,6 +2486,10 @@
                         {
                             "text": "Netherlands",
                             "value": "netherlands"
+                        },
+                        {
+                            "text": "Wallonie",
+                            "value": "wallonie"
                         }
                     ]
                 },
