@@ -1,16 +1,40 @@
 
-percentages = JSON.parse(percentages); // passed in watchpigeon.pug
-
-noUiSlider.create(document.getElementById("input-scale"), {
-    range: {
-        min: 0,
-        max: 100
-    },
-    start: [
-        20, 100
-    ],
-    connect: true
+parties = JSON.parse(parties); // passed in watchpigeon.pug
+parties.sort((a,b) => {
+    const aPercentage = a.percentage;
+    const bPercentage = b.percentage;
+    if (aPercentage > bPercentage) {
+        return 1;
+    } else if (aPercentage == bPercentage) {
+        return 0;
+    } else {
+        return -1;
+    }
 })
+
+// https://refreshless.com/nouislider/examples/#section-colored-connect
+
+function createSliders() {
+    const percentageValues = parties.map(party => party.percentage);
+    percentageValues.sort();
+    noUiSlider.create(document.getElementById("input-scale"), {
+        range: {
+            min: 0,
+            max: 100
+        },
+        start: percentageValues,
+        connect: true
+    })
+
+    const handles = document.querySelectorAll("#input-scale .noUi-handle")
+    handles.forEach((handle, i) => {
+        const party = parties[i];
+        const img = document.createElement("img");
+        img.setAttribute("src", "/assets/" + party.logo.filename_download)
+        handle.appendChild(img)
+    });
+}
+createSliders();
 
 function setParam(key, value) {
     const urlParams = new URLSearchParams(window.location.search);
