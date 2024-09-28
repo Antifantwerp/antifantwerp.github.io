@@ -21,3 +21,39 @@ input[type=range] {
     }
 }
 
+
+#tags, article ul {
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
+
+.tag {
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(172, 172, 172);
+
+    opacity: 0.5;
+
+    &.selected {
+        opacity: 1;
+        font-size: 1.1rem
+    }
+    article & {
+        opacity: 1;
+    }
+}
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    article {
+        min-width: 300px;
+        flex: 1;
+        border: 1px dashed gray;
+        padding: 20px;
+        margin: 20px;
+    }
+}
