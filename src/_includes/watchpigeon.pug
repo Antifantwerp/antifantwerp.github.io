@@ -115,7 +115,7 @@ main
 
                     h4 Party scores
                     ul.party-scores
-                        each party in involvedParties
+                        each party, i in involvedParties
                             - const response = article.responses.find(response => response.party.id == party.id);
                             li
                                 hgroup
@@ -124,22 +124,24 @@ main
                                         span=party.name
                                     p Score: #{response.score}
                                 p=response.note
-                                +tagbutton("party", party.id, party.name)
-                                hr
+                                if i < involvedParties.length-1
+                                    hr
 
-
-                    h4 Tags
-                    ul
-                        each subject in involvedSubjects
-                            +tagbutton("subject", subject.id, subject.name)
-                    
-                    - if (!Array.isArray(article.url))
-                        a(href=article.url)=article.url
-                    - else
+                    footer
+                        h4 Tags
                         ul
-                            each url in article.url
-                                li
-                                    a(href=url)=url
+                            each party in involvedParties
+                                +tagbutton("party", party.id, party.name)
+                            each subject in involvedSubjects
+                                +tagbutton("subject", subject.id, subject.name)
+                        
+                        - if (!Array.isArray(article.url))
+                            a(href=article.url)=article.url
+                        - else
+                            ul
+                                each url in article.url
+                                    li
+                                        a(href=url)=url
 
     script let parties = '!{JSON.stringify(percentages)}';
     script(src="/scripts/political-parties.js")
