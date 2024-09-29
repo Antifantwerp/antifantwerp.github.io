@@ -109,7 +109,7 @@ main
                     const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
                 article(data-tags=allTags)
                     header
-                        h3 #{article.title} #{article.year}
+                        h3 #{article.title} (#{article.year})
                     if article.note
                         p Note: #{article.note}
 
