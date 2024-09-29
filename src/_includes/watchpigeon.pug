@@ -114,10 +114,19 @@ main
                         p Note: #{article.note}
 
                     h4 Party scores
-                    ul
+                    ul.party-scores
                         each party in involvedParties
                             - const response = article.responses.find(response => response.party.id == party.id);
-                            +tagbutton("party", party.id, `${party.name}: ${response.score}, ${response.note}`)
+                            li
+                                hgroup
+                                    h5
+                                        img(aria-hidden=true src="/assets/" + party.logo.filename_download)
+                                        span=party.name
+                                    p Score: #{response.score}
+                                p=response.note
+                                +tagbutton("party", party.id, party.name)
+                                hr
+
 
                     h4 Tags
                     ul
