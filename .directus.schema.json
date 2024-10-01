@@ -4,6 +4,62 @@
     "vendor": "postgres",
     "collections": [
         {
+            "collection": "AFAAssetLibrary",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAAssetLibrary",
+                "color": "#E35169",
+                "display_template": null,
+                "group": null,
+                "hidden": false,
+                "icon": null,
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 3,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAAssetLibrary"
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary_files",
+            "meta": {
+                "accountability": "all",
+                "archive_app_filter": true,
+                "archive_field": null,
+                "archive_value": null,
+                "collapse": "open",
+                "collection": "AFAAssetLibrary_files",
+                "color": null,
+                "display_template": null,
+                "group": null,
+                "hidden": true,
+                "icon": "import_export",
+                "item_duplication_fields": null,
+                "note": null,
+                "preview_url": null,
+                "singleton": false,
+                "sort": 4,
+                "sort_field": null,
+                "translations": null,
+                "unarchive_value": null,
+                "versioning": false
+            },
+            "schema": {
+                "name": "AFAAssetLibrary_files"
+            }
+        },
+        {
             "collection": "AFALinks",
             "meta": {
                 "accountability": "all",
@@ -21,7 +77,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 3,
+                "sort": 5,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -105,7 +161,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 6,
+                "sort": 8,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -133,7 +189,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 8,
+                "sort": 10,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -161,7 +217,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 5,
+                "sort": 7,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -189,7 +245,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 7,
+                "sort": 9,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -217,7 +273,7 @@
                 "note": null,
                 "preview_url": null,
                 "singleton": false,
-                "sort": 4,
+                "sort": 6,
                 "sort_field": null,
                 "translations": null,
                 "unarchive_value": null,
@@ -229,6 +285,321 @@
         }
     ],
     "fields": [
+        {
+            "collection": "AFAAssetLibrary",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAAssetLibrary",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": "input",
+                "note": null,
+                "options": null,
+                "readonly": true,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAAssetLibrary",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAAssetLibrary_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary",
+            "field": "files",
+            "type": "alias",
+            "meta": {
+                "collection": "AFAAssetLibrary",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "files",
+                "group": null,
+                "hidden": false,
+                "interface": "files",
+                "note": null,
+                "options": {
+                    "folder": "ab2f1cb7-bcd4-433e-a3ac-e000e1e51654"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": [
+                    "files"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary",
+            "field": "title",
+            "type": "text",
+            "meta": {
+                "collection": "AFAAssetLibrary",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "title",
+                "group": null,
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "placeholder": "Title"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "title",
+                "table": "AFAAssetLibrary",
+                "data_type": "text",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary",
+            "field": "authors",
+            "type": "json",
+            "meta": {
+                "collection": "AFAAssetLibrary",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "authors",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                    "fields": [
+                        {
+                            "field": "name",
+                            "name": "name",
+                            "type": "string",
+                            "meta": {
+                                "field": "name",
+                                "type": "string",
+                                "required": true,
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "Name"
+                                }
+                            }
+                        },
+                        {
+                            "field": "url",
+                            "name": "url",
+                            "type": "string",
+                            "meta": {
+                                "field": "url",
+                                "type": "string",
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "URL"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 4,
+                "special": [
+                    "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "authors",
+                "table": "AFAAssetLibrary",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary_files",
+            "field": "id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAAssetLibrary_files",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "id",
+                "table": "AFAAssetLibrary_files",
+                "data_type": "integer",
+                "default_value": "nextval('\"AFAAssetLibrary_files_id_seq\"'::regclass)",
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": false,
+                "is_unique": true,
+                "is_primary_key": true,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": true,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary_files",
+            "field": "AFAAssetLibrary_id",
+            "type": "integer",
+            "meta": {
+                "collection": "AFAAssetLibrary_files",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "AFAAssetLibrary_id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "AFAAssetLibrary_id",
+                "table": "AFAAssetLibrary_files",
+                "data_type": "integer",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": 32,
+                "numeric_scale": 0,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "AFAAssetLibrary",
+                "foreign_key_column": "id"
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary_files",
+            "field": "directus_files_id",
+            "type": "uuid",
+            "meta": {
+                "collection": "AFAAssetLibrary_files",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "directus_files_id",
+                "group": null,
+                "hidden": true,
+                "interface": null,
+                "note": null,
+                "options": null,
+                "readonly": false,
+                "required": false,
+                "sort": 3,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "directus_files_id",
+                "table": "AFAAssetLibrary_files",
+                "data_type": "uuid",
+                "default_value": null,
+                "max_length": null,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id"
+            }
+        },
         {
             "collection": "AFALinks",
             "field": "id",
@@ -526,7 +897,8 @@
                                 "type": "string",
                                 "interface": "input",
                                 "options": {
-                                    "placeholder": "Name"
+                                    "placeholder": "Name",
+                                    "iconLeft": "title"
                                 }
                             }
                         },
@@ -540,7 +912,8 @@
                                 "type": "string",
                                 "interface": "input",
                                 "options": {
-                                    "placeholder": "https://example.com/"
+                                    "placeholder": "https://example.com/",
+                                    "iconLeft": "link"
                                 }
                             }
                         }
@@ -816,6 +1189,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "title",
                     "placeholder": "Zwarte Kat Kollektief"
                 },
                 "readonly": false,
@@ -835,7 +1209,7 @@
                 "max_length": 255,
                 "numeric_precision": null,
                 "numeric_scale": null,
-                "is_nullable": true,
+                "is_nullable": false,
                 "is_unique": false,
                 "is_primary_key": false,
                 "is_generated": false,
@@ -905,6 +1279,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "format_color_text",
                     "placeholder": "(including a few free stickers)"
                 },
                 "readonly": false,
@@ -1547,7 +1922,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
-                    "iconLeft": "text_fields",
+                    "iconLeft": "format_color_text",
                     "placeholder": "Relevant Instagram post"
                 },
                 "readonly": false,
@@ -1611,7 +1986,8 @@
                             "icon": "exclamation",
                             "color": "#E35169"
                         }
-                    ]
+                    ],
+                    "icon": "question_exchange"
                 },
                 "readonly": false,
                 "required": false,
@@ -1655,6 +2031,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "title",
                     "placeholder": "Nickname for internal usage"
                 },
                 "readonly": false,
@@ -2126,6 +2503,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "format_color_text",
                     "placeholder": "Note"
                 },
                 "readonly": false,
@@ -2346,6 +2724,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "title",
                     "placeholder": "Name"
                 },
                 "readonly": false,
@@ -2491,7 +2870,9 @@
                             "text": "Wallonie",
                             "value": "wallonie"
                         }
-                    ]
+                    ],
+                    "icon": "add_location_alt",
+                    "placeholder": "Areas"
                 },
                 "readonly": false,
                 "required": false,
@@ -2840,7 +3221,8 @@
                             "value": -3,
                             "color": "#E35169"
                         }
-                    ]
+                    ],
+                    "icon": "format_list_numbered"
                 },
                 "readonly": false,
                 "required": false,
@@ -2927,7 +3309,9 @@
                 "hidden": false,
                 "interface": "input-rich-text-md",
                 "note": null,
-                "options": null,
+                "options": {
+                    "placeholder": "Note"
+                },
                 "readonly": false,
                 "required": false,
                 "sort": 8,
@@ -3012,6 +3396,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "title",
                     "placeholder": "Name"
                 },
                 "readonly": false,
@@ -3056,6 +3441,7 @@
                 "interface": "input",
                 "note": null,
                 "options": {
+                    "iconLeft": "format_color_text",
                     "placeholder": "Description"
                 },
                 "readonly": false,
@@ -3087,6 +3473,56 @@
         }
     ],
     "relations": [
+        {
+            "collection": "AFAAssetLibrary_files",
+            "field": "directus_files_id",
+            "related_collection": "directus_files",
+            "meta": {
+                "junction_field": "AFAAssetLibrary_id",
+                "many_collection": "AFAAssetLibrary_files",
+                "many_field": "directus_files_id",
+                "one_allowed_collections": null,
+                "one_collection": "directus_files",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": null,
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAAssetLibrary_files",
+                "column": "directus_files_id",
+                "foreign_key_table": "directus_files",
+                "foreign_key_column": "id",
+                "constraint_name": "afaassetlibrary_files_directus_files_id_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
+        {
+            "collection": "AFAAssetLibrary_files",
+            "field": "AFAAssetLibrary_id",
+            "related_collection": "AFAAssetLibrary",
+            "meta": {
+                "junction_field": "directus_files_id",
+                "many_collection": "AFAAssetLibrary_files",
+                "many_field": "AFAAssetLibrary_id",
+                "one_allowed_collections": null,
+                "one_collection": "AFAAssetLibrary",
+                "one_collection_field": null,
+                "one_deselect_action": "nullify",
+                "one_field": "files",
+                "sort_field": null
+            },
+            "schema": {
+                "table": "AFAAssetLibrary_files",
+                "column": "AFAAssetLibrary_id",
+                "foreign_key_table": "AFAAssetLibrary",
+                "foreign_key_column": "id",
+                "constraint_name": "afaassetlibrary_files_afaassetlibrary_id_foreign",
+                "on_update": "NO ACTION",
+                "on_delete": "SET NULL"
+            }
+        },
         {
             "collection": "AFALinks",
             "field": "user_created",
