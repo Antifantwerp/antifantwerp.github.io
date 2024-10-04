@@ -30,6 +30,11 @@
         "description": null
     },
     {
+        "id": "sex_workers_rights",
+        "name": "Sex Worker’s Rights",
+        "description": "Sex work is work"
+    },
+    {
         "id": "trans_rights",
         "name": "Trans Rights",
         "description": null

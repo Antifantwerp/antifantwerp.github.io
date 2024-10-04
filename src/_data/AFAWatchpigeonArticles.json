@@ -562,5 +562,74 @@
                 }
             }
         ]
+    },
+    {
+        "id": 8,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-10-04T12:10:56.455Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-10-04T12:22:13.270Z",
+        "year": 2024,
+        "url": "https://www.vrt.be/vrtnws/nl/2024/10/03/stad-antwerpen-neemt-nieuwe-regels-op-in-politiecodex-tegen-onze/",
+        "title": "Police codex addition about “inappropriate nudity” by N-VA",
+        "note": "The law is incredibly broad and puts final judgement in the common sense of whichever cop is active at the time. This law was added to have sex workers cover up within in their district, whilst being phrased as being for the sake of sex workers",
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "trans_rights",
+                    "name": "Trans Rights",
+                    "description": null
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This includes polyamory here, but not trans rights"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "sex_workers_rights",
+                    "name": "Sex Worker’s Rights",
+                    "description": "Sex work is work"
+                }
+            }
+        ],
+        "responses": [
+            {
+                "score": -3,
+                "note": "Created proposal",
+                "party": {
+                    "id": "be_nva",
+                    "logo": {
+                        "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
+                        "filename_download": "party-logo-be-nva.svg"
+                    }
+                }
+            },
+            {
+                "score": 2,
+                "note": "Opposes, gave public statement",
+                "party": {
+                    "id": "be_groen",
+                    "logo": {
+                        "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
+                        "filename_download": "party-logo-be-groen.svg"
+                    }
+                }
+            },
+            {
+                "score": 2,
+                "note": "Opposes",
+                "party": {
+                    "id": "be_pvda",
+                    "logo": {
+                        "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
+                        "filename_download": "party-logo-be-pvda.svg"
+                    }
+                }
+            }
+        ]
     }
 ]
