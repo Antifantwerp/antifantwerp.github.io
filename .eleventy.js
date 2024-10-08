@@ -1,12 +1,18 @@
-const yaml = require("js-yaml");
-const sass = require("sass");
-const eleventySass = require("eleventy-sass");
-const eleventyAutoCacheBuster = require("eleventy-auto-cache-buster");
+import yaml from "js-yaml";
+import eleventySass from "@grimlink/eleventy-plugin-sass";
+import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
+import favicons from "./.favicons.js";
+import * as sass from "sass";
+import pugPlugin from "@11ty/eleventy-plugin-pug";
 
-const favicons = require("./.favicons");
 
-
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
+    eleventyConfig.addPlugin(pugPlugin);
+    eleventyConfig.addPlugin(eleventySass, {
+        sass,
+        outputPath: "",
+        includePaths: ["node_modules", "node_modules/@picocss/pico/scss"]
+    });
     favicons({
         input: "src",
         output: "dist",
@@ -22,16 +28,17 @@ module.exports = function (eleventyConfig) {
         "./node_modules/nouislider/dist/nouislider.min.css": "/vendor/nouislider.min.css"
     });
 
+    /*
     eleventyConfig.addPlugin(eleventySass, {
         sass: {
             loadPaths: ["node_modules", "node_modules/@picocss/pico/scss"]
         }
-    });
-
-    return {
-        dir: {
-            input: "src",
-            output: "dist",
-        }
-    }
+    });*/
 }
+
+export const config = {
+    dir: {
+        input: "src",
+        output: "dist",
+    }
+};

@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path")
-const favicons = require("favicons").favicons;
+import fs from "fs";
+import path from "path";
+import { favicons } from "favicons";
 
 async function write(response, property, outputDir) {
     Promise.all(
@@ -10,7 +10,7 @@ async function write(response, property, outputDir) {
     );
 }
 
-module.exports = async function(eleventyDir) {
+export default async function(eleventyDir) {
     const response = await favicons("src/assets/antifa.svg", {
         background: "#ff0000",
         theme_color: "#ff0000",

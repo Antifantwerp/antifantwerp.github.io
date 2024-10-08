@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Website for antifantwerp",
   "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/Antifantwerp/antifantwerp.github.io.git",
   "author": "Antifantwerp <antifantwerp@proton.me>",
   "license": "MIT",
@@ -15,15 +16,16 @@
     "cms:schema:apply": "directus-to-data --restore-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE --apply-schema -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@grimlink/eleventy-plugin-sass": "^1.0.3",
     "@picocss/pico": "^2.0.6",
     "directus-to-data": "^0.7.2",
     "eleventy-auto-cache-buster": "^0.6.1",
-    "eleventy-sass": "^2.2.3",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",
     "jstransformer-markdown-it": "^3.0.0",
     "nouislider": "^15.8.1",
-    "sass": "^1.69.4"
+    "sass": "1.77.6"
   }
 }
