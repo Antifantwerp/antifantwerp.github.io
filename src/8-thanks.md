@@ -1,7 +1,7 @@
 ---
 layout: page.md
 permalink: thanks/
-order: 7
+order: 8
 title: Thanks
 description: Credit to those who contributed
 ---

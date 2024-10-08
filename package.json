@@ -10,10 +10,10 @@
   "scripts": {
     "dev": "yarn eleventy --serve",
     "build": "yarn eleventy",
-    "cms:pull": "directus-to-data --collection-output src/_data/{{collectionName}}.json --assets-output src/assets/{{filename}} -c AFAOrganisations -c AFAStickers:*,image.* -c AFALinks:title,entries -c AFAWatchpigeonParties:*,logo.filename_download,logo.id -c AFAWatchpigeonArticles:*,subjects.AFAWatchpigeonSubjects_id.id,subjects.AFAWatchpigeonSubjects_id.name,subjects.AFAWatchpigeonSubjects_id.description,responses.party.id,responses.party.logo.id,responses.party.logo.filename_download,responses.score,responses.note -c AFAWatchpigeonSubjects -c AFAAssetLibrary",
-    "cms:schema:backup": "directus-to-data --backup-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files",
-    "cms:schema:restore": "directus-to-data --restore-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files",
-    "cms:schema:apply": "directus-to-data --restore-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE --apply-schema -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files"
+    "cms:pull": "directus-to-data --collection-output src/_data/{{collectionName}}.json --assets-output src/assets/{{filename}} -c AFAOrganisations -c AFAStickers:*,image.* -c AFALinks:title,entries -c AFAWatchpigeonParties:*,logo.filename_download,logo.id -c AFAWatchpigeonArticles:*,subjects.AFAWatchpigeonSubjects_id.id,subjects.AFAWatchpigeonSubjects_id.name,subjects.AFAWatchpigeonSubjects_id.description,responses.party.id,responses.party.logo.id,responses.party.logo.filename_download,responses.score,responses.note -c AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFABlog",
+    "cms:schema:backup": "directus-to-data --backup-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files -c AFABlog",
+    "cms:schema:restore": "directus-to-data --restore-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files -c AFABlog",
+    "cms:schema:apply": "directus-to-data --restore-schema .directus.schema.json --collection-output NO_WRITE --assets-output NO_WRITE --apply-schema -c AFAOrganisations -c AFAStickers -c AFALinks -c AFAWatchpigeonSubjects -c AFAWatchpigeonParties -c AFAWatchpigeonArticles -c AFAWatchpigeonResponses -c AFAWatchpigeonArticles_AFAWatchpigeonSubjects -c AFAAssetLibrary -c AFAAssetLibrary_files -c AFABlog"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
@@ -25,6 +25,7 @@
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",
     "jstransformer-markdown-it": "^3.0.0",
+    "markdown-it": "^14.1.0",
     "nouislider": "^15.8.1",
     "sass": "1.77.6"
   }

@@ -1,7 +1,7 @@
 ---
 layout: page.md
 permalink: contributions/
-order: 6
+order: 7
 title: Contributing
 description: Instructions for contributing to and/or joining antifantwerp
 ---

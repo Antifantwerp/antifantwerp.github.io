@@ -1,0 +1,20 @@
+---js
+const layout = "page.pug";
+
+
+const pagination = {
+    "data": "AFABlog",
+    "size": 1,
+    "alias": "post"
+};
+const eleventyComputed = {
+    "permalink": (data) => `blog/${data.post.id}/index.html`,
+    "title" : (data) => `${data.post.title} - Antifantwerp`,
+    "description": (data) => data.post.description
+}
+---
+hgroup
+    h1=post.title
+    p=post.description
+
+section#post=post.content
