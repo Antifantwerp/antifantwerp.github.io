@@ -248,5 +248,20 @@
         "area": [
             "surrounding"
         ]
+    },
+    {
+        "id": 18,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-10-09T10:11:23.236Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-10-09T10:14:39.857Z",
+        "name": "Policewatch",
+        "url": "https://policewatch.be/",
+        "note": "A bunch of info against police violence in Belgium, available in Dutch & French. A project from la Ligue des Droits Humains & de Liga voor Mensenrechten",
+        "type": "politicalorg",
+        "parent_organisation": null,
+        "area": [
+            "belgium"
+        ]
     }
 ]

@@ -1,5 +1,15 @@
 [
     {
+        "id": "blurring-faces-automatically",
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-10-09T09:42:30.853Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-10-09T10:15:17.477Z",
+        "title": "Blurring faces automatically",
+        "description": "It's not a perfect solution, but it's quick, private and it works.",
+        "content": "## Should my footage be blurred?\nUnless you have great reason to not (e.g. consent from whoever is unblurred), yes.\n- Recognisable individuals can be in abusive/unsafe situations where mere proof of attendance could get them in trouble or danger\n- Cops explicitly need to be blurred in [the Netherlands (PDF, politie.nl)](https://www.politie.nl/binaries/content/assets/politie/onderwerpen/social-media/instructie-beeld-op-social-media.pdf), and are [recommended to be blurred in Belgium (policewatch.be)](https://policewatch.be/pagina/eerste_reflexen)\n\n\n## Deface\nThe following guide uses a tool called [deface (github.com)](https://github.com/ORB-HD/deface). This allows you to **blur images and videos** *locally* with one command.\n\n> Note that this will obviously not look as good as manual blurring in video editing, but it is a good quick and dirty way to get it done.\n\nAs of writing, using deface requires some knowledge of how to use a **command line**. This does mean it supports **Linux**, **MacOS** & **Windows**.\n\n### Installation & usage\n1. Install any version of [Python 3 (python.org)](https://www.python.org/downloads/) on your system. If asked, add Python to PATH.\n2. Open a command line and run `python3 -m pip install deface`\n    *(Note: you might have to use `python` instead of `python3`)*\n3. After this is done, navigate your command line to the image/video file\n4. Run `deface yourfilename.mp4 --keep-audio --thresh 0.2 --mask-scale 1.2` *(note: remove `--keep-audio` when blurring images)*\n\nDone! It will run (for a while, for videos) and then put the blurred file next to the original. If the result doesn't look right, change the number values and run deface again. See `deface -h` and the [deface README (github.com)](https://github.com/ORB-HD/deface) for all possible options.\n\n> Nix users can use the [deface package (search.nixos.org)](https://search.nixos.org/packages?show=defacetype=packages&query=deface) instead of step 1 and 2.\n\n#### Windows batch script\nIf you're on Windows, here's an example script that you can drag a file onto from your file explorer.\n```batch\ndeface %1 --keep-audio --thresh 0.1 --mask-scale 1.2\n```"
+    },
+    {
         "id": "cops-and-phone-access",
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-10-08T14:58:51.500Z",
