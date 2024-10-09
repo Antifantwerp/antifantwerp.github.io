@@ -3,3 +3,7 @@ blockquote {
     padding-bottom: 2px;
     color: gray;
 }
+
+nav[aria-label="breadcrumb"] {
+    flex-wrap: nowrap;
+}

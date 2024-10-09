@@ -31,7 +31,7 @@ export function render(data) {
     const createdAt = dateStringToOtherDateString(data.post.date_created);
     const updatedAt = dateStringToOtherDateString(data.post.date_updated);
 
-    const header = `<hgroup><h1>${data.post.title}</h1><p>${data.post.description}</p></hgroup>`;
+    const header = `<hgroup><h1><nav aria-label="breadcrumb"><ul><li><a href="/blog">Blog</a></li><li>${data.post.title}</li></ul></nav></h1><p>${data.post.description}</p></hgroup>`;
     const blockquote = `<blockquote>Published at: ${createdAt}<br>Last updated: ${updatedAt}</blockquote>`;
     const content = md.render(data.post.content);
 
