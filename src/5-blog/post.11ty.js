@@ -11,7 +11,7 @@ const md = markdownit();
 
 function dateStringToOtherDateString(dateString) {
     const date = dayjs(dateString).tz("Europe/Brussels");
-    return date.format("D MMMM YYYY, H:mm (UTCZ)");
+    return date.format("DD MMMM YYYY, HH:mm (UTCZ)");
 }
 
 export const data = {
@@ -22,8 +22,8 @@ export const data = {
         "alias": "post"
     },
     permalink: (data) => `blog/${data.post.id}/index.html`,
-    title: (data) => `${data.post.title} - Antifantwerp`,
-    description: (data) => data.post.description,
+    title: "Blog - Antifantwerp", //(data) => `${data.post.title} - Antifantwerp`,
+    description: "News, important info & guides", //(data) => data.post.description,
     stylesheet: "/style/blogpost.css"
 }
 
