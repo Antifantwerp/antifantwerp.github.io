@@ -6,16 +6,13 @@ title: Blog
 description: News &amp; tutorials written by Antifantwerp
 ---
 
-h1 Blogs
+h1 Blog posts
 
-
-nav 
-    ul
-        for post, index in AFABlog
-            li
-                a(href="/blog/" + post.id)
-                    article
-                        h2=post.title
-                        p=post.description
-                    
+ul
+    for post, index in AFABlog
+        li
+            a(href="/blog/" + post.id)
+                span=post.title
+                p=post.description
             hr
+
