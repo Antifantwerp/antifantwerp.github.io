@@ -20,5 +20,43 @@
                 "url": "https://mapcomplete.org/surveillance?z=15&lat=51.21585688037587&lon=4.420263386840816"
             }
         ]
+    },
+    {
+        "title": "Political sites",
+        "entries": [
+            {
+                "name": "Riseup",
+                "url": "https://riseup.net/"
+            },
+            {
+                "name": "Riseup's  Radical Server list",
+                "url": "https://riseup.net/en/security/resources/radical-servers"
+            },
+            {
+                "name": "AnarSec",
+                "url": "https://www.anarsec.guide/"
+            },
+            {
+                "name": "No Trace Project",
+                "url": "https://www.notrace.how/"
+            }
+        ]
+    },
+    {
+        "title": "Literature",
+        "entries": [
+            {
+                "name": "Transreads",
+                "url": "https://transreads.org/"
+            },
+            {
+                "name": "The Marxists Internet Archive Library",
+                "url": "https://www.marxists.org/"
+            },
+            {
+                "name": "The Anarchist Library",
+                "url": "https://theanarchistlibrary.org/special/index"
+            }
+        ]
     }
 ]
