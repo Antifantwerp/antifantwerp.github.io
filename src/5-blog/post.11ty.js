@@ -22,8 +22,6 @@ export const data = {
         "alias": "post"
     },
     permalink: (data) => `blog/${data.post.id}/index.html`,
-    title: "Blog - Antifantwerp", //(data) => `${data.post.title} - Antifantwerp`,
-    description: "News, important info & guides", //(data) => data.post.description,
     stylesheet: "/style/blogpost.css"
 }
 
