@@ -33,5 +33,5 @@ export function render(data) {
     const blockquote = `<blockquote>Published at: ${createdAt}<br>Last updated: ${updatedAt}</blockquote>`;
     const content = md.render(data.post.content);
 
-    return header + blockquote + content;
+    return `<main id="main"><article>${header}${blockquote}${content}</article></main>`;
 }
