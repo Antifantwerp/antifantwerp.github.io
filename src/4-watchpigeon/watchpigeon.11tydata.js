@@ -54,11 +54,8 @@ export default function (configData) {
         let pointsByParty = {};
         let maxScaleByParty = {};
         let partyArticleCount = {};
-        const passToClientJs = [];
-        const relatedArticles = [];
 
         // -- Calculate scores
-
         // do this for all articles, in case an organiastion has overlap between areas; all data has to be considered
         AFAWatchpigeonArticles.forEach((article) => {
             let relevantForArea = false;
@@ -77,9 +74,9 @@ export default function (configData) {
             });
 
             if (relevantForArea) {
-                const involvedPartyIds = article.responses.map(response => response.party.id)
+                const articlePartyIds = article.responses.map(response => response.party.id)
                 
-                article.parties = AFAWatchpigeonParties.filter((party) => involvedPartyIds.includes(party.id));
+                article.parties = AFAWatchpigeonParties.filter((party) => articlePartyIds.includes(party.id) && areaPartyIds.includes(party.id));
 
                 // I'm not going to lie, I'm not quite sure why this if statement ended up being necessary
                 if (Object.keys(article.subjects[0]).includes("AFAWatchpigeonSubjects_id")) {
