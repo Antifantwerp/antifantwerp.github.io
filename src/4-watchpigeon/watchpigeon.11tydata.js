@@ -47,7 +47,9 @@ export default function (configData) {
         // -- Get area data
         let areaParties = AFAWatchpigeonParties.filter(party => party.areas.includes(areaId));
         const areaPartyIds = areaParties.map((party) => party.id)
-        const areaArticles =  [];  // Do not add values yet, see below  //AFAWatchpigeonArticles.filter(article => article.responses.find((response) => areaPartyIds.includes(response.party.id)));
+        const areaSubjects = new Set();
+        const areaArticles =  [];  // Do not add values yet, see below
+        
         // -- Create output & calculation variables
         let pointsByParty = {};
         let maxScaleByParty = {};
@@ -85,6 +87,8 @@ export default function (configData) {
                 }
                 article.allTags = article.parties.map(party => party.id).concat(article.subjects.map(subject => subject.id)).join(",");
 
+                article.subjects.forEach(subject => areaSubjects.add(subject));
+
                 areaArticles.push(article);
             }
         });
@@ -99,12 +103,13 @@ export default function (configData) {
             const partyPoints = pointsByParty[partyId];
             const percentage = partyPoints/partyMax*100;
             party.percentage = percentage;
-            
+
             return party;
         })
 
         areaData[areaId] = {
             parties: areaParties,
+            subjects: Array.from(areaSubjects),
             articles: areaArticles,
         }
     })

@@ -54,7 +54,7 @@ main
         fieldset#tags
             legend Tags
 
-            each subject in AFAWatchpigeonSubjects
+            each subject in area.subjects
                 +tagbutton("subject", subject.id, subject.name)
             
             hr
