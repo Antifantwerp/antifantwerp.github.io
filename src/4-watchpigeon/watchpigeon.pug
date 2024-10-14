@@ -10,53 +10,11 @@ eleventyComputed:
     title: "| Watchpigeon - #{watchId}"
     description: "| Want to know whether political parties in #{watchId} actually support their statements? Now you can. Complete with articles."
 ---
-- console.log(areas)
+- const area = watchpigeonData[watchId]
 
 mixin tagbutton(type, id, title=false)
     - if (!title) { title = id };
     button(name=type, value=id).tag=title
-
--
-    const relevantParties = AFAWatchpigeonParties.filter(party => party.areas.includes(watchId));
-    const relevantPartyIds = relevantParties.map((party) => party.id)
-    const relevantArticles = AFAWatchpigeonArticles.filter(article => article.responses.find((response) => relevantPartyIds.includes(response.party.id)));
-    let points = {};
-    let maxScale = {};
-    let involvedArticles = {};
-    const percentages = [];
-    const relatedArticles = [];
-    // Filter out parties with no configuration
-    //filterParties((party)=> {return party == null});
-
-    function addToObjectNumber(object, key, increaseWith) {
-        if (!Object.hasOwn(object, key)) {
-            object[key] = 0;
-        }
-        object[key] += increaseWith;
-        return object;
-    }
-
-    // do this for all articles, in case an organiastion has overlap between areas; all data has to be considered
-    AFAWatchpigeonArticles.forEach((article, articleId) => {
-        article.responses.forEach((response) => {
-            const partyId = response.party.id;
-            points = addToObjectNumber(points, partyId, response.score + 3) // +3 to normalize into positive values from 0-6
-            maxScale = addToObjectNumber(maxScale, partyId, 3 + 3)  // Same as above
-            involvedArticles = addToObjectNumber(involvedArticles, partyId, 1);
-        });
-    });
-
-    // Convert from a possibly negative value to percentages
-    for (partyId in points) {
-        if (!relevantPartyIds.includes(partyId)) continue;
-        const partyMax = maxScale[partyId];
-        const partyPoints = points[partyId];
-        const percentage = partyPoints/partyMax*100;
-        const party = relevantParties.find(party => party.id == partyId)
-        party.percentage = percentage;
-
-        percentages.push(party);
-    }
 
 
 main
@@ -96,23 +54,22 @@ main
         fieldset#tags
             legend Tags
 
-            
             each subject in AFAWatchpigeonSubjects
                 +tagbutton("subject", subject.id, subject.name)
             
             hr
 
-            each party in relevantParties
+            each party in area.relevantParties
                 +tagbutton("party", party.id, party.name)
 
             hr
 
 
         section#articles
-            each article in relevantArticles
+            each article in area.relevantArticles
                 -
                     const involvedPartyIds = article.responses.map(response => response.party.id)
-                    const involvedParties = relevantParties.filter((party) => involvedPartyIds.includes(party.id));
+                    const involvedParties = area.relevantParties.filter((party) => involvedPartyIds.includes(party.id));
                     const involvedSubjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)
                     const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
                 article(data-tags=allTags)
@@ -148,5 +105,5 @@ main
                                 li
                                     a(href=source.url)=source.name
 
-    script let parties = '!{JSON.stringify(percentages)}';
+    script let parties = '!{JSON.stringify(area.percentages)}';
     script(src="/scripts/political-parties.js")
