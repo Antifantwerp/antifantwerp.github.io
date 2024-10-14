@@ -90,22 +90,19 @@ export default function (configData) {
         });
 
         // Convert from a possibly negative value to percentages to pass to client-side javascript
-        for (let partyId in pointsByParty) {
-            if (!areaPartyIds.includes(partyId)) continue;
+        areaParties.map((party) => {
+            const partyId = party.id;
             const partyMax = maxScaleByParty[partyId];
             const partyPoints = pointsByParty[partyId];
             const percentage = partyPoints/partyMax*100;
-            const partyData = areaParties.find(party => party.id == partyId)
-            partyData.percentage = percentage;
-
-            passToClientJs.push(partyData);
-        }
+            party.percentage = percentage;
+            
+            return party;
+        })
 
         areaData[areaId] = {
-            //id: areaId,
             parties: areaParties,
             articles: areaArticles,
-            passToClientJs
         }
     })
 
