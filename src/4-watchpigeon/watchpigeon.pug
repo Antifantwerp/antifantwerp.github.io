@@ -59,17 +59,17 @@ main
             
             hr
 
-            each party in area.relevantParties
+            each party in area.parties
                 +tagbutton("party", party.id, party.name)
 
             hr
 
 
         section#articles
-            each article in area.relevantArticles
+            each article in area.articles
                 -
                     const involvedPartyIds = article.responses.map(response => response.party.id)
-                    const involvedParties = area.relevantParties.filter((party) => involvedPartyIds.includes(party.id));
+                    const involvedParties = area.parties.filter((party) => involvedPartyIds.includes(party.id));
                     const involvedSubjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)
                     const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
                 article(data-tags=allTags)
@@ -105,5 +105,5 @@ main
                                 li
                                     a(href=source.url)=source.name
 
-    script let parties = '!{JSON.stringify(area.percentages)}';
+    script let parties = '!{JSON.stringify(area.passToClientJs)}';
     script(src="/scripts/political-parties.js")

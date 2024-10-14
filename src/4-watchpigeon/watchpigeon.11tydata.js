@@ -40,56 +40,54 @@ export default function (configData) {
     const areas = Array.from(individualAreas);
 
     
-    const watchpigeonData = {};
+    const areaData = {};
     
-    areas.forEach((watchId) => {
-        console.log("parsing " + watchId)
-        
-
-        const relevantParties = AFAWatchpigeonParties.filter(party => party.areas.includes(watchId));
-        const relevantPartyIds = relevantParties.map((party) => party.id)
-        const relevantArticles = AFAWatchpigeonArticles.filter(article => article.responses.find((response) => relevantPartyIds.includes(response.party.id)));
-        let points = {};
-        let maxScale = {};
-        let involvedArticles = {};
-        const percentages = [];
+    areas.forEach((areaId) => {
+        // -- Get area data
+        const areaParties = AFAWatchpigeonParties.filter(party => party.areas.includes(areaId));
+        const areaPartyIds = areaParties.map((party) => party.id)
+        const areaArticles = AFAWatchpigeonArticles.filter(article => article.responses.find((response) => areaPartyIds.includes(response.party.id)));
+        // -- Create output & calculation variables
+        let pointsByParty = {};
+        let maxScaleByParty = {};
+        let partyArticleCount = {};
+        const passToClientJs = [];
         const relatedArticles = [];
-        // Filter out parties with no configuration
-        //filterParties((party)=> {return party == null});
 
+        // -- Calculate scores
 
         // do this for all articles, in case an organiastion has overlap between areas; all data has to be considered
-        AFAWatchpigeonArticles.forEach((article, articleId) => {
+        AFAWatchpigeonArticles.forEach((article) => {
             article.responses.forEach((response) => {
                 const partyId = response.party.id;
-                points = addToObjectNumber(points, partyId, response.score + 3) // +3 to normalize into positive values from 0-6
-                maxScale = addToObjectNumber(maxScale, partyId, 3 + 3)  // Same as above
-                involvedArticles = addToObjectNumber(involvedArticles, partyId, 1);
+                pointsByParty = addToObjectNumber(pointsByParty, partyId, response.score + 3) // +3 to normalize into positive values from 0-6
+                maxScaleByParty = addToObjectNumber(maxScaleByParty, partyId, 3 + 3)  // Same as above
+                partyArticleCount = addToObjectNumber(partyArticleCount, partyId, 1);
             });
         });
 
-        // Convert from a possibly negative value to percentages
-        for (let partyId in points) {
-            if (!relevantPartyIds.includes(partyId)) continue;
-            const partyMax = maxScale[partyId];
-            const partyPoints = points[partyId];
+        // Convert from a possibly negative value to percentages to pass to client-side javascript
+        for (let partyId in pointsByParty) {
+            if (!areaPartyIds.includes(partyId)) continue;
+            const partyMax = maxScaleByParty[partyId];
+            const partyPoints = pointsByParty[partyId];
             const percentage = partyPoints/partyMax*100;
-            const party = relevantParties.find(party => party.id == partyId)
-            party.percentage = percentage;
+            const partyData = areaParties.find(party => party.id == partyId)
+            partyData.percentage = percentage;
 
-            percentages.push(party);
+            passToClientJs.push(partyData);
         }
 
-        watchpigeonData[watchId] = {
-            id: watchId,
-            relevantParties,
-            relevantArticles,
-            percentages
+        areaData[areaId] = {
+            //id: areaId,
+            parties: areaParties,
+            articles: areaArticles,
+            passToClientJs
         }
     })
 
     return {
         areas: areas,
-        watchpigeonData: watchpigeonData
+        watchpigeonData: areaData
     }
 }
