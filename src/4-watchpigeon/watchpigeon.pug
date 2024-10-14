@@ -1,9 +1,17 @@
 ---
 layout: base.pug
 stylesheet: /style/political-parties.css
+pagination:
+    data: areas
+    alias: watchId
+    size: 1
 eleventyComputed:
-    description: "Want to know whether political parties in #{watchId} actually support their statements? Now you can. Complete with articles."
+    permalink: "| watchpigeon/#{watchId}/index.html"
+    title: "| Watchpigeon - #{watchId}"
+    description: "| Want to know whether political parties in #{watchId} actually support their statements? Now you can. Complete with articles."
 ---
+- console.log(areas)
+
 mixin tagbutton(type, id, title=false)
     - if (!title) { title = id };
     button(name=type, value=id).tag=title
