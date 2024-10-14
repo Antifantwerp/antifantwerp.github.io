@@ -45,7 +45,7 @@ export default function (configData) {
     
     areas.forEach((areaId) => {
         // -- Get area data
-        const areaParties = AFAWatchpigeonParties.filter(party => party.areas.includes(areaId));
+        let areaParties = AFAWatchpigeonParties.filter(party => party.areas.includes(areaId));
         const areaPartyIds = areaParties.map((party) => party.id)
         const areaArticles =  [];  // Do not add values yet, see below  //AFAWatchpigeonArticles.filter(article => article.responses.find((response) => areaPartyIds.includes(response.party.id)));
         // -- Create output & calculation variables
@@ -88,6 +88,9 @@ export default function (configData) {
                 areaArticles.push(article);
             }
         });
+
+        // Filter out areas without any relevant articles
+        areaParties = areaParties.filter(party => Object.keys(pointsByParty).includes(party.id));
 
         // Convert from a possibly negative value to percentages to pass to client-side javascript
         areaParties.map((party) => {
