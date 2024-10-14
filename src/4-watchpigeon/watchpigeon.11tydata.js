@@ -47,7 +47,7 @@ export default function (configData) {
         // -- Get area data
         let areaParties = AFAWatchpigeonParties.filter(party => party.areas.includes(areaId));
         const areaPartyIds = areaParties.map((party) => party.id)
-        const areaSubjects = new Set();
+        const areaSubjects = [];  // Set was unreliable with the objects
         const areaArticles =  [];  // Do not add values yet, see below
         
         // -- Create output & calculation variables
@@ -84,7 +84,12 @@ export default function (configData) {
                 }
                 article.allTags = article.parties.map(party => party.id).concat(article.subjects.map(subject => subject.id)).join(",");
 
-                article.subjects.forEach(subject => areaSubjects.add(subject));
+                // Set wasn't working reliably with the subject objects
+                article.subjects.forEach((articleSubject) => {
+                    if (!areaSubjects.find(areaSubject => areaSubject.id == articleSubject.id)) {
+                        areaSubjects.push(articleSubject)
+                    }
+                });
 
                 areaArticles.push(article);
             }
@@ -104,6 +109,8 @@ export default function (configData) {
             return party;
         })
 
+
+        console.log(areaSubjects[0] == areaSubjects[1])
         areaData[areaId] = {
             parties: areaParties,
             subjects: Array.from(areaSubjects),
