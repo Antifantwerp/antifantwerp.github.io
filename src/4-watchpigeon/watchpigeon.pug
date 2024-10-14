@@ -67,12 +67,7 @@ main
 
         section#articles
             each article in area.articles
-                -
-                    const involvedPartyIds = article.responses.map(response => response.party.id)
-                    const involvedParties = area.parties.filter((party) => involvedPartyIds.includes(party.id));
-                    const involvedSubjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)
-                    const allTags =involvedParties.map(party => party.id).concat(involvedSubjects.map(subject => subject.id)).join(",");
-                article(data-tags=allTags)
+                article(data-tags=article.allTags)
                     header
                         h3 #{article.title} (#{article.year})
                     if article.note
@@ -80,7 +75,7 @@ main
 
                     h4 Party scores
                     ul.party-scores
-                        each party, i in involvedParties
+                        each party, i in article.parties
                             - const response = article.responses.find(response => response.party.id == party.id);
                             li
                                 hgroup
@@ -89,15 +84,15 @@ main
                                         span=party.name
                                     p Score: #{response.score}
                                 p=response.note
-                                if i < involvedParties.length-1
+                                if i < article.parties.length-1
                                     hr
 
                     footer
                         h4 Tags
                         ul
-                            each party in involvedParties
+                            each party in article.parties
                                 +tagbutton("party", party.id, party.name)
-                            each subject in involvedSubjects
+                            each subject in article.subjects
                                 +tagbutton("subject", subject.id, subject.name)
                         
                         ul
