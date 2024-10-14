@@ -8,7 +8,10 @@ description: Want to know whether political parties in and around Antwerp actual
 main
     nav
         ul.grid
-            each place in ["flanders", "netherlands", "wallonie"]
+            -
+                const areas = new Set();
+                AFAWatchpigeonParties.forEach(party => party.areas.forEach(area => areas.add(area)))
+            each place in Array.from(areas)
                 a(href="/watchpigeon/" + place)
                     li
                         article
