@@ -1,14 +1,6 @@
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Antifantwerp
-
-        link(rel="stylesheet", href="/stylesheet.css")
-
-        include favicons.pug
-
         -
             function getFromPagination(variable, key, defaultValue) {
                 if (variable !== undefined) {
@@ -23,6 +15,9 @@ html(lang="en")
             title = getFromPagination(title, "title", "Antifantwerp")
             description = getFromPagination(description, "description", "A small puddle of information for being anti-fascist in Antwerp. Information about stickers to (not) look out for, or organisations to lend aid to!")
 
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=title
 
         meta(property="og:title" content=title)
         meta(property="og:url" content="https://antifantwerp.github.io" + page.url)
@@ -31,8 +26,11 @@ html(lang="en")
         meta(property="og:image:alt" content="An antifa logo: a white circle with a black border. Within the circle is a black flag on the front, and left-below-behind it a red one. The top of the circle says Antifa, the bottom says Antwerp")
         meta(property="og:site_name" content="Antifantwerp")
 
+        link(rel="stylesheet", href="/stylesheet.css")
         if stylesheet
             link(rel="stylesheet", href=stylesheet)
+
+        include favicons.pug
 
 
     body
