@@ -135,13 +135,10 @@ main
                             each subject in involvedSubjects
                                 +tagbutton("subject", subject.id, subject.name)
                         
-                        - if (!Array.isArray(article.url))
-                            a(href=article.url)=article.url
-                        - else
-                            ul
-                                each url in article.url
-                                    li
-                                        a(href=url)=url
+                        ul
+                            each source in article.sources
+                                li
+                                    a(href=source.url)=source.name
 
     script let parties = '!{JSON.stringify(percentages)}';
     script(src="/scripts/political-parties.js")

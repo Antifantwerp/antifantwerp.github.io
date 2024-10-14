@@ -4,11 +4,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T18:03:11.199Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-26T17:18:14.009Z",
+        "date_updated": "2024-10-14T10:10:07.099Z",
         "year": 2023,
-        "url": "https://www.pvda.be/energie",
         "title": "PVDA's website on Energy",
         "note": null,
+        "sources": [
+            {
+                "name": "PVDA's official website (NL, pvda.be)",
+                "url": "https://www.pvda.be/energie"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -37,11 +42,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:16:11.626Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-26T17:18:14.086Z",
+        "date_updated": "2024-10-14T10:09:56.097Z",
         "year": 2021,
-        "url": "https://nieuws.vooruit.org/vooruit_wil_jouw_energiefactuur_betaalbaarder_maken",
         "title": "Vooruit blog post about Lowering energy prices",
         "note": "Their proposal is a band-aid, not a solution.",
+        "sources": [
+            {
+                "name": "Vooruit's news page (NL, nieuws.vooruit.org)",
+                "url": "https://nieuws.vooruit.org/vooruit_wil_jouw_energiefactuur_betaalbaarder_maken"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -70,11 +80,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:28:02.472Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-26T17:18:14.172Z",
+        "date_updated": "2024-10-14T10:10:28.661Z",
         "year": 2023,
-        "url": "https://www.openvld.be/relschoppers_moeten_verbod_op_betogen_krijgen",
         "title": "Proposal protest ban for rioters",
         "note": "There have been in recent history multiple cases of escalation by police and/or regular protests being called riots. Additionally, some of the proposed banned actions are historically proven protest actions (e.g. blocking traffic)",
+        "sources": [
+            {
+                "name": "OpenVLD's website (NL, openvld.be)",
+                "url": "https://www.openvld.be/relschoppers_moeten_verbod_op_betogen_krijgen"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -103,11 +118,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:30:49.444Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-26T17:18:14.265Z",
+        "date_updated": "2024-10-14T10:11:58.827Z",
         "year": 2023,
-        "url": "https://www.andc.tv/body-en-mind/TRF-stemmen-partij-politiek-vrouwen-rechten-abortus",
         "title": "Dutch parties views on abortion",
         "note": null,
+        "sources": [
+            {
+                "name": "&C Magazine (NL, andc.tv)",
+                "url": "https://www.andc.tv/body-en-mind/TRF-stemmen-partij-politiek-vrouwen-rechten-abortus"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -290,11 +310,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:42:27.731Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-28T09:33:28.639Z",
+        "date_updated": "2024-10-14T10:12:26.029Z",
         "year": 2019,
-        "url": "https://www.nieuwsblad.be/cnt/dmf20190319_04267654",
         "title": "Political party questionaires of sex & gender",
         "note": null,
+        "sources": [
+            {
+                "name": "Belgian newspaper (NL, nieuwsblad.be)",
+                "url": "https://www.nieuwsblad.be/cnt/dmf20190319_04267654"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -307,7 +332,7 @@
                 "AFAWatchpigeonSubjects_id": {
                     "id": "queer_rights",
                     "name": "Queer Rights",
-                    "description": "This includes polyamory here, but not trans rights"
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
                 }
             },
             {
@@ -402,12 +427,17 @@
         "id": 6,
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-28T09:37:35.288Z",
-        "user_updated": null,
-        "date_updated": null,
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-10-14T10:13:02.500Z",
         "year": 2022,
-        "url": "https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/",
         "title": "CD&V and Vlaams Belang about abortion",
         "note": null,
+        "sources": [
+            {
+                "name": "Belgian news outlet (NL, vrt.be)",
+                "url": "https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -458,11 +488,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-28T09:40:55.770Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-09-28T09:58:34.893Z",
+        "date_updated": "2024-10-14T10:13:24.639Z",
         "year": 2023,
-        "url": "https://www.vrt.be/vrtnws/nl/2023/10/12/conflict-israel-hamas-verdeelt-belgische-politiek-niet-slim-v/",
         "title": "Parties' reactions to increase of Palestine/Israel conflict",
         "note": "Every death is an injustice, no matter what side. However Israel as a country is an ethnostate & colonising Palestine.",
+        "sources": [
+            {
+                "name": "Belgian news outlet (NL, vrt.be)",
+                "url": "https://www.vrt.be/vrtnws/nl/2023/10/12/conflict-israel-hamas-verdeelt-belgische-politiek-niet-slim-v/"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -568,11 +603,16 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-10-04T12:10:56.455Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-04T12:22:13.270Z",
+        "date_updated": "2024-10-14T10:13:43.589Z",
         "year": 2024,
-        "url": "https://www.vrt.be/vrtnws/nl/2024/10/03/stad-antwerpen-neemt-nieuwe-regels-op-in-politiecodex-tegen-onze/",
         "title": "Police codex addition about “inappropriate nudity” by N-VA",
         "note": "The law is incredibly broad and puts final judgement in the common sense of whichever cop is active at the time. This law was added to have sex workers cover up within in their district, whilst being phrased as being for the sake of sex workers",
+        "sources": [
+            {
+                "name": "Belgian news site (NL, vrt.be)",
+                "url": "https://www.vrt.be/vrtnws/nl/2024/10/03/stad-antwerpen-neemt-nieuwe-regels-op-in-politiecodex-tegen-onze/"
+            }
+        ],
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
@@ -585,7 +625,7 @@
                 "AFAWatchpigeonSubjects_id": {
                     "id": "queer_rights",
                     "name": "Queer Rights",
-                    "description": "This includes polyamory here, but not trans rights"
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
                 }
             },
             {
@@ -627,6 +667,51 @@
                     "logo": {
                         "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
                         "filename_download": "party-logo-be-pvda.svg"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-10-12T17:52:43.828Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-10-14T10:15:11.094Z",
+        "year": 2024,
+        "title": "Bringing back chemical castration - Vlaams Belang",
+        "note": "Chemical castration has been historically used against sexual deviants like \"queer people\" people. Vlaams Belang has gone on record calling \"trans ideology\" pedophilia",
+        "sources": [
+            {
+                "name": "Vlaams Belang's website (NL, vlaamsbelang.org)",
+                "url": "https://www.vlaamsbelang.org/nieuws/vlaams-belang-wil-chemische-castratie-voor-seksueel-misbruik-mogelijk-maken"
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "trans_rights",
+                    "name": "Trans Rights",
+                    "description": null
+                }
+            }
+        ],
+        "responses": [
+            {
+                "score": -3,
+                "note": "It's their own website",
+                "party": {
+                    "id": "be_vb",
+                    "logo": {
+                        "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
+                        "filename_download": "party-logo-be-vb.svg"
                     }
                 }
             }

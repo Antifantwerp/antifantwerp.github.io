@@ -2725,51 +2725,6 @@
         },
         {
             "collection": "AFAWatchpigeonArticles",
-            "field": "url",
-            "type": "string",
-            "meta": {
-                "collection": "AFAWatchpigeonArticles",
-                "conditions": null,
-                "display": null,
-                "display_options": null,
-                "field": "url",
-                "group": null,
-                "hidden": false,
-                "interface": "input",
-                "note": null,
-                "options": {
-                    "iconLeft": "link",
-                    "placeholder": "https://example.com/"
-                },
-                "readonly": false,
-                "required": false,
-                "sort": 9,
-                "special": null,
-                "translations": null,
-                "validation": null,
-                "validation_message": null,
-                "width": "full"
-            },
-            "schema": {
-                "name": "url",
-                "table": "AFAWatchpigeonArticles",
-                "data_type": "character varying",
-                "default_value": null,
-                "max_length": 255,
-                "numeric_precision": null,
-                "numeric_scale": null,
-                "is_nullable": true,
-                "is_unique": false,
-                "is_primary_key": false,
-                "is_generated": false,
-                "generation_expression": null,
-                "has_auto_increment": false,
-                "foreign_key_table": null,
-                "foreign_key_column": null
-            }
-        },
-        {
-            "collection": "AFAWatchpigeonArticles",
             "field": "title",
             "type": "string",
             "meta": {
@@ -2838,7 +2793,7 @@
                 },
                 "readonly": false,
                 "required": false,
-                "sort": 11,
+                "sort": 12,
                 "special": [
                     "o2m"
                 ],
@@ -2870,7 +2825,7 @@
                 },
                 "readonly": false,
                 "required": false,
-                "sort": 10,
+                "sort": 11,
                 "special": [
                     "m2m"
                 ],
@@ -2913,6 +2868,83 @@
                 "data_type": "character varying",
                 "default_value": null,
                 "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAWatchpigeonArticles",
+            "field": "sources",
+            "type": "json",
+            "meta": {
+                "collection": "AFAWatchpigeonArticles",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "sources",
+                "group": null,
+                "hidden": false,
+                "interface": "list",
+                "note": null,
+                "options": {
+                    "fields": [
+                        {
+                            "field": "name",
+                            "name": "name",
+                            "type": "string",
+                            "meta": {
+                                "field": "name",
+                                "width": "half",
+                                "type": "string",
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "Name",
+                                    "iconLeft": "title"
+                                }
+                            }
+                        },
+                        {
+                            "field": "url",
+                            "name": "url",
+                            "type": "string",
+                            "meta": {
+                                "field": "url",
+                                "width": "half",
+                                "type": "string",
+                                "interface": "input",
+                                "options": {
+                                    "placeholder": "https://example.com/",
+                                    "iconLeft": "link"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 10,
+                "special": [
+                    "cast-json"
+                ],
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "sources",
+                "table": "AFAWatchpigeonArticles",
+                "data_type": "json",
+                "default_value": null,
+                "max_length": null,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
