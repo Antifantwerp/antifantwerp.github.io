@@ -88,6 +88,14 @@ main
                                     hr
 
                     footer
+                        unless article.sources.length > 1
+                            h4 Source
+                        else
+                            h4 Sources
+                        ul
+                            each source in article.sources
+                                li
+                                    a(href=source.url)=source.name
                         h4 Tags
                         ul
                             each party in article.parties
@@ -95,10 +103,6 @@ main
                             each subject in article.subjects
                                 +tagbutton("subject", subject.id, subject.name)
                         
-                        ul
-                            each source in article.sources
-                                li
-                                    a(href=source.url)=source.name
 
     script let parties = '!{JSON.stringify(area.parties)}';
     script(src="/scripts/political-parties.js")

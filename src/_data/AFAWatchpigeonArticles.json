@@ -653,7 +653,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-10-04T12:10:56.455Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:13:43.589Z",
+        "date_updated": "2024-10-16T10:55:40.975Z",
         "year": 2024,
         "title": "Police codex addition about “inappropriate nudity” by N-VA",
         "note": "The law is incredibly broad and puts final judgement in the common sense of whichever cop is active at the time. This law was added to have sex workers cover up within in their district, whilst being phrased as being for the sake of sex workers",
@@ -661,6 +661,14 @@
             {
                 "name": "Belgian news site (NL, vrt.be)",
                 "url": "https://www.vrt.be/vrtnws/nl/2024/10/03/stad-antwerpen-neemt-nieuwe-regels-op-in-politiecodex-tegen-onze/"
+            },
+            {
+                "name": "Another Belgian news site (NL, hln.be)",
+                "url": "https://www.hln.be/antwerpen/te-naakt-op-straat-aanstootgevend-gedrag-kan-je-voortaan-gas-boete-kosten-in-antwerpen~a34b64228/"
+            },
+            {
+                "name": "And another Belgian news site (NL, demorgen.be)",
+                "url": "https://www.demorgen.be/snelnieuws/nieuw-seksueel-strafrecht-laat-te-veel-ruimte-voor-zedenschennis-volgens-de-wever~bcaf6d1d/"
             }
         ],
         "subjects": [

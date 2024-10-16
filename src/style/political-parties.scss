@@ -77,6 +77,7 @@ input[type=range] {
 #articles {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     flex-wrap: wrap;
     article {
         min-width: 300px;
