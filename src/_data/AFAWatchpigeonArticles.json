@@ -4,7 +4,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T18:03:11.199Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:10:07.099Z",
+        "date_updated": "2024-10-16T10:04:42.298Z",
         "year": 2023,
         "title": "PVDA's website on Energy",
         "note": null,
@@ -17,9 +17,9 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "poverty",
-                    "name": "Poverty",
-                    "description": null
+                    "id": "anti_poverty",
+                    "name": "Anti-poverty",
+                    "description": "What if people could afford food and housing"
                 }
             }
         ],
@@ -43,7 +43,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:16:11.626Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:09:56.097Z",
+        "date_updated": "2024-10-16T10:04:50.695Z",
         "year": 2021,
         "title": "Vooruit blog post about Lowering energy prices",
         "note": "Their proposal is a band-aid, not a solution.",
@@ -56,9 +56,9 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "poverty",
-                    "name": "Poverty",
-                    "description": null
+                    "id": "anti_poverty",
+                    "name": "Anti-poverty",
+                    "description": "What if people could afford food and housing"
                 }
             }
         ],
@@ -97,7 +97,7 @@
                 "AFAWatchpigeonSubjects_id": {
                     "id": "right_to_protest",
                     "name": "Right to protest",
-                    "description": null
+                    "description": "People should be allowed to protest - and counterprotest - as wanted"
                 }
             }
         ],
@@ -121,7 +121,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:30:49.444Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:11:58.827Z",
+        "date_updated": "2024-10-16T10:06:34.653Z",
         "year": 2023,
         "title": "Dutch parties views on abortion",
         "note": null,
@@ -134,9 +134,23 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "abortion",
-                    "name": "Abortion",
-                    "description": null
+                    "id": "pro_choice",
+                    "name": "Pro-choice",
+                    "description": "This includes abortion and the right to do with your body and clothes as you wish. This does not include wearing clear hate symbols and declining life-saving medical procedures like vaccinations"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_diversity",
+                    "name": "Pro-diversity",
+                    "description": "Not staying isolated with those who were born right next to you is good for you"
                 }
             }
         ],
@@ -328,7 +342,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-25T13:42:27.731Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:12:26.029Z",
+        "date_updated": "2024-10-16T10:10:07.372Z",
         "year": 2019,
         "title": "Political party questionaires of sex & gender",
         "note": null,
@@ -341,13 +355,6 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "abortion",
-                    "name": "Abortion",
-                    "description": null
-                }
-            },
-            {
-                "AFAWatchpigeonSubjects_id": {
                     "id": "queer_rights",
                     "name": "Queer Rights",
                     "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
@@ -355,9 +362,16 @@
             },
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "diversity",
-                    "name": "Diversity",
-                    "description": null
+                    "id": "pro_choice",
+                    "name": "Pro-choice",
+                    "description": "This includes abortion and the right to do with your body and clothes as you wish. This does not include wearing clear hate symbols and declining life-saving medical procedures like vaccinations"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_diversity",
+                    "name": "Pro-diversity",
+                    "description": "Not staying isolated with those who were born right next to you is good for you"
                 }
             }
         ],
@@ -453,7 +467,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-28T09:37:35.288Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:13:02.500Z",
+        "date_updated": "2024-10-16T10:05:38.640Z",
         "year": 2022,
         "title": "CD&V and Vlaams Belang about abortion",
         "note": null,
@@ -466,9 +480,9 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "abortion",
-                    "name": "Abortion",
-                    "description": null
+                    "id": "pro_choice",
+                    "name": "Pro-choice",
+                    "description": "This includes abortion and the right to do with your body and clothes as you wish. This does not include wearing clear hate symbols and declining life-saving medical procedures like vaccinations"
                 }
             }
         ],
@@ -516,7 +530,7 @@
         "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
         "date_created": "2024-09-28T09:40:55.770Z",
         "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
-        "date_updated": "2024-10-14T10:13:24.639Z",
+        "date_updated": "2024-10-16T10:05:59.343Z",
         "year": 2023,
         "title": "Parties' reactions to increase of Palestine/Israel conflict",
         "note": "Every death is an injustice, no matter what side. However Israel as a country is an ethnostate & colonising Palestine.",
@@ -529,9 +543,9 @@
         "subjects": [
             {
                 "AFAWatchpigeonSubjects_id": {
-                    "id": "palestine",
-                    "name": "Palestine",
-                    "description": null
+                    "id": "free_palestine",
+                    "name": "Free Palestine",
+                    "description": "What if we would stop colonising"
                 }
             }
         ],
@@ -654,7 +668,7 @@
                 "AFAWatchpigeonSubjects_id": {
                     "id": "trans_rights",
                     "name": "Trans Rights",
-                    "description": null
+                    "description": "Providing support, safety & medical help to every trans person that wants it"
                 }
             },
             {
@@ -738,7 +752,7 @@
                 "AFAWatchpigeonSubjects_id": {
                     "id": "trans_rights",
                     "name": "Trans Rights",
-                    "description": null
+                    "description": "Providing support, safety & medical help to every trans person that wants it"
                 }
             }
         ],

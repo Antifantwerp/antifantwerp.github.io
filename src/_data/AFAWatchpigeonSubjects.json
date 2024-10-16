@@ -1,33 +1,53 @@
 [
     {
-        "id": "abortion",
-        "name": "Abortion",
-        "description": null
+        "id": "anti_anti_semitism",
+        "name": "Anti-anti-semitism",
+        "description": "Jewish people have consistently been subject to horrible conspiracy theories and persecution. Israel's horrible genocide must not never take away that anti-semitism is unacceptable. Also, we need a better word for this."
     },
     {
-        "id": "diversity",
-        "name": "Diversity",
-        "description": null
+        "id": "anti_poverty",
+        "name": "Anti-poverty",
+        "description": "What if people could afford food and housing"
     },
     {
-        "id": "palestine",
-        "name": "Palestine",
-        "description": null
+        "id": "disability_rights",
+        "name": "Disability rights",
+        "description": "Don't rest until about every location and website is well accessible and disabled people can get married without huge financial consequences"
     },
     {
-        "id": "poverty",
-        "name": "Poverty",
-        "description": null
+        "id": "free_palestine",
+        "name": "Free Palestine",
+        "description": "What if we would stop colonising"
+    },
+    {
+        "id": "polyamorous_rights",
+        "name": "Polyamorous rights",
+        "description": "If someone wants to marry multiple people, they should be allowed to"
+    },
+    {
+        "id": "pro_choice",
+        "name": "Pro-choice",
+        "description": "This includes abortion and the right to do with your body and clothes as you wish. This does not include wearing clear hate symbols and declining life-saving medical procedures like vaccinations"
+    },
+    {
+        "id": "pro_diversity",
+        "name": "Pro-diversity",
+        "description": "Not staying isolated with those who were born right next to you is good for you"
     },
     {
         "id": "queer_rights",
         "name": "Queer Rights",
-        "description": "This includes polyamory here, but not trans rights"
+        "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+    },
+    {
+        "id": "right_to_housing",
+        "name": "Right to housing",
+        "description": "There are enough buildings for all of us. Unused and empty buildings should house those who cannot afford to otherwise"
     },
     {
         "id": "right_to_protest",
         "name": "Right to protest",
-        "description": null
+        "description": "People should be allowed to protest - and counterprotest - as wanted"
     },
     {
         "id": "sex_workers_rights",
@@ -37,6 +57,6 @@
     {
         "id": "trans_rights",
         "name": "Trans Rights",
-        "description": null
+        "description": "Providing support, safety & medical help to every trans person that wants it"
     }
 ]
