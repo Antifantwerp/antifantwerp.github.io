@@ -90,7 +90,7 @@ export default function (configData) {
                     areaArticle.subjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)                    
                 }
                 
-                areaArticle.allTags = areaArticle.parties.map(party => party.id).concat(article.subjects.map(subject => subject.id)).join(",");
+                areaArticle.allTags = areaArticle.parties.map(party => party.id).concat(areaArticle.subjects.map(subject => subject.id)).join(",");
 
                 // Set wasn't working reliably with the subject objects
                 areaArticle.subjects.forEach((articleSubject) => {
