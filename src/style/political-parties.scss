@@ -92,6 +92,11 @@ input[type=range] {
 }
 
 .party-scores {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        flex-basis: 100%;
+    }
     hgroup {
         vertical-align: middle;
 
