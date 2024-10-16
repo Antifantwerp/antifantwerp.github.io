@@ -75,8 +75,8 @@ main
 
                     h4 Party scores
                     ul.party-scores
-                        each party, i in article.parties
-                            - const response = article.responses.find(response => response.party.id == party.id);
+                        each response, i in article.responses
+                            - const party = response.party
                             li
                                 hgroup
                                     h5
@@ -84,7 +84,7 @@ main
                                         span=party.name
                                     p Score: #{response.score}
                                 p=response.note
-                                if i < article.parties.length-1
+                                if i < article.responses.length-1
                                     hr
 
                     footer

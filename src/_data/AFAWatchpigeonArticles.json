@@ -29,6 +29,7 @@
                 "note": "Tax corporations who profit from energy, lower & block prices",
                 "party": {
                     "id": "be_pvda",
+                    "name": "Partij Van De Arbeid",
                     "logo": {
                         "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
                         "filename_download": "party-logo-be-pvda.svg"
@@ -67,6 +68,7 @@
                 "note": "Solely lowering the prices",
                 "party": {
                     "id": "be_vooruit",
+                    "name": "Vooruit",
                     "logo": {
                         "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
                         "filename_download": "party-logo-be-vooruit.svg"
@@ -105,6 +107,7 @@
                 "note": "Created proposal",
                 "party": {
                     "id": "be_openvld",
+                    "name": "Open Vld",
                     "logo": {
                         "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
                         "filename_download": "party-logo-be-openvld.svg"
@@ -143,6 +146,7 @@
                 "note": "Decriminalising abortion, pushback against abortion clinic protests, anticonception as a right",
                 "party": {
                     "id": "nl_glpvda",
+                    "name": "GroenLinks-PvdA",
                     "logo": {
                         "id": "09725f51-136b-4238-b21e-c5bd30f85f76",
                         "filename_download": "party-logo-nl-glpvda.svg"
@@ -154,6 +158,7 @@
                 "note": "Abortion & anticonception as a right, sex ed for all ages",
                 "party": {
                     "id": "nl_volt",
+                    "name": "Volt Nederland",
                     "logo": {
                         "id": "2ece8c06-ed3b-4bb5-81cf-febf683eddbd",
                         "filename_download": "party-logo-nl-volt.svg"
@@ -165,6 +170,7 @@
                 "note": "Decriminalising abortion, anticonception as a right",
                 "party": {
                     "id": "nl_pvdd",
+                    "name": "Partij voor de Dieren",
                     "logo": {
                         "id": "f9c06fc7-9097-446b-878f-89470e579fd0",
                         "filename_download": "party-logo-nl-pvdd.svg"
@@ -176,6 +182,7 @@
                 "note": "Decriminalising abortion, anticonception as a right",
                 "party": {
                     "id": "nl_d66",
+                    "name": "Democraten 66",
                     "logo": {
                         "id": "31e2c747-b97d-4534-8025-3aef9c7fa8d3",
                         "filename_download": "party-logo-nl-d66.svg"
@@ -187,6 +194,7 @@
                 "note": "Decriminalising abortion, anticonception as a right",
                 "party": {
                     "id": "nl_sp",
+                    "name": "Socialistische Partij",
                     "logo": {
                         "id": "a4462dd1-7e39-4618-816f-4bea00d02e95",
                         "filename_download": "party-logo-nl-sp.svg"
@@ -198,6 +206,7 @@
                 "note": "Decriminalising abortion, anticonception as a right",
                 "party": {
                     "id": "nl_bij1",
+                    "name": "BIJ1",
                     "logo": {
                         "id": "38300035-aeea-423c-b680-5a30976cf30a",
                         "filename_download": "party-logo-nl-bij1.svg"
@@ -209,6 +218,7 @@
                 "note": "Abortion & anticonception as a right, against removing forced reconsideration time",
                 "party": {
                     "id": "nl_bbb",
+                    "name": "BoerBurgerBeweging",
                     "logo": {
                         "id": "82135883-29d1-4800-bd3c-7bebbb0229c8",
                         "filename_download": "party-logo-nl-bbb.svg"
@@ -220,6 +230,7 @@
                 "note": "Loosening abortion laws is a \"dangerous precedent\", but supports anticonception as a right",
                 "party": {
                     "id": "nl_cu",
+                    "name": "ChristenUnie",
                     "logo": {
                         "id": "124365c6-d826-4532-aa1d-7c711864e4ea",
                         "filename_download": "party-logo-nl-cu.svg"
@@ -231,6 +242,7 @@
                 "note": "For abortuspil by general practicioner, but against decriminalising abortion",
                 "party": {
                     "id": "nl_cda",
+                    "name": "Christen-Democratisch Appèl",
                     "logo": {
                         "id": "e2db876d-0caf-4a0a-b8ec-058d3d533ef9",
                         "filename_download": "party-logo-nl-cda.svg"
@@ -242,6 +254,7 @@
                 "note": "Only wants abortion for medical reasons",
                 "party": {
                     "id": "nl_ja21",
+                    "name": "JA21",
                     "logo": {
                         "id": "3ada149d-8f31-489d-a0f4-36f160fdef9f",
                         "filename_download": "party-logo-nl-ja21.svg"
@@ -253,6 +266,7 @@
                 "note": "Against abortion existing",
                 "party": {
                     "id": "nl_sgp",
+                    "name": "Staatkundig Gereformeerde Partij",
                     "logo": {
                         "id": "b220140c-0f1e-46a0-880d-62e7d249d8c5",
                         "filename_download": "party-logo-nl-sgp.svg"
@@ -264,6 +278,7 @@
                 "note": "Complacent about abortion",
                 "party": {
                     "id": "nl_pvv",
+                    "name": "Partij voor de Vrijheid",
                     "logo": {
                         "id": "471ccbee-d4d5-464e-915a-993f28b96fcb",
                         "filename_download": "party-logo-nl-pvv.svg"
@@ -275,6 +290,7 @@
                 "note": "Complacent about abortion",
                 "party": {
                     "id": "nl_nsc",
+                    "name": "Nieuw Sociaal Contract",
                     "logo": {
                         "id": "8a47f415-97d7-4a01-afee-572b99eb4175",
                         "filename_download": "party-logo-nl-nsc.svg"
@@ -286,6 +302,7 @@
                 "note": "Complacent about abortion",
                 "party": {
                     "id": "nl_vvd",
+                    "name": "Volkspartij voor Vrijheid en Democratie",
                     "logo": {
                         "id": "9adfd647-daf1-4725-a47d-a2da604cdd34",
                         "filename_download": "party-logo-nl-vvd.svg"
@@ -297,6 +314,7 @@
                 "note": "Complacent about abortion, against the increased criminalisation of \"sex without consent\"",
                 "party": {
                     "id": "nl_fvd",
+                    "name": "fvd",
                     "logo": {
                         "id": "ef68abdf-a1b5-46f3-9a18-83de525d6523",
                         "filename_download": "party-logo-nl-fvd.svg"
@@ -349,6 +367,7 @@
                 "note": "Against mentions of same gender relationships in kindergarten.",
                 "party": {
                     "id": "be_cdv",
+                    "name": "cd&v",
                     "logo": {
                         "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
                         "filename_download": "party-logo-be-cdv.svg"
@@ -360,6 +379,7 @@
                 "note": "Against police training programs about homophobia, mentions of same gender relationships in kindergarten, specific elderly care for LGBTQIA+ people, and quotas for electoral lists.",
                 "party": {
                     "id": "be_vb",
+                    "name": "Vlaams Belang",
                     "logo": {
                         "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
                         "filename_download": "party-logo-be-vb.svg"
@@ -371,6 +391,7 @@
                 "note": "Against police training programs about homophobia,\nmentions of same gender relationships in kindergarten, \nspecific elderly care for LGBTQIA+ people,\nand quotas for electoral lists.\nMinisters from countries with homophobic laws should\nnot be talked to about these subjects.",
                 "party": {
                     "id": "be_nva",
+                    "name": "N-VA",
                     "logo": {
                         "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
                         "filename_download": "party-logo-be-nva.svg"
@@ -382,6 +403,7 @@
                 "note": "Pro age-appropiate sex ed,\nincrease of abortion term,\nand quotas for electoral lists.",
                 "party": {
                     "id": "be_vooruit",
+                    "name": "Vooruit",
                     "logo": {
                         "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
                         "filename_download": "party-logo-be-vooruit.svg"
@@ -393,6 +415,7 @@
                 "note": "Pro age-appropiate sex ed,\nincrease of abortion term,\nand quotas for electoral lists.",
                 "party": {
                     "id": "be_pvda",
+                    "name": "Partij Van De Arbeid",
                     "logo": {
                         "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
                         "filename_download": "party-logo-be-pvda.svg"
@@ -404,6 +427,7 @@
                 "note": "Pro age-appropiate sex ed,\nincrease of abortion term,\nand quotas for electoral lists.",
                 "party": {
                     "id": "be_openvld",
+                    "name": "Open Vld",
                     "logo": {
                         "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
                         "filename_download": "party-logo-be-openvld.svg"
@@ -415,6 +439,7 @@
                 "note": "Pro age-appropiate sex ed,\nincrease of abortion term,\nand quotas for electoral lists.",
                 "party": {
                     "id": "be_groen",
+                    "name": "Groen",
                     "logo": {
                         "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
                         "filename_download": "party-logo-be-groen.svg"
@@ -453,6 +478,7 @@
                 "note": "Against loosening restrictions, but also against restricting general access.",
                 "party": {
                     "id": "be_cdv",
+                    "name": "cd&v",
                     "logo": {
                         "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
                         "filename_download": "party-logo-be-cdv.svg"
@@ -464,6 +490,7 @@
                 "note": "Against all forms of abortion. Pro life.",
                 "party": {
                     "id": "be_vb",
+                    "name": "Vlaams Belang",
                     "logo": {
                         "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
                         "filename_download": "party-logo-be-vb.svg"
@@ -475,6 +502,7 @@
                 "note": "Pro loosening restrictions",
                 "party": {
                     "id": "be_openvld",
+                    "name": "Open Vld",
                     "logo": {
                         "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
                         "filename_download": "party-logo-be-openvld.svg"
@@ -513,6 +541,7 @@
                 "note": "Pro-Israel",
                 "party": {
                     "id": "be_nva",
+                    "name": "N-VA",
                     "logo": {
                         "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
                         "filename_download": "party-logo-be-nva.svg"
@@ -524,6 +553,7 @@
                 "note": "Solely accentuated Israel deaths",
                 "party": {
                     "id": "be_openvld",
+                    "name": "Open Vld",
                     "logo": {
                         "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
                         "filename_download": "party-logo-be-openvld.svg"
@@ -535,6 +565,7 @@
                 "note": "Criticised openvld's statement",
                 "party": {
                     "id": "be_groen",
+                    "name": "Groen",
                     "logo": {
                         "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
                         "filename_download": "party-logo-be-groen.svg"
@@ -546,6 +577,7 @@
                 "note": "Accentuated all deaths",
                 "party": {
                     "id": "be_vooruit",
+                    "name": "Vooruit",
                     "logo": {
                         "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
                         "filename_download": "party-logo-be-vooruit.svg"
@@ -557,6 +589,7 @@
                 "note": "Complacent",
                 "party": {
                     "id": "be_cdv",
+                    "name": "cd&v",
                     "logo": {
                         "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
                         "filename_download": "party-logo-be-cdv.svg"
@@ -568,6 +601,7 @@
                 "note": "\"It's not reasonable to ask Israelis to negotiate with terrorists\"",
                 "party": {
                     "id": "be_mr",
+                    "name": "Mouvement Réformateur",
                     "logo": {
                         "id": "7ac493c1-4771-403d-84d9-e4f9069f4b22",
                         "filename_download": "party-logo-mouvement-reformateur.png"
@@ -579,6 +613,7 @@
                 "note": "Supported statement by Groen, accentuated the attacks on Palestinian civilians",
                 "party": {
                     "id": "be_ps",
+                    "name": "Parti Socialiste",
                     "logo": {
                         "id": "fc40eae6-b20d-41ca-91a8-94564bc2521a",
                         "filename_download": "party-logo-be-parti-socialiste.svg"
@@ -590,6 +625,7 @@
                 "note": "Pro-Palestine, against Israelian occupation",
                 "party": {
                     "id": "be_pvda",
+                    "name": "Partij Van De Arbeid",
                     "logo": {
                         "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
                         "filename_download": "party-logo-be-pvda.svg"
@@ -642,6 +678,7 @@
                 "note": "Created proposal",
                 "party": {
                     "id": "be_nva",
+                    "name": "N-VA",
                     "logo": {
                         "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
                         "filename_download": "party-logo-be-nva.svg"
@@ -653,6 +690,7 @@
                 "note": "Opposes, gave public statement",
                 "party": {
                     "id": "be_groen",
+                    "name": "Groen",
                     "logo": {
                         "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
                         "filename_download": "party-logo-be-groen.svg"
@@ -664,6 +702,7 @@
                 "note": "Opposes",
                 "party": {
                     "id": "be_pvda",
+                    "name": "Partij Van De Arbeid",
                     "logo": {
                         "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
                         "filename_download": "party-logo-be-pvda.svg"
@@ -709,6 +748,7 @@
                 "note": "It's their own website",
                 "party": {
                     "id": "be_vb",
+                    "name": "Vlaams Belang",
                     "logo": {
                         "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
                         "filename_download": "party-logo-be-vb.svg"

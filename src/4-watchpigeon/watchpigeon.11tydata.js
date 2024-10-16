@@ -67,6 +67,10 @@ export default function (configData) {
                 pointsByParty = addToObjectNumber(pointsByParty, partyId, response.score + 3) // +3 to normalize into positive values from 0-6
                 maxScaleByParty = addToObjectNumber(maxScaleByParty, partyId, 3 + 3)  // Same as above
                 partyArticleCount = addToObjectNumber(partyArticleCount, partyId, 1);
+
+                if (areaId == "wallonie") {
+                    console.log(areaId, partyId)
+                }
                 
                 if (areaPartyIds.includes(partyId)) {
                     relevantForArea = true;
@@ -74,24 +78,28 @@ export default function (configData) {
             });
 
             if (relevantForArea) {
+                const areaArticle = structuredClone(article);  // Javascript pass reference stuff
                 const articlePartyIds = article.responses.map(response => response.party.id)
                 
-                article.parties = AFAWatchpigeonParties.filter((party) => articlePartyIds.includes(party.id) && areaPartyIds.includes(party.id));
+                areaArticle.parties = areaParties.filter((party) => articlePartyIds.includes(party.id));
+                //console.log(areaId, areaPartyIds)
+                areaArticle.responses = article.responses.filter((response) => areaPartyIds.includes(response.party.id))
 
                 // I'm not going to lie, I'm not quite sure why this if statement ended up being necessary
                 if (Object.keys(article.subjects[0]).includes("AFAWatchpigeonSubjects_id")) {
-                    article.subjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)                    
+                    areaArticle.subjects = article.subjects.map(subject => subject.AFAWatchpigeonSubjects_id)                    
                 }
-                article.allTags = article.parties.map(party => party.id).concat(article.subjects.map(subject => subject.id)).join(",");
+                
+                areaArticle.allTags = areaArticle.parties.map(party => party.id).concat(article.subjects.map(subject => subject.id)).join(",");
 
                 // Set wasn't working reliably with the subject objects
-                article.subjects.forEach((articleSubject) => {
+                areaArticle.subjects.forEach((articleSubject) => {
                     if (!areaSubjects.find(areaSubject => areaSubject.id == articleSubject.id)) {
                         areaSubjects.push(articleSubject)
                     }
                 });
 
-                areaArticles.push(article);
+                areaArticles.push(areaArticle);
             }
         });
 
@@ -110,7 +118,6 @@ export default function (configData) {
         })
 
 
-        console.log(areaSubjects[0] == areaSubjects[1])
         areaData[areaId] = {
             parties: areaParties,
             subjects: Array.from(areaSubjects),
