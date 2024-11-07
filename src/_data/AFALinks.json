@@ -62,5 +62,18 @@
                 "url": "https://theanarchistlibrary.org/special/index"
             }
         ]
+    },
+    {
+        "title": "Data",
+        "entries": [
+            {
+                "name": "🇺🇸 - State map of (historically) sundown towns",
+                "url": "https://justice.tougaloo.edu/sundown-towns/using-the-sundown-towns-database/state-map/"
+            },
+            {
+                "name": "🇺🇸 - City map of (historically) sundown towns",
+                "url": "https://justice.tougaloo.edu/map/"
+            }
+        ]
     }
 ]
