@@ -778,5 +778,384 @@
                 }
             }
         ]
+    },
+    {
+        "id": 11,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T13:02:04.440Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T15:08:02.472Z",
+        "year": 2024,
+        "title": "U.S. military usage of Meta’s AI now allowed",
+        "sources": [
+            {
+                "name": "The Verge",
+                "url": "https://www.theverge.com/2024/11/4/24287951/meta-ai-llama-war-us-government-national-security"
+            }
+        ],
+        "note": null,
+        "responses": [
+            {
+                "score": -3,
+                "note": "They explicitly allowed it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "anti_warmongering",
+                    "name": "Anti-warmongering",
+                    "description": "War has become a profitable industry that turns innocent lives into money"
+                }
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T13:11:54.350Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T14:25:19.130Z",
+        "year": 2021,
+        "title": "Meta/Facebook tracks you outside of Meta’s products too",
+        "sources": [
+            {
+                "name": "Forbes",
+                "url": "https://www.forbes.com/sites/kateoflahertyuk/2021/05/08/all-the-ways-facebook-tracks-you-and-how-to-stop-it/"
+            },
+            {
+                "name": "Mozilla reports “like/share on facebook” buttons on any website share info about you to Facebook",
+                "url": "https://addons.mozilla.org/en-GB/firefox/addon/facebook-container/"
+            },
+            {
+                "name": "Vox",
+                "url": "https://www.vox.com/recode/23172691/meta-tracking-privacy-hospitals"
+            }
+        ],
+        "note": null,
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "privacy",
+                    "name": "Privacy",
+                    "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
+                }
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T13:27:05.892Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T13:35:23.291Z",
+        "year": 2023,
+        "title": "Meta Pixel sued over collection of sensitive medical data",
+        "sources": [
+            {
+                "name": "Reuters",
+                "url": "https://www.reuters.com/legal/meta-platforms-must-face-medical-privacy-class-action-2023-09-08/"
+            }
+        ],
+        "note": "The judge mentions “sensitive healthcare information is intentionally captured and transmitted to Meta”",
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did that.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "privacy",
+                    "name": "Privacy",
+                    "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
+                }
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T13:36:35.743Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T13:40:06.120Z",
+        "year": 2022,
+        "title": "Meta selling data from crisis pregnancy sites to anti-abortion clinics",
+        "sources": [
+            {
+                "name": "The Markup",
+                "url": "https://themarkup.org/pixel-hunt/2022/06/15/facebook-and-anti-abortion-clinics-are-collecting-highly-sensitive-info-on-would-be-patients"
+            }
+        ],
+        "note": null,
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_choice",
+                    "name": "Pro-choice",
+                    "description": "This includes abortion and the right to do with your body and clothes as you wish. This does not include wearing clear hate symbols and declining life-saving medical procedures like vaccinations"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "privacy",
+                    "name": "Privacy",
+                    "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T13:41:49.088Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T17:47:42.816Z",
+        "year": 2022,
+        "title": "Meta colected personal information from student aid applications",
+        "sources": [
+            {
+                "name": "The Markup",
+                "url": "https://themarkup.org/pixel-hunt/2022/04/28/applied-for-student-aid-online-facebook-saw-you"
+            }
+        ],
+        "note": null,
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "privacy",
+                    "name": "Privacy",
+                    "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
+                }
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T14:30:02.946Z",
+        "user_updated": null,
+        "date_updated": null,
+        "year": 2024,
+        "title": "Europe consumer groups reveal Meta collects “data used to infer their sexual orientation, emotional state or even their susceptibility to addiction”",
+        "sources": [
+            {
+                "name": "CNN",
+                "url": "https://www.cnn.com/2024/02/29/tech/meta-data-processing-europe-gdpr/index.html"
+            }
+        ],
+        "note": "Storing data about sexuality, mental health and addiction for the sake of advertising is a lot",
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "privacy",
+                    "name": "Privacy",
+                    "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+                }
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T14:35:25.828Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T15:07:01.482Z",
+        "year": 2018,
+        "title": "Meta allowed exclusion of ethnic groups for housing & men-over-women targeting for job ads",
+        "sources": [
+            {
+                "name": "NYTimes: Justice Dept. Backs Suit Accusing Facebook of Violating Fair Housing Act",
+                "url": "https://www.nytimes.com/2018/08/17/us/politics/justice-dept-facebook-fair-housing.html"
+            },
+            {
+                "name": "(Archived) Justice Dept. Backs Suit Accusing Facebook of Violating Fair Housing Act",
+                "url": "http://web.archive.org/web/20190207090844/https://www.nytimes.com/2018/08/17/us/politics/justice-dept-facebook-fair-housing.html"
+            },
+            {
+                "name": "NYTimes: Facebook Vowed to End Discriminatory Housing Ads. Suit Says It Didn’t.",
+                "url": "https://www.nytimes.com/2018/03/27/nyregion/facebook-housing-ads-discrimination-lawsuit.html"
+            },
+            {
+                "name": "(Archived) Facebook Vowed to End Discriminatory Housing Ads. Suit Says It Didn’t.",
+                "url": "http://web.archive.org/web/20220125035342/https://www.nytimes.com/2018/03/27/nyregion/facebook-housing-ads-discrimination-lawsuit.html"
+            },
+            {
+                "name": "Wired article about 2018 Facebook controversies",
+                "url": "https://www.wired.com/story/facebook-scandals-2018/"
+            }
+        ],
+        "note": null,
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did it.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_diversity",
+                    "name": "Pro-diversity",
+                    "description": "Not staying isolated with those who were born right next to you is good for you"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "right_to_housing",
+                    "name": "Right to housing",
+                    "description": "There are enough buildings for all of us. Unused and empty buildings should house those who cannot afford to otherwise"
+                }
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2024-11-08T15:12:48.962Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2024-11-08T15:25:45.294Z",
+        "year": 2022,
+        "title": "The United Nations and Amnesty International note Facebook promoted hatred towards the Rohingya population",
+        "sources": [
+            {
+                "name": "Wired article about Facebook’s scandals in 2018",
+                "url": "https://www.wired.com/story/facebook-scandals-2018/"
+            },
+            {
+                "name": "Amnesty International statement",
+                "url": "https://www.amnesty.org/en/latest/news/2022/09/myanmar-facebooks-systems-promoted-violence-against-rohingya-meta-owes-reparations-new-report/"
+            },
+            {
+                "name": "Reuters article about the UN’s investigation",
+                "url": "https://www.reuters.com/article/world/un-investigators-cite-facebook-role-in-myanmar-crisis-idUSKCN1GO2Q4/"
+            }
+        ],
+        "note": "This culminated into a genocide.",
+        "responses": [
+            {
+                "score": -3,
+                "note": "The news is about them.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_diversity",
+                    "name": "Pro-diversity",
+                    "description": "Not staying isolated with those who were born right next to you is good for you"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "anti_warmongering",
+                    "name": "Anti-warmongering",
+                    "description": "War has become a profitable industry that turns innocent lives into money"
+                }
+            }
+        ]
     }
 ]

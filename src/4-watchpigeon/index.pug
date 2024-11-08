@@ -16,5 +16,7 @@ main
                     li
                         article
                             header=place
-                            img(src="/assets/watchpigeon/" + place + ".svg", alt="Flag from " + place)
-
+                            unless place == "tech"
+                                img(src="/assets/watchpigeon/" + place + ".svg", alt="Flag from " + place)
+                            else
+                                img(src="/assets/watchpigeon/tech.jpg" alt="A picture of pigeons on a telephone line in front of a blue cloudy sky")

@@ -10,6 +10,11 @@
         "description": "What if people could afford food and housing"
     },
     {
+        "id": "anti_warmongering",
+        "name": "Anti-warmongering",
+        "description": "War has become a profitable industry that turns innocent lives into money"
+    },
+    {
         "id": "disability_rights",
         "name": "Disability rights",
         "description": "Don't rest until about every location and website is well accessible and disabled people can get married without huge financial consequences"
@@ -23,6 +28,11 @@
         "id": "polyamorous_rights",
         "name": "Polyamorous rights",
         "description": "If someone wants to marry multiple people, they should be allowed to"
+    },
+    {
+        "id": "privacy",
+        "name": "Privacy",
+        "description": "Privacy is an important pursuit. “If you have nothing to hide, you have nothing to fear” doesn’t work when what and who is illegal can be changed by the government at any time"
     },
     {
         "id": "pro_choice",

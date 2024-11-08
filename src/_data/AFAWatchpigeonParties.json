@@ -322,5 +322,17 @@
             "filename_download": "party-logo-nl-vvd.svg",
             "id": "9adfd647-daf1-4725-a47d-a2da604cdd34"
         }
+    },
+    {
+        "id": "tech_meta",
+        "name": "Meta/Facebook",
+        "colour": "#3399FF",
+        "areas": [
+            "tech"
+        ],
+        "logo": {
+            "filename_download": "party-logo-tech-meta.svg",
+            "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e"
+        }
     }
 ]

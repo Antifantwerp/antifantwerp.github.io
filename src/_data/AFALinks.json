@@ -73,6 +73,10 @@
             {
                 "name": "🇺🇸 - City map of (historically) sundown towns",
                 "url": "https://justice.tougaloo.edu/map/"
+            },
+            {
+                "name": "Journalism by The Markup & Mozilla about Meta's tracking practices",
+                "url": "https://themarkup.org/series/pixel-hunt"
             }
         ]
     }
