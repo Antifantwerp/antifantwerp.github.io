@@ -1,4 +1,4 @@
-# Tech for leftists: 
+# Tech for leftists: messaging
 
 I’m not gonna sit here and say I’m an expert at all. I’m solely a random person sharing information it thinks is important. While I did computer studies, I’m not a high-scale messaging platform engineer or anything. Please do your own research, double-check the links I provide, and [feel free to contact me with any additions or corrections](/contributions/)!
 
@@ -127,32 +127,6 @@ Yes, this has sometimes been instrumental in taking awful people down. But remem
 
 ---
 
-## Mail/Google alternatives
-
-### Tuta
-*[Free & paid plans (tuta.com)](https://tuta.com/pricing)*
-
-Previously Tutanota, Tuta is an open-source, encrypted-first **e-mail** service, alongside an encrypted **calendar**, hosted in Germany\*. Their eco-system is pretty locked in, so don’t expect a lot of integration with external services, but this is also done in the pursuit of being privacy-first. They have a decent **free tier**.
-
-\*: [Five-Fourteen Eyes](#five-fourteen-eyes)
-
-### Proton
-*[Free & Paid Plans (proton.me)](https://proton.me/pricing)*
-
-Like Tuta, Proton has an closed ecosystem that’s not likely to integrate with other services. But they compensate by offering encrypted **e-mail**, **calendar**, **cloud storage**, **VPN**, and a **password manager**. They also offer a decent **free tier**. It's like if the Google Suite was private.
-
-
-### Mailbox.org
-*[Paid plans (mailbox.org)](https://register.mailbox.org/en)*
-
-Unlike [Tuta](#tuta) and [Proton](#proton), [mailbox.org](http://mailbox.org) is *not* a closed ecosystem. This means it is inherently less private, but this allows you to integrate it with your phones' built-in/downloaded mail/contacts/calendar apps. It is [built on top of and uses open-source systems, but they have their own closed-source software built on top of it (mailbox.org)](https://userforum-en.mailbox.org/topic/is-everything-at-mailbox-org-open-source). It is hosted in Germany\*.
-
-They still focus on privacy however, with support for encrypted **mail** (including custom domains for the standard & premium packages), **calendar**, an **online office suite**, **meeting tools**, and include [transparency reports about government data requests, including when they deny them for not having been properly filed (mailbox.org)](https://mailbox.org/en/post/transparency-report-2023).
-
-While less secure than [Proton](#proton)'s closed ecosystem, it's a decent Google-suite style option if you want to be able to use different mail/calendar apps. Also seems to be run on green energy.
-
-\*: [Five-Fourteen Eyes](#five-fourteen-eyes)
-
 ## Extra info
 ### Five-Fourteen Eyes
 A publicly stated agreement exists, wherein
@@ -174,7 +148,7 @@ According to [leaked documents by Edward Snowden (he/him, I assume) (bbc.co.uk)]
 - 🇪🇸 Spain
 - 🇸🇪 Sweden
 
-### Good explanations about tech stuff for normal people
+### Good explanations about cybersecurity stuff for normal people
 I feel a bit silly posting links to [Tom Scott (he/him) (tomscott.com)](https://www.tomscott.com/) videos on this website, but he does an excellent job at explaining some common pitfalls in terms of cybersecurity in understandable ways.
 
 - [On encryption, privacy, laws, and “crime fighting” (youtube.com)](https://www.youtube.com/watch?v=CINVwWHlzTY)
