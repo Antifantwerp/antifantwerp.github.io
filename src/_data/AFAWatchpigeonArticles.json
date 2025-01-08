@@ -1157,5 +1157,66 @@
                 }
             }
         ]
+    },
+    {
+        "id": 19,
+        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_created": "2025-01-08T12:17:21.111Z",
+        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "date_updated": "2025-01-08T12:21:07.479Z",
+        "year": 2025,
+        "title": "(🇺🇸) Meta changes code of conduct allows sexism, homophobia & transphobia",
+        "sources": [
+            {
+                "name": "Meta Now Lets Users Say Gay and Trans People Have 'Mental Illness' (EN, wired.com@web.archive.org)",
+                "url": "https://web.archive.org/web/20250107185225/https://www.wired.com/story/meta-immigration-gender-policies-change/"
+            },
+            {
+                "name": "Calling women ‘household objects’ now permitted on Facebook after Meta updated its guidelines (EN, cnn.com)",
+                "url": "https://edition.cnn.com/2025/01/07/tech/meta-hateful-conduct-policy-update-fact-check/index.html"
+            },
+            {
+                "name": "Rules moderation Facebook and Instagram in US allow more hateful content (NL, tweakers.net)",
+                "url": "https://tweakers.net/nieuws/230506/regels-moderatie-facebook-en-instagram-in-vs-laten-meer-haatdragende-content-toe.html"
+            }
+        ],
+        "note": "Now permits \"gender-based limitations of military, law enforcement, and teaching jobs\",  \"Chinese people bearing responsibility for Covid-19\", \"allegations of mental illness or abnormality when based on gender or sexual orientation\"",
+        "responses": [
+            {
+                "score": -3,
+                "note": "They did this.",
+                "party": {
+                    "id": "tech_meta",
+                    "name": "Meta/Facebook",
+                    "logo": {
+                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "filename_download": "party-logo-tech-meta.svg"
+                    }
+                }
+            }
+        ],
+        "subjects": [
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "trans_rights",
+                    "name": "Trans Rights",
+                    "description": "Providing support, safety & medical help to every trans person that wants it"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "queer_rights",
+                    "name": "Queer Rights",
+                    "description": "This refers mostly to things in terms of orientation & the rights thereof. Trans & polyamorous rights are in seperate subjects"
+                }
+            },
+            {
+                "AFAWatchpigeonSubjects_id": {
+                    "id": "pro_diversity",
+                    "name": "Pro-diversity",
+                    "description": "Not staying isolated with those who were born right next to you is good for you"
+                }
+            }
+        ]
     }
 ]
