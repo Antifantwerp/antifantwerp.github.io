@@ -1,9 +1,9 @@
 [
     {
         "id": "blurring-faces-automatically",
-        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_created": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_created": "2024-10-09T09:42:30.853Z",
-        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_updated": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_updated": "2024-10-09T10:15:17.477Z",
         "title": "Blurring faces automatically",
         "description": "It's not a perfect solution, but it's quick, private and it works.",
@@ -11,9 +11,9 @@
     },
     {
         "id": "cops-and-phone-access",
-        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_created": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_created": "2024-10-08T14:58:51.500Z",
-        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_updated": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_updated": "2024-10-08T23:00:48.718Z",
         "title": "EU court of justice allows cops to look into phones for small crimes",
         "description": "About cops & phone access. This decision has been made over 85 grams of weed.",
@@ -21,9 +21,9 @@
     },
     {
         "id": "netherlands-crime-prediction-algorithm-for-minors",
-        "user_created": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_created": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_created": "2025-01-21T13:53:52.364Z",
-        "user_updated": "5d375048-2c17-4ebe-af95-f5b1c57e0940",
+        "user_updated": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
         "date_updated": "2025-01-21T15:48:57.220Z",
         "title": "The Netherlands uses a crime prediction algorithm on minors to determine punishment",
         "description": "Noone involved got informed, and (even in-house) analyses point to important flaws",
