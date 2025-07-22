@@ -1,7 +1,7 @@
 {
     "version": 1,
     "directus": "11.1.0",
-    "vendor": "postgres",
+    "vendor": "sqlite",
     "collections": [
         {
             "collection": "AFAAssetLibrary",

@@ -21,7 +21,7 @@
     "@grimlink/eleventy-plugin-sass": "^1.0.3",
     "@picocss/pico": "^2.0.6",
     "dayjs": "^1.11.13",
-    "directus-to-data": "^0.7.2",
+    "directus-to-data": "^0.8.0",
     "eleventy-auto-cache-buster": "^0.6.1",
     "favicons": "^7.1.4",
     "js-yaml": "^4.1.0",
