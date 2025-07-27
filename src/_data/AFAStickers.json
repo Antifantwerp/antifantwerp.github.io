@@ -12,19 +12,19 @@
         "category": "neutral",
         "name": "Fuck Thierry Jaspart!",
         "image": {
-            "id": "322448db-acae-4a6c-985e-0328fc5022f4",
+            "id": "804ada94-46fb-43a9-83ab-5005d30dd576",
             "storage": "local",
-            "filename_disk": "322448db-acae-4a6c-985e-0328fc5022f4.png",
+            "filename_disk": "804ada94-46fb-43a9-83ab-5005d30dd576.png",
             "filename_download": "sticker-fuck-thierry-jaspart.png",
-            "title": "Fuck Thierry Jaspart!",
+            "title": "Sticker Fuck Thierry Jaspart",
             "type": "image/png",
-            "folder": "3c090bdc-81e1-4417-b914-194a0f5271ab",
+            "folder": null,
             "uploaded_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "created_on": "2024-06-29T19:23:55.819Z",
-            "modified_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "modified_on": "2024-09-28T14:29:21.381Z",
+            "created_on": "2025-07-22T13:04:28",
+            "modified_by": null,
+            "modified_on": "2025-07-22T13:04:29",
             "charset": null,
-            "filesize": "57356",
+            "filesize": 57356,
             "width": 258,
             "height": 217,
             "duration": null,
@@ -37,7 +37,7 @@
             "focal_point_y": null,
             "tus_id": null,
             "tus_data": null,
-            "uploaded_on": "2024-06-29T19:23:55.819Z"
+            "uploaded_on": "2025-07-22T13:04:29"
         }
     },
     {
@@ -53,19 +53,19 @@
         "category": "bad",
         "name": "vlaams-rechts-radikaal-www.nsv.be",
         "image": {
-            "id": "d08d7d9e-7e09-42d0-a1f0-b8e8f4cb5eec",
+            "id": "e4e70bef-3eb6-4c50-8d8e-66ad6ffeac3e",
             "storage": "local",
-            "filename_disk": "d08d7d9e-7e09-42d0-a1f0-b8e8f4cb5eec.png",
+            "filename_disk": "e4e70bef-3eb6-4c50-8d8e-66ad6ffeac3e.png",
             "filename_download": "sticker-vlaams-rechts-radikaal-www-nsv-be.png",
-            "title": "Vlaams Rechts Radikaal Www.nsv.be",
+            "title": "Sticker Vlaams Rechts Radikaal WWW Nsv Be",
             "type": "image/png",
-            "folder": "3c090bdc-81e1-4417-b914-194a0f5271ab",
+            "folder": null,
             "uploaded_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "created_on": "2024-09-18T16:34:13.626Z",
-            "modified_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "modified_on": "2024-09-28T14:29:11.671Z",
+            "created_on": "2025-07-22T13:04:29",
+            "modified_by": null,
+            "modified_on": "2025-07-22T13:04:29",
             "charset": null,
-            "filesize": "495983",
+            "filesize": 495983,
             "width": 1000,
             "height": 1000,
             "duration": null,
@@ -78,7 +78,7 @@
             "focal_point_y": null,
             "tus_id": null,
             "tus_data": null,
-            "uploaded_on": "2024-09-18T16:34:13.626Z"
+            "uploaded_on": "2025-07-22T13:04:29"
         }
     },
     {
@@ -94,19 +94,19 @@
         "category": "bad",
         "name": "vbj-op-linkse-traantjes",
         "image": {
-            "id": "437d6f04-df4e-4f83-b70f-481fa8cdaba7",
+            "id": "bfc87129-c075-4ae7-bad9-1f4d0103bd1b",
             "storage": "local",
-            "filename_disk": "437d6f04-df4e-4f83-b70f-481fa8cdaba7.jpeg",
+            "filename_disk": "bfc87129-c075-4ae7-bad9-1f4d0103bd1b.jpeg",
             "filename_download": "sticker-vlaams-belang-jongeren-op-linkse-traantjes.jpeg",
-            "title": "sticker-vlaams-belang-jongeren-op-linkse-traantjes",
+            "title": "Sticker Vlaams Belang Jongeren Op Linkse Traantjes",
             "type": "image/jpeg",
             "folder": null,
             "uploaded_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "created_on": "2024-10-22T14:14:40.986Z",
-            "modified_by": "cc6e38fb-3b5a-4cd9-a706-b7d586bac771",
-            "modified_on": "2024-10-22T14:19:07.526Z",
+            "created_on": "2025-07-22T13:04:28",
+            "modified_by": null,
+            "modified_on": "2025-07-22T13:04:29",
             "charset": null,
-            "filesize": "3619523",
+            "filesize": 3619523,
             "width": 3024,
             "height": 4032,
             "duration": null,
@@ -130,7 +130,7 @@
             "focal_point_y": null,
             "tus_id": null,
             "tus_data": null,
-            "uploaded_on": "2024-10-22T14:14:43.188Z"
+            "uploaded_on": "2025-07-22T13:04:29"
         }
     }
 ]
