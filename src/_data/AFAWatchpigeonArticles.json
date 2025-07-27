@@ -7,13 +7,13 @@
         "date_updated": "2024-10-18T11:37:24.874Z",
         "year": 2023,
         "title": "PVDA's website on Energy",
+        "note": null,
         "sources": [
             {
                 "name": "PVDA's official website (NL, pvda.be)",
                 "url": "https://www.pvda.be/energie"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": 2,
@@ -22,7 +22,7 @@
                     "id": "be_pvda",
                     "name": "Partij Van De Arbeid",
                     "logo": {
-                        "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
+                        "id": "bdc16027-6e5d-4340-8c92-7bdaae3ee911",
                         "filename_download": "party-logo-be-pvda.svg"
                     }
                 }
@@ -46,13 +46,13 @@
         "date_updated": "2024-10-18T11:37:25.025Z",
         "year": 2021,
         "title": "Vooruit blog post about Lowering energy prices",
+        "note": "Their proposal is a band-aid, not a solution.",
         "sources": [
             {
                 "name": "Vooruit's news page (NL, nieuws.vooruit.org)",
                 "url": "https://nieuws.vooruit.org/vooruit_wil_jouw_energiefactuur_betaalbaarder_maken"
             }
         ],
-        "note": "Their proposal is a band-aid, not a solution.",
         "responses": [
             {
                 "score": 1,
@@ -61,7 +61,7 @@
                     "id": "be_vooruit",
                     "name": "Vooruit",
                     "logo": {
-                        "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
+                        "id": "b179fdce-5714-4eaf-bfc9-5e3c6b972b18",
                         "filename_download": "party-logo-be-vooruit.svg"
                     }
                 }
@@ -85,13 +85,13 @@
         "date_updated": "2024-10-18T11:37:25.170Z",
         "year": 2023,
         "title": "Proposal protest ban for rioters",
+        "note": "There have been in recent history multiple cases of escalation by police and/or regular protests being called riots. Additionally, some of the proposed banned actions are historically proven protest actions (e.g. blocking traffic)",
         "sources": [
             {
                 "name": "OpenVLD's website (NL, openvld.be)",
                 "url": "https://www.openvld.be/relschoppers_moeten_verbod_op_betogen_krijgen"
             }
         ],
-        "note": "There have been in recent history multiple cases of escalation by police and/or regular protests being called riots. Additionally, some of the proposed banned actions are historically proven protest actions (e.g. blocking traffic)",
         "responses": [
             {
                 "score": -2,
@@ -100,7 +100,7 @@
                     "id": "be_openvld",
                     "name": "Open Vld",
                     "logo": {
-                        "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
+                        "id": "c7f8cae4-ba64-4007-9908-7794f6711897",
                         "filename_download": "party-logo-be-openvld.svg"
                     }
                 }
@@ -124,13 +124,13 @@
         "date_updated": "2024-10-18T11:37:25.336Z",
         "year": 2023,
         "title": "Dutch parties views on abortion",
+        "note": null,
         "sources": [
             {
                 "name": "&C Magazine (NL, andc.tv)",
                 "url": "https://www.andc.tv/body-en-mind/TRF-stemmen-partij-politiek-vrouwen-rechten-abortus"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": 3,
@@ -139,7 +139,7 @@
                     "id": "nl_glpvda",
                     "name": "GroenLinks-PvdA",
                     "logo": {
-                        "id": "09725f51-136b-4238-b21e-c5bd30f85f76",
+                        "id": "2f99188a-bffb-4f99-9556-5644768679a4",
                         "filename_download": "party-logo-nl-glpvda.svg"
                     }
                 }
@@ -151,7 +151,7 @@
                     "id": "nl_volt",
                     "name": "Volt Nederland",
                     "logo": {
-                        "id": "2ece8c06-ed3b-4bb5-81cf-febf683eddbd",
+                        "id": "25cffdd9-70a2-40c6-8a49-40c0e5efd1e2",
                         "filename_download": "party-logo-nl-volt.svg"
                     }
                 }
@@ -163,7 +163,7 @@
                     "id": "nl_pvdd",
                     "name": "Partij voor de Dieren",
                     "logo": {
-                        "id": "f9c06fc7-9097-446b-878f-89470e579fd0",
+                        "id": "612e229f-5e8f-4d4c-b610-81e408b45562",
                         "filename_download": "party-logo-nl-pvdd.svg"
                     }
                 }
@@ -175,7 +175,7 @@
                     "id": "nl_d66",
                     "name": "Democraten 66",
                     "logo": {
-                        "id": "31e2c747-b97d-4534-8025-3aef9c7fa8d3",
+                        "id": "57c22754-56a9-4f07-bb93-96e08a6a532b",
                         "filename_download": "party-logo-nl-d66.svg"
                     }
                 }
@@ -187,7 +187,7 @@
                     "id": "nl_sp",
                     "name": "Socialistische Partij",
                     "logo": {
-                        "id": "a4462dd1-7e39-4618-816f-4bea00d02e95",
+                        "id": "e9c716b4-eb1a-4b8c-9e94-9ae31a2b4fa7",
                         "filename_download": "party-logo-nl-sp.svg"
                     }
                 }
@@ -199,7 +199,7 @@
                     "id": "nl_bij1",
                     "name": "BIJ1",
                     "logo": {
-                        "id": "38300035-aeea-423c-b680-5a30976cf30a",
+                        "id": "a7777a06-6eed-483d-b12b-615635f34244",
                         "filename_download": "party-logo-nl-bij1.svg"
                     }
                 }
@@ -211,7 +211,7 @@
                     "id": "nl_bbb",
                     "name": "BoerBurgerBeweging",
                     "logo": {
-                        "id": "82135883-29d1-4800-bd3c-7bebbb0229c8",
+                        "id": "dc2f926b-1f87-4d0c-a572-3e26aeb594cc",
                         "filename_download": "party-logo-nl-bbb.svg"
                     }
                 }
@@ -223,7 +223,7 @@
                     "id": "nl_cu",
                     "name": "ChristenUnie",
                     "logo": {
-                        "id": "124365c6-d826-4532-aa1d-7c711864e4ea",
+                        "id": "bfdd4c6c-878d-4e0f-bcb4-d3b7c850cbf6",
                         "filename_download": "party-logo-nl-cu.svg"
                     }
                 }
@@ -235,7 +235,7 @@
                     "id": "nl_cda",
                     "name": "Christen-Democratisch Appèl",
                     "logo": {
-                        "id": "e2db876d-0caf-4a0a-b8ec-058d3d533ef9",
+                        "id": "b48ff48b-28cd-4d37-839c-c41b9039d79b",
                         "filename_download": "party-logo-nl-cda.svg"
                     }
                 }
@@ -247,7 +247,7 @@
                     "id": "nl_ja21",
                     "name": "JA21",
                     "logo": {
-                        "id": "3ada149d-8f31-489d-a0f4-36f160fdef9f",
+                        "id": "086b3917-daf3-44cd-8d61-3b1ec952ec93",
                         "filename_download": "party-logo-nl-ja21.svg"
                     }
                 }
@@ -259,7 +259,7 @@
                     "id": "nl_sgp",
                     "name": "Staatkundig Gereformeerde Partij",
                     "logo": {
-                        "id": "b220140c-0f1e-46a0-880d-62e7d249d8c5",
+                        "id": "e85b433b-7aa6-4854-a4a6-7801e981b603",
                         "filename_download": "party-logo-nl-sgp.svg"
                     }
                 }
@@ -271,7 +271,7 @@
                     "id": "nl_pvv",
                     "name": "Partij voor de Vrijheid",
                     "logo": {
-                        "id": "471ccbee-d4d5-464e-915a-993f28b96fcb",
+                        "id": "f0e67a70-1683-49bf-9857-2d023464c32a",
                         "filename_download": "party-logo-nl-pvv.svg"
                     }
                 }
@@ -283,7 +283,7 @@
                     "id": "nl_nsc",
                     "name": "Nieuw Sociaal Contract",
                     "logo": {
-                        "id": "8a47f415-97d7-4a01-afee-572b99eb4175",
+                        "id": "1ed674c5-ad96-4ffd-8d34-5c423a072fc2",
                         "filename_download": "party-logo-nl-nsc.svg"
                     }
                 }
@@ -295,7 +295,7 @@
                     "id": "nl_vvd",
                     "name": "Volkspartij voor Vrijheid en Democratie",
                     "logo": {
-                        "id": "9adfd647-daf1-4725-a47d-a2da604cdd34",
+                        "id": "0b2c4a75-bd8b-4c84-82b1-a624497eb365",
                         "filename_download": "party-logo-nl-vvd.svg"
                     }
                 }
@@ -307,7 +307,7 @@
                     "id": "nl_fvd",
                     "name": "fvd",
                     "logo": {
-                        "id": "ef68abdf-a1b5-46f3-9a18-83de525d6523",
+                        "id": "50f7a035-83d4-4d6d-8201-5564c11cb538",
                         "filename_download": "party-logo-nl-fvd.svg"
                     }
                 }
@@ -345,13 +345,13 @@
         "date_updated": "2024-10-18T11:37:26.269Z",
         "year": 2019,
         "title": "Political party questionaires of sex & gender",
+        "note": null,
         "sources": [
             {
                 "name": "Belgian newspaper (NL, nieuwsblad.be)",
                 "url": "https://www.nieuwsblad.be/cnt/dmf20190319_04267654"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -2,
@@ -360,7 +360,7 @@
                     "id": "be_cdv",
                     "name": "cd&v",
                     "logo": {
-                        "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
+                        "id": "f8d75227-6ba2-431f-9439-72b417b23137",
                         "filename_download": "party-logo-be-cdv.svg"
                     }
                 }
@@ -372,7 +372,7 @@
                     "id": "be_vb",
                     "name": "Vlaams Belang",
                     "logo": {
-                        "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
+                        "id": "58169e6c-3152-4441-805e-7bfaf7e26a14",
                         "filename_download": "party-logo-be-vb.svg"
                     }
                 }
@@ -384,7 +384,7 @@
                     "id": "be_nva",
                     "name": "N-VA",
                     "logo": {
-                        "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
+                        "id": "02b5b6d8-f221-4c5f-9512-9b96300dd93e",
                         "filename_download": "party-logo-be-nva.svg"
                     }
                 }
@@ -396,7 +396,7 @@
                     "id": "be_vooruit",
                     "name": "Vooruit",
                     "logo": {
-                        "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
+                        "id": "b179fdce-5714-4eaf-bfc9-5e3c6b972b18",
                         "filename_download": "party-logo-be-vooruit.svg"
                     }
                 }
@@ -408,7 +408,7 @@
                     "id": "be_pvda",
                     "name": "Partij Van De Arbeid",
                     "logo": {
-                        "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
+                        "id": "bdc16027-6e5d-4340-8c92-7bdaae3ee911",
                         "filename_download": "party-logo-be-pvda.svg"
                     }
                 }
@@ -420,7 +420,7 @@
                     "id": "be_openvld",
                     "name": "Open Vld",
                     "logo": {
-                        "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
+                        "id": "c7f8cae4-ba64-4007-9908-7794f6711897",
                         "filename_download": "party-logo-be-openvld.svg"
                     }
                 }
@@ -432,7 +432,7 @@
                     "id": "be_groen",
                     "name": "Groen",
                     "logo": {
-                        "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
+                        "id": "19202906-2a91-4db1-b4f8-0701478be65c",
                         "filename_download": "party-logo-be-groen.svg"
                     }
                 }
@@ -470,13 +470,13 @@
         "date_updated": "2024-10-18T11:37:26.742Z",
         "year": 2022,
         "title": "CD&V and Vlaams Belang about abortion",
+        "note": null,
         "sources": [
             {
                 "name": "Belgian news outlet (NL, vrt.be)",
                 "url": "https://www.vrt.be/vrtnws/nl/2022/06/26/sammy-mahdi-abortus/"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -2,
@@ -485,19 +485,19 @@
                     "id": "be_cdv",
                     "name": "cd&v",
                     "logo": {
-                        "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
+                        "id": "f8d75227-6ba2-431f-9439-72b417b23137",
                         "filename_download": "party-logo-be-cdv.svg"
                     }
                 }
             },
             {
                 "score": -3,
-                "note": "Against all forms of abortion. Pro life.",
+                "note": "Against all forms of abortion. \"Pro-life\"",
                 "party": {
                     "id": "be_vb",
                     "name": "Vlaams Belang",
                     "logo": {
-                        "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
+                        "id": "58169e6c-3152-4441-805e-7bfaf7e26a14",
                         "filename_download": "party-logo-be-vb.svg"
                     }
                 }
@@ -509,7 +509,7 @@
                     "id": "be_openvld",
                     "name": "Open Vld",
                     "logo": {
-                        "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
+                        "id": "c7f8cae4-ba64-4007-9908-7794f6711897",
                         "filename_download": "party-logo-be-openvld.svg"
                     }
                 }
@@ -533,13 +533,13 @@
         "date_updated": "2024-10-18T11:37:26.920Z",
         "year": 2023,
         "title": "Parties' reactions to increase of Palestine/Israel conflict",
+        "note": "Every death is an injustice, no matter what side. However Israel as a country is an ethnostate & colonising Palestine.",
         "sources": [
             {
                 "name": "Belgian news outlet (NL, vrt.be)",
                 "url": "https://www.vrt.be/vrtnws/nl/2023/10/12/conflict-israel-hamas-verdeelt-belgische-politiek-niet-slim-v/"
             }
         ],
-        "note": "Every death is an injustice, no matter what side. However Israel as a country is an ethnostate & colonising Palestine.",
         "responses": [
             {
                 "score": -3,
@@ -548,7 +548,7 @@
                     "id": "be_nva",
                     "name": "N-VA",
                     "logo": {
-                        "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
+                        "id": "02b5b6d8-f221-4c5f-9512-9b96300dd93e",
                         "filename_download": "party-logo-be-nva.svg"
                     }
                 }
@@ -560,7 +560,7 @@
                     "id": "be_openvld",
                     "name": "Open Vld",
                     "logo": {
-                        "id": "a41cc007-3a45-40fa-813a-dfd8a9adbac8",
+                        "id": "c7f8cae4-ba64-4007-9908-7794f6711897",
                         "filename_download": "party-logo-be-openvld.svg"
                     }
                 }
@@ -572,7 +572,7 @@
                     "id": "be_groen",
                     "name": "Groen",
                     "logo": {
-                        "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
+                        "id": "19202906-2a91-4db1-b4f8-0701478be65c",
                         "filename_download": "party-logo-be-groen.svg"
                     }
                 }
@@ -584,7 +584,7 @@
                     "id": "be_vooruit",
                     "name": "Vooruit",
                     "logo": {
-                        "id": "c7013c2b-3a3a-47e8-99f7-5bab439b1b2b",
+                        "id": "b179fdce-5714-4eaf-bfc9-5e3c6b972b18",
                         "filename_download": "party-logo-be-vooruit.svg"
                     }
                 }
@@ -596,7 +596,7 @@
                     "id": "be_cdv",
                     "name": "cd&v",
                     "logo": {
-                        "id": "b77e0fb9-e89f-4aae-ad92-1abfa237ac50",
+                        "id": "f8d75227-6ba2-431f-9439-72b417b23137",
                         "filename_download": "party-logo-be-cdv.svg"
                     }
                 }
@@ -608,7 +608,7 @@
                     "id": "be_mr",
                     "name": "Mouvement Réformateur",
                     "logo": {
-                        "id": "7ac493c1-4771-403d-84d9-e4f9069f4b22",
+                        "id": "58724eba-830d-48b6-a382-431d4694399b",
                         "filename_download": "party-logo-mouvement-reformateur.png"
                     }
                 }
@@ -620,7 +620,7 @@
                     "id": "be_ps",
                     "name": "Parti Socialiste",
                     "logo": {
-                        "id": "fc40eae6-b20d-41ca-91a8-94564bc2521a",
+                        "id": "de3bb3c1-bdb5-41eb-9b6f-bd91b344e336",
                         "filename_download": "party-logo-be-parti-socialiste.svg"
                     }
                 }
@@ -632,7 +632,7 @@
                     "id": "be_pvda",
                     "name": "Partij Van De Arbeid",
                     "logo": {
-                        "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
+                        "id": "bdc16027-6e5d-4340-8c92-7bdaae3ee911",
                         "filename_download": "party-logo-be-pvda.svg"
                     }
                 }
@@ -656,6 +656,7 @@
         "date_updated": "2024-10-18T11:37:27.249Z",
         "year": 2024,
         "title": "Police codex addition about “inappropriate nudity” by N-VA",
+        "note": "The law is incredibly broad and puts final judgement in the common sense of whichever cop is active at the time. This law was added to have sex workers cover up within in their district, whilst being phrased as being for the sake of sex workers",
         "sources": [
             {
                 "name": "Belgian news site (NL, vrt.be)",
@@ -670,7 +671,6 @@
                 "url": "https://www.demorgen.be/snelnieuws/nieuw-seksueel-strafrecht-laat-te-veel-ruimte-voor-zedenschennis-volgens-de-wever~bcaf6d1d/"
             }
         ],
-        "note": "The law is incredibly broad and puts final judgement in the common sense of whichever cop is active at the time. This law was added to have sex workers cover up within in their district, whilst being phrased as being for the sake of sex workers",
         "responses": [
             {
                 "score": -3,
@@ -679,7 +679,7 @@
                     "id": "be_nva",
                     "name": "N-VA",
                     "logo": {
-                        "id": "38b517a8-4f1c-4f48-b88f-1335f37e4b89",
+                        "id": "02b5b6d8-f221-4c5f-9512-9b96300dd93e",
                         "filename_download": "party-logo-be-nva.svg"
                     }
                 }
@@ -691,7 +691,7 @@
                     "id": "be_groen",
                     "name": "Groen",
                     "logo": {
-                        "id": "ad8783da-e6a1-4bc7-9643-f948907a7885",
+                        "id": "19202906-2a91-4db1-b4f8-0701478be65c",
                         "filename_download": "party-logo-be-groen.svg"
                     }
                 }
@@ -703,7 +703,7 @@
                     "id": "be_pvda",
                     "name": "Partij Van De Arbeid",
                     "logo": {
-                        "id": "dbf4c4c9-545a-44ff-ad9d-23359ff4f66f",
+                        "id": "bdc16027-6e5d-4340-8c92-7bdaae3ee911",
                         "filename_download": "party-logo-be-pvda.svg"
                     }
                 }
@@ -741,22 +741,22 @@
         "date_updated": "2024-10-18T11:37:27.944Z",
         "year": 2024,
         "title": "Bringing back chemical castration - Vlaams Belang",
+        "note": "Chemical castration has been historically used against sexual deviants like \"queer people\" people. Vlaams Belang has gone on record calling \"trans ideology\" pedophilia",
         "sources": [
             {
                 "name": "Vlaams Belang's website (NL, vlaamsbelang.org)",
                 "url": "https://www.vlaamsbelang.org/nieuws/vlaams-belang-wil-chemische-castratie-voor-seksueel-misbruik-mogelijk-maken"
             }
         ],
-        "note": "Chemical castration has been historically used against sexual deviants like \"queer people\" people. Vlaams Belang has gone on record calling \"trans ideology\" pedophilia",
         "responses": [
             {
                 "score": -3,
-                "note": "It's their own website",
+                "note": "It's their own website and proposal",
                 "party": {
                     "id": "be_vb",
                     "name": "Vlaams Belang",
                     "logo": {
-                        "id": "66374180-0ba3-43d3-b806-ba87bb25c0a2",
+                        "id": "58169e6c-3152-4441-805e-7bfaf7e26a14",
                         "filename_download": "party-logo-be-vb.svg"
                     }
                 }
@@ -787,13 +787,13 @@
         "date_updated": "2024-11-08T15:08:02.472Z",
         "year": 2024,
         "title": "U.S. military usage of Meta’s AI now allowed",
+        "note": null,
         "sources": [
             {
                 "name": "The Verge",
                 "url": "https://www.theverge.com/2024/11/4/24287951/meta-ai-llama-war-us-government-national-security"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -3,
@@ -802,7 +802,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -826,6 +826,7 @@
         "date_updated": "2024-11-08T14:25:19.130Z",
         "year": 2021,
         "title": "Meta/Facebook tracks you outside of Meta’s products too",
+        "note": null,
         "sources": [
             {
                 "name": "Forbes",
@@ -840,7 +841,6 @@
                 "url": "https://www.vox.com/recode/23172691/meta-tracking-privacy-hospitals"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -3,
@@ -849,7 +849,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -873,13 +873,13 @@
         "date_updated": "2024-11-08T13:35:23.291Z",
         "year": 2023,
         "title": "Meta Pixel sued over collection of sensitive medical data",
+        "note": "The judge mentions “sensitive healthcare information is intentionally captured and transmitted to Meta”",
         "sources": [
             {
                 "name": "Reuters",
                 "url": "https://www.reuters.com/legal/meta-platforms-must-face-medical-privacy-class-action-2023-09-08/"
             }
         ],
-        "note": "The judge mentions “sensitive healthcare information is intentionally captured and transmitted to Meta”",
         "responses": [
             {
                 "score": -3,
@@ -888,7 +888,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -912,13 +912,13 @@
         "date_updated": "2024-11-08T13:40:06.120Z",
         "year": 2022,
         "title": "Meta selling data from crisis pregnancy sites to anti-abortion clinics",
+        "note": null,
         "sources": [
             {
                 "name": "The Markup",
                 "url": "https://themarkup.org/pixel-hunt/2022/06/15/facebook-and-anti-abortion-clinics-are-collecting-highly-sensitive-info-on-would-be-patients"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -3,
@@ -927,7 +927,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -958,13 +958,13 @@
         "date_updated": "2024-11-08T17:47:42.816Z",
         "year": 2022,
         "title": "Meta colected personal information from student aid applications",
+        "note": null,
         "sources": [
             {
                 "name": "The Markup",
                 "url": "https://themarkup.org/pixel-hunt/2022/04/28/applied-for-student-aid-online-facebook-saw-you"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -3,
@@ -973,7 +973,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -997,13 +997,13 @@
         "date_updated": null,
         "year": 2024,
         "title": "Europe consumer groups reveal Meta collects “data used to infer their sexual orientation, emotional state or even their susceptibility to addiction”",
+        "note": "Storing data about sexuality, mental health and addiction for the sake of advertising is a lot",
         "sources": [
             {
                 "name": "CNN",
                 "url": "https://www.cnn.com/2024/02/29/tech/meta-data-processing-europe-gdpr/index.html"
             }
         ],
-        "note": "Storing data about sexuality, mental health and addiction for the sake of advertising is a lot",
         "responses": [
             {
                 "score": -3,
@@ -1012,7 +1012,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -1043,6 +1043,7 @@
         "date_updated": "2024-11-08T15:07:01.482Z",
         "year": 2018,
         "title": "Meta allowed exclusion of ethnic groups for housing & men-over-women targeting for job ads",
+        "note": null,
         "sources": [
             {
                 "name": "NYTimes: Justice Dept. Backs Suit Accusing Facebook of Violating Fair Housing Act",
@@ -1065,7 +1066,6 @@
                 "url": "https://www.wired.com/story/facebook-scandals-2018/"
             }
         ],
-        "note": null,
         "responses": [
             {
                 "score": -3,
@@ -1074,7 +1074,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -1112,6 +1112,7 @@
         "date_updated": "2024-11-08T15:25:45.294Z",
         "year": 2022,
         "title": "The United Nations and Amnesty International note Facebook promoted hatred towards the Rohingya population",
+        "note": "This culminated into a genocide.",
         "sources": [
             {
                 "name": "Wired article about Facebook’s scandals in 2018",
@@ -1126,7 +1127,6 @@
                 "url": "https://www.reuters.com/article/world/un-investigators-cite-facebook-role-in-myanmar-crisis-idUSKCN1GO2Q4/"
             }
         ],
-        "note": "This culminated into a genocide.",
         "responses": [
             {
                 "score": -3,
@@ -1135,7 +1135,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
@@ -1166,6 +1166,7 @@
         "date_updated": "2025-01-08T12:29:17.154Z",
         "year": 2025,
         "title": "(🇺🇸) Meta changes code of conduct allows sexism, homophobia & transphobia",
+        "note": "Now permits \"gender-based limitations of military, law enforcement, and teaching jobs\",  \"Chinese people bearing responsibility for Covid-19\", \"allegations of mental illness or abnormality when based on gender or sexual orientation\"",
         "sources": [
             {
                 "name": "Meta Now Lets Users Say Gay and Trans People Have 'Mental Illness' (EN, wired.com @ web.archive.org)",
@@ -1180,7 +1181,6 @@
                 "url": "https://tweakers.net/nieuws/230506/regels-moderatie-facebook-en-instagram-in-vs-laten-meer-haatdragende-content-toe.html"
             }
         ],
-        "note": "Now permits \"gender-based limitations of military, law enforcement, and teaching jobs\",  \"Chinese people bearing responsibility for Covid-19\", \"allegations of mental illness or abnormality when based on gender or sexual orientation\"",
         "responses": [
             {
                 "score": -3,
@@ -1189,7 +1189,7 @@
                     "id": "tech_meta",
                     "name": "Meta/Facebook",
                     "logo": {
-                        "id": "8ef2d144-b71b-4d08-ba66-caed6d6a702e",
+                        "id": "c12809e9-1b3c-4ab6-b9ba-50e78bfe2f97",
                         "filename_download": "party-logo-tech-meta.svg"
                     }
                 }
