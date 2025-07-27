@@ -341,12 +341,12 @@
                 "name": "id",
                 "table": "AFAAssetLibrary",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAAssetLibrary_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -530,12 +530,12 @@
                 "name": "id",
                 "table": "AFAAssetLibrary_files",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAAssetLibrary_files_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -574,8 +574,8 @@
                 "data_type": "integer",
                 "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -589,7 +589,7 @@
         {
             "collection": "AFAAssetLibrary_files",
             "field": "directus_files_id",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAAssetLibrary_files",
                 "conditions": null,
@@ -613,9 +613,9 @@
             "schema": {
                 "name": "directus_files_id",
                 "table": "AFAAssetLibrary_files",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -658,7 +658,7 @@
             "schema": {
                 "name": "id",
                 "table": "AFABlog",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -676,7 +676,7 @@
         {
             "collection": "AFABlog",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFABlog",
                 "conditions": null,
@@ -704,9 +704,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFABlog",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -732,14 +732,15 @@
                 },
                 "field": "date_created",
                 "group": null,
-                "hidden": true,
+                "hidden": false,
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -750,7 +751,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFABlog",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -768,7 +769,7 @@
         {
             "collection": "AFABlog",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFABlog",
                 "conditions": null,
@@ -796,9 +797,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFABlog",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -824,15 +825,15 @@
                 },
                 "field": "date_updated",
                 "group": null,
-                "hidden": true,
+                "hidden": false,
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -842,7 +843,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFABlog",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -887,7 +888,7 @@
             "schema": {
                 "name": "title",
                 "table": "AFABlog",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -932,7 +933,7 @@
             "schema": {
                 "name": "description",
                 "table": "AFABlog",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1020,12 +1021,12 @@
                 "name": "id",
                 "table": "AFALinks",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFALinks_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -1037,7 +1038,7 @@
         {
             "collection": "AFALinks",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFALinks",
                 "conditions": null,
@@ -1065,9 +1066,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFALinks",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1097,10 +1098,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -1111,7 +1113,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFALinks",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -1129,7 +1131,7 @@
         {
             "collection": "AFALinks",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFALinks",
                 "conditions": null,
@@ -1157,9 +1159,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFALinks",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1189,11 +1191,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -1203,7 +1205,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFALinks",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -1248,7 +1250,7 @@
             "schema": {
                 "name": "title",
                 "table": "AFALinks",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1368,12 +1370,12 @@
                 "name": "id",
                 "table": "AFAOrganisations",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAOrganisations_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -1385,7 +1387,7 @@
         {
             "collection": "AFAOrganisations",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAOrganisations",
                 "conditions": null,
@@ -1413,9 +1415,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFAOrganisations",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1445,10 +1447,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -1459,7 +1462,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFAOrganisations",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -1477,7 +1480,7 @@
         {
             "collection": "AFAOrganisations",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAOrganisations",
                 "conditions": null,
@@ -1505,9 +1508,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFAOrganisations",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1537,11 +1540,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -1551,7 +1554,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFAOrganisations",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -1596,7 +1599,7 @@
             "schema": {
                 "name": "name",
                 "table": "AFAOrganisations",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1641,7 +1644,7 @@
             "schema": {
                 "name": "url",
                 "table": "AFAOrganisations",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1686,7 +1689,7 @@
             "schema": {
                 "name": "note",
                 "table": "AFAOrganisations",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1742,7 +1745,7 @@
             "schema": {
                 "name": "type",
                 "table": "AFAOrganisations",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -1794,8 +1797,8 @@
                 "data_type": "integer",
                 "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -1896,12 +1899,12 @@
                 "name": "id",
                 "table": "AFAStickers",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAStickers_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -1913,7 +1916,7 @@
         {
             "collection": "AFAStickers",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAStickers",
                 "conditions": null,
@@ -1941,9 +1944,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFAStickers",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -1973,10 +1976,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -1987,7 +1991,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFAStickers",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -2005,7 +2009,7 @@
         {
             "collection": "AFAStickers",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAStickers",
                 "conditions": null,
@@ -2033,9 +2037,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFAStickers",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -2065,11 +2069,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -2079,7 +2083,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFAStickers",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -2123,9 +2127,9 @@
             "schema": {
                 "name": "image",
                 "table": "AFAStickers",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -2210,7 +2214,7 @@
             "schema": {
                 "name": "image_description",
                 "table": "AFAStickers",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -2252,96 +2256,6 @@
                 "validation": null,
                 "validation_message": null,
                 "width": "full"
-            }
-        },
-        {
-            "collection": "AFAStickers",
-            "field": "url",
-            "type": "string",
-            "meta": {
-                "collection": "AFAStickers",
-                "conditions": null,
-                "display": null,
-                "display_options": null,
-                "field": "url",
-                "group": "source",
-                "hidden": false,
-                "interface": "input",
-                "note": null,
-                "options": {
-                    "iconLeft": "link",
-                    "placeholder": "https://example.com"
-                },
-                "readonly": false,
-                "required": false,
-                "sort": 2,
-                "special": null,
-                "translations": null,
-                "validation": null,
-                "validation_message": null,
-                "width": "full"
-            },
-            "schema": {
-                "name": "url",
-                "table": "AFAStickers",
-                "data_type": "character varying",
-                "default_value": null,
-                "max_length": 255,
-                "numeric_precision": null,
-                "numeric_scale": null,
-                "is_nullable": true,
-                "is_unique": false,
-                "is_primary_key": false,
-                "is_generated": false,
-                "generation_expression": null,
-                "has_auto_increment": false,
-                "foreign_key_table": null,
-                "foreign_key_column": null
-            }
-        },
-        {
-            "collection": "AFAStickers",
-            "field": "label",
-            "type": "string",
-            "meta": {
-                "collection": "AFAStickers",
-                "conditions": null,
-                "display": null,
-                "display_options": null,
-                "field": "label",
-                "group": "source",
-                "hidden": false,
-                "interface": "input",
-                "note": null,
-                "options": {
-                    "iconLeft": "format_color_text",
-                    "placeholder": "Relevant Instagram post"
-                },
-                "readonly": false,
-                "required": false,
-                "sort": 1,
-                "special": null,
-                "translations": null,
-                "validation": null,
-                "validation_message": null,
-                "width": "full"
-            },
-            "schema": {
-                "name": "label",
-                "table": "AFAStickers",
-                "data_type": "character varying",
-                "default_value": null,
-                "max_length": 255,
-                "numeric_precision": null,
-                "numeric_scale": null,
-                "is_nullable": true,
-                "is_unique": false,
-                "is_primary_key": false,
-                "is_generated": false,
-                "generation_expression": null,
-                "has_auto_increment": false,
-                "foreign_key_table": null,
-                "foreign_key_column": null
             }
         },
         {
@@ -2393,7 +2307,7 @@
             "schema": {
                 "name": "category",
                 "table": "AFAStickers",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -2438,7 +2352,97 @@
             "schema": {
                 "name": "name",
                 "table": "AFAStickers",
-                "data_type": "character varying",
+                "data_type": "varchar",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "url",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "url",
+                "group": "source",
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "link",
+                    "placeholder": "https://example.com"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 2,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "url",
+                "table": "AFAStickers",
+                "data_type": "varchar",
+                "default_value": null,
+                "max_length": 255,
+                "numeric_precision": null,
+                "numeric_scale": null,
+                "is_nullable": true,
+                "is_unique": false,
+                "is_primary_key": false,
+                "is_generated": false,
+                "generation_expression": null,
+                "has_auto_increment": false,
+                "foreign_key_table": null,
+                "foreign_key_column": null
+            }
+        },
+        {
+            "collection": "AFAStickers",
+            "field": "label",
+            "type": "string",
+            "meta": {
+                "collection": "AFAStickers",
+                "conditions": null,
+                "display": null,
+                "display_options": null,
+                "field": "label",
+                "group": "source",
+                "hidden": false,
+                "interface": "input",
+                "note": null,
+                "options": {
+                    "iconLeft": "format_color_text",
+                    "placeholder": "Relevant Instagram post"
+                },
+                "readonly": false,
+                "required": false,
+                "sort": 1,
+                "special": null,
+                "translations": null,
+                "validation": null,
+                "validation_message": null,
+                "width": "full"
+            },
+            "schema": {
+                "name": "label",
+                "table": "AFAStickers",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -2481,12 +2485,12 @@
                 "name": "id",
                 "table": "AFAWatchpigeonArticles",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAWatchpigeonArticles_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -2498,7 +2502,7 @@
         {
             "collection": "AFAWatchpigeonArticles",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAWatchpigeonArticles",
                 "conditions": null,
@@ -2526,9 +2530,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -2562,6 +2566,7 @@
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -2572,7 +2577,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -2590,7 +2595,7 @@
         {
             "collection": "AFAWatchpigeonArticles",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAWatchpigeonArticles",
                 "conditions": null,
@@ -2618,9 +2623,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -2654,7 +2659,7 @@
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -2664,7 +2669,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -2711,8 +2716,8 @@
                 "data_type": "integer",
                 "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -2753,7 +2758,7 @@
             "schema": {
                 "name": "title",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -2865,7 +2870,7 @@
             "schema": {
                 "name": "note",
                 "table": "AFAWatchpigeonArticles",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -2985,12 +2990,12 @@
                 "name": "id",
                 "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAWatchpigeonArticles_AFAWatchpigeonSubjects_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -3029,8 +3034,8 @@
                 "data_type": "integer",
                 "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -3068,7 +3073,7 @@
             "schema": {
                 "name": "AFAWatchpigeonSubjects_id",
                 "table": "AFAWatchpigeonArticles_AFAWatchpigeonSubjects",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3118,7 +3123,7 @@
             "schema": {
                 "name": "id",
                 "table": "AFAWatchpigeonParties",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3163,7 +3168,7 @@
             "schema": {
                 "name": "name",
                 "table": "AFAWatchpigeonParties",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3205,7 +3210,7 @@
             "schema": {
                 "name": "colour",
                 "table": "AFAWatchpigeonParties",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3251,9 +3256,9 @@
             "schema": {
                 "name": "logo",
                 "table": "AFAWatchpigeonParties",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -3355,12 +3360,12 @@
                 "name": "id",
                 "table": "AFAWatchpigeonResponses",
                 "data_type": "integer",
-                "default_value": "nextval('\"AFAWatchpigeonResponses_id_seq\"'::regclass)",
+                "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": false,
-                "is_unique": true,
+                "is_unique": false,
                 "is_primary_key": true,
                 "is_generated": false,
                 "generation_expression": null,
@@ -3372,7 +3377,7 @@
         {
             "collection": "AFAWatchpigeonResponses",
             "field": "user_created",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAWatchpigeonResponses",
                 "conditions": null,
@@ -3400,9 +3405,9 @@
             "schema": {
                 "name": "user_created",
                 "table": "AFAWatchpigeonResponses",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -3432,10 +3437,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 3,
                 "special": [
+                    "cast-timestamp",
                     "date-created"
                 ],
                 "translations": null,
@@ -3446,7 +3452,7 @@
             "schema": {
                 "name": "date_created",
                 "table": "AFAWatchpigeonResponses",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -3464,7 +3470,7 @@
         {
             "collection": "AFAWatchpigeonResponses",
             "field": "user_updated",
-            "type": "uuid",
+            "type": "string",
             "meta": {
                 "collection": "AFAWatchpigeonResponses",
                 "conditions": null,
@@ -3492,9 +3498,9 @@
             "schema": {
                 "name": "user_updated",
                 "table": "AFAWatchpigeonResponses",
-                "data_type": "uuid",
+                "data_type": "char",
                 "default_value": null,
-                "max_length": null,
+                "max_length": 36,
                 "numeric_precision": null,
                 "numeric_scale": null,
                 "is_nullable": true,
@@ -3524,11 +3530,11 @@
                 "interface": "datetime",
                 "note": null,
                 "options": null,
-                "readonly": true,
+                "readonly": false,
                 "required": false,
                 "sort": 5,
                 "special": [
-                    "date-updated"
+                    "cast-timestamp"
                 ],
                 "translations": null,
                 "validation": null,
@@ -3538,7 +3544,7 @@
             "schema": {
                 "name": "date_updated",
                 "table": "AFAWatchpigeonResponses",
-                "data_type": "timestamp with time zone",
+                "data_type": "datetime",
                 "default_value": null,
                 "max_length": null,
                 "numeric_precision": null,
@@ -3584,7 +3590,7 @@
             "schema": {
                 "name": "party",
                 "table": "AFAWatchpigeonResponses",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3663,8 +3669,8 @@
                 "data_type": "integer",
                 "default_value": 0,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -3707,8 +3713,8 @@
                 "data_type": "integer",
                 "default_value": null,
                 "max_length": null,
-                "numeric_precision": 32,
-                "numeric_scale": 0,
+                "numeric_precision": null,
+                "numeric_scale": null,
                 "is_nullable": true,
                 "is_unique": false,
                 "is_primary_key": false,
@@ -3790,7 +3796,7 @@
             "schema": {
                 "name": "id",
                 "table": "AFAWatchpigeonSubjects",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3835,7 +3841,7 @@
             "schema": {
                 "name": "name",
                 "table": "AFAWatchpigeonSubjects",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3880,7 +3886,7 @@
             "schema": {
                 "name": "description",
                 "table": "AFAWatchpigeonSubjects",
-                "data_type": "character varying",
+                "data_type": "varchar",
                 "default_value": null,
                 "max_length": 255,
                 "numeric_precision": null,
@@ -3917,7 +3923,7 @@
                 "column": "directus_files_id",
                 "foreign_key_table": "directus_files",
                 "foreign_key_column": "id",
-                "constraint_name": "afaassetlibrary_files_directus_files_id_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
@@ -3942,7 +3948,7 @@
                 "column": "AFAAssetLibrary_id",
                 "foreign_key_table": "AFAAssetLibrary",
                 "foreign_key_column": "id",
-                "constraint_name": "afaassetlibrary_files_afaassetlibrary_id_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
@@ -3967,7 +3973,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afablog_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -3992,7 +3998,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afablog_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4017,7 +4023,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afalinks_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4042,7 +4048,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afalinks_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4067,7 +4073,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afaorganisations_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4092,7 +4098,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afaorganisations_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4117,7 +4123,7 @@
                 "column": "parent_organisation",
                 "foreign_key_table": "AFAOrganisations",
                 "foreign_key_column": "id",
-                "constraint_name": "afaorganisations_parent_organisation_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4142,7 +4148,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afastickers_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4167,7 +4173,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afastickers_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4192,7 +4198,7 @@
                 "column": "image",
                 "foreign_key_table": "directus_files",
                 "foreign_key_column": "id",
-                "constraint_name": "afastickers_image_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
@@ -4217,7 +4223,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonarticles_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4242,7 +4248,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonarticles_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4267,7 +4273,7 @@
                 "column": "AFAWatchpigeonSubjects_id",
                 "foreign_key_table": "AFAWatchpigeonSubjects",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__232961c9_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "CASCADE"
             }
@@ -4292,7 +4298,7 @@
                 "column": "AFAWatchpigeonArticles_id",
                 "foreign_key_table": "AFAWatchpigeonArticles",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonarticles_afawatchpigeonsubje__6d407a93_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "CASCADE"
             }
@@ -4317,7 +4323,7 @@
                 "column": "logo",
                 "foreign_key_table": "directus_files",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonparties_logo_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
@@ -4342,7 +4348,7 @@
                 "column": "user_created",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonresponses_user_created_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4367,7 +4373,7 @@
                 "column": "user_updated",
                 "foreign_key_table": "directus_users",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonresponses_user_updated_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "NO ACTION"
             }
@@ -4392,7 +4398,7 @@
                 "column": "party",
                 "foreign_key_table": "AFAWatchpigeonParties",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonresponses_party_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
@@ -4417,7 +4423,7 @@
                 "column": "article_id",
                 "foreign_key_table": "AFAWatchpigeonArticles",
                 "foreign_key_column": "id",
-                "constraint_name": "afawatchpigeonresponses_article_id_foreign",
+                "constraint_name": null,
                 "on_update": "NO ACTION",
                 "on_delete": "SET NULL"
             }
